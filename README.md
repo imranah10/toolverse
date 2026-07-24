@@ -21,7 +21,8 @@
   <a href="#what's-included">Components</a> ·
   <a href="#icons">Icons</a> ·
   <a href="#theme-customization">Theme</a> ·
-  <a href="CONTRIBUTING.md">Contributing</a>
+  <a href="CONTRIBUTING.md">Contributing</a> ·
+  <a href="#-run-the-playground-locally">Playground</a>
 </p>
 
 <p><strong>
@@ -360,6 +361,41 @@ npm version major    # 1.3.0 → 2.0.0
 # Publish
 npm publish
 ```
+
+---
+
+## 🎨 Run the Playground locally
+
+Want to **see all components live** before installing? Or contributing and want to see your changes?
+
+The repo includes a Vite + React playground at `playground/`:
+
+```bash
+# Clone
+git clone https://github.com/imranah10/toolverse.git
+cd toolverse
+
+# One command — installs deps + starts playground
+npm run playground
+```
+
+Then open **http://localhost:5173** — you'll see all 17 handcrafted components rendered live:
+
+- Buttons (8 variants + 4 sizes + states)
+- Cards (hover, glow, with header/body/footer)
+- Alerts (4 variants)
+- Inputs (with error/hint states)
+- Avatars (5 sizes + status + AvatarGroup)
+- Icons (all 7 variants: line, solid, duotone, aurora, neon, glass, crystal3d)
+- Overlays (Modal, Drawer, Tooltip, Tag, Badge)
+- States (Empty/Error/Success + Loaders + Progress)
+
+**Edit any file in `src/components/`, save, refresh browser — see your change instantly.**
+
+> The playground uses Vite's alias feature to import directly from `src/index.ts`,
+> so you don't even need to rebuild the package between changes.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full instructions.
 
 ---
 

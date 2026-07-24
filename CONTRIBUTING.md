@@ -23,6 +23,36 @@ npm install
 npm run build
 ```
 
+## 🎨 Run the Playground (SEE YOUR CHANGES LIVE)
+
+The playground is a Vite + React app that imports the local package, so any change
+you make to `src/` is immediately visible in the browser.
+
+```bash
+# One command — installs playground deps + starts dev server
+npm run playground
+
+# Or step by step:
+npm run playground:install   # first time only
+npm run playground:dev        # start dev server
+```
+
+Then open **http://localhost:5173** — you'll see all 17 handcrafted components live:
+
+- Buttons (8 variants + 4 sizes + states)
+- Cards (hover, glow, with header/body/footer)
+- Alerts (info/success/warning/danger)
+- Inputs (with error/hint states)
+- Avatars (5 sizes + status + AvatarGroup)
+- Icons (all 7 variants: line, solid, duotone, aurora, neon, glass, crystal3d)
+- Overlays (Modal, Drawer, Tooltip, Tag, Badge)
+- States (Empty/Error/Success + Loaders + Progress)
+
+**Edit any file in `src/components/`, save, refresh browser — see your change instantly.**
+
+> The playground uses Vite's alias feature to import directly from `../src/index.ts`,
+> so you don't even need to rebuild the package between changes.
+
 ## Project Structure
 
 ```
@@ -33,6 +63,14 @@ toolverse/
 │   ├── provider.tsx         # ToolverseProvider + theme context
 │   ├── theme.ts             # Theme system
 │   └── index.ts             # Barrel export
+├── playground/              # 🎨 Vite + React app for LIVE preview
+│   ├── src/
+│   │   ├── App.tsx          # Showcase of all components
+│   │   ├── main.tsx
+│   │   └── index.css
+│   ├── package.json
+│   ├── vite.config.ts       # Aliases "toolverse" to ../src
+│   └── index.html
 ├── cli/
 │   └── index.js             # npx toolverse add <component> CLI
 ├── dist/                    # Built output (gitignored)

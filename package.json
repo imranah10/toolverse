@@ -19,7 +19,11 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "prepublishOnly": "npm run build",
-    "cli:add": "node cli/index.js add"
+    "cli:add": "node cli/index.js add",
+    "playground": "cd playground && npm install && npm run dev",
+    "playground:install": "cd playground && npm install",
+    "playground:dev": "cd playground && npm run dev",
+    "playground:build": "cd playground && npm run build"
   },
   "keywords": [
     "react",

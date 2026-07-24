@@ -1,10 +1,40 @@
-# Toolverse
+<div align="center">
 
-> **263 UI components (17 handcrafted + 246 library) + 1,099 icons across 21 categories.** Premium themeable accessible React component library.
+# 🛡️ Toolverse
 
-[![npm version](https://img.shields.io/npm/v/toolverse.svg)](https://www.npmjs.com/package/toolverse)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Bundle size](https://img.shields.io/bundlephobia/minzip/toolverse)](https://www.npmjs.com/package/toolverse)
+### Premium UI Component & Icon Library for React, Vue, Svelte, Angular
+
+**263 components (17 handcrafted + 246 library) + 1,099 icons across 21 categories**
+
+[![npm version](https://img.shields.io/npm/v/toolverse.svg?style=for-the-badge&color=CB3837)](https://www.npmjs.com/package/toolverse)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&color=FFCB2B)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/imranah10/toolverse.svg?style=for-the-badge&color=FFB31A)](https://github.com/imranah10/toolverse/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/imranah10/toolverse.svg?style=for-the-badge&color=61DAFB)](https://github.com/imranah10/toolverse/issues)
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/imranah10/toolverse/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/imranah10/toolverse/actions)
+[![Bundle size](https://img.shields.io/bundlephobia/minzip/toolverse?style=flat-square&color=6366f1)](https://www.npmjs.com/package/toolverse)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue.svg?style=flat-square&color=3178C6)](https://www.typescriptlang.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&color=16A34A)](CONTRIBUTING.md)
+
+<p>
+  <a href="#install"><code>npm install toolverse</code></a> ·
+  <a href="#what's-included">Components</a> ·
+  <a href="#icons">Icons</a> ·
+  <a href="#theme-customization">Theme</a> ·
+  <a href="CONTRIBUTING.md">Contributing</a>
+</p>
+
+<p><strong>
+  ⭐ Star this repo · 🐛 <a href="https://github.com/imranah10/toolverse/issues">Report bugs</a> · 💬 <a href="https://github.com/imranah10/toolverse/discussions">Discussions</a>
+</strong></p>
+
+---
+
+</div>
+
+> **Why Toolverse?** 263 components (17 handcrafted + 246 library) + 1,099 icons (7 variants each). Zero-runtime, tree-shakeable, fully TypeScript-typed, accessible, and themeable. The most complete premium UI library on npm.
+
+---
 
 ## Why Toolverse?
 

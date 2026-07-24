@@ -1,0 +1,70 @@
+{
+  "name": "toolverse",
+  "version": "1.3.0",
+  "description": "Toolverse — 263 UI components (17 handcrafted + 246 library) + 1,099 icons across 21 categories. Premium themeable accessible library for React, Vue, Svelte, Angular.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "cli",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "toolverse": "cli/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build",
+    "cli:add": "node cli/index.js add"
+  },
+  "keywords": [
+    "react",
+    "vue",
+    "svelte",
+    "angular",
+    "components",
+    "ui",
+    "design-system",
+    "tailwind",
+    "shadcn",
+    "toolverse",
+    "component-library",
+    "headless"
+  ],
+  "author": "Toolverse <hello@toolverse.ai>",
+  "license": "MIT",
+  "homepage": "https://toolverse-ai.space-z.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toolverse/toolverse-npm"
+  },
+  "bugs": {
+    "url": "https://github.com/toolverse/toolverse-npm/issues"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "react-dom": { "optional": true },
+    "vue": { "optional": true },
+    "svelte": { "optional": true }
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

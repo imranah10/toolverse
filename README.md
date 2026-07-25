@@ -399,6 +399,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full instructions.
 
 ---
 
+## Testing
+
+Unit tests are written with [Vitest](https://vitest.dev/) + React Testing Library. Run `npm test` to execute them.
+
 ## License
 
 MIT © Toolverse

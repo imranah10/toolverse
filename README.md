@@ -244,7 +244,7 @@ import { Button } from "./components/toolverse/Button";
 
 ### Way 3: Export as File (web app — single file, no 2-file problem!)
 
-Visit [toolverse-ai.space-z.ai](https://toolverse-ai.space-z.ai) → Developer Studio → Component Builder → customize → click **"Export as File"**.
+Visit [toolverse-official.vercel.app](https://toolverse-official.vercel.app) → Developer Studio → Component Builder → customize → click **"Export as File"**.
 
 **🔥 NEW in v1.3.0:** React export now generates **SINGLE FILE** with embedded styles. No more `.tsx` + `.css` 2-file problem. Just one `.tsx` file — paste, import, use.
 
@@ -406,6 +406,6 @@ MIT © Toolverse
 ## Links
 
 - **npm:** https://www.npmjs.com/package/toolverse
-- **Website:** https://toolverse-ai.space-z.ai
-- **Documentation:** https://toolverse-ai.space-z.ai/studio/developer
+- **Website:** https://toolverse-official.vercel.app
+- **Documentation:** https://toolverse-official.vercel.app/studio/developer
 - **Issues:** https://github.com/toolverse/toolverse-npm/issues

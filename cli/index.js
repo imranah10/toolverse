@@ -403,7 +403,7 @@ Examples:
 The component file is added to ./src/components/toolverse/ (or nearest
 existing components folder). You OWN the file — customize freely.
 
-Docs: https://toolverse-ai.space-z.ai
+Docs: https://toolverse-official.vercel.app
 `);
 }
 

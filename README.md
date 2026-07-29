@@ -408,4 +408,4 @@ MIT © Toolverse
 - **npm:** https://www.npmjs.com/package/toolverse
 - **Website:** https://toolverse-official.vercel.app
 - **Documentation:** https://toolverse-official.vercel.app/studio/developer
-- **Issues:** https://github.com/toolverse/toolverse-npm/issues
+- **Issues:** https://github.com/imranah10/toolverse/issues

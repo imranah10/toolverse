@@ -106,5 +106,5 @@ export * from "./generated";
 
 // Version
 export const VERSION = "1.2.0";
-export const TOTAL_COMPONENTS = 263;   // 17 handcrafted + 246 library
-export const TOTAL_ICONS = 1099;        // 100 handcrafted + 999 library
+export const TOTAL_COMPONENTS = 274;   // 31 handcrafted + 243 library
+export const TOTAL_ICONS = 1012;        // original crystal set — 7 variants each

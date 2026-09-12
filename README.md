@@ -4,7 +4,7 @@
 
 ### Premium UI Component & Icon Library for React, Vue, Svelte, Angular
 
-**263 components (17 handcrafted + 246 library) + 1,099 icons across 21 categories**
+**274 components (31 handcrafted + 243 library) + 1,009 icons across 21 categories — 1,286+ named exports**
 
 [![npm version](https://img.shields.io/npm/v/toolverse.svg?style=for-the-badge&color=CB3837)](https://www.npmjs.com/package/toolverse)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&color=FFCB2B)](https://opensource.org/licenses/MIT)
@@ -33,17 +33,19 @@
 
 </div>
 
-> **Why Toolverse?** 263 components (17 handcrafted + 246 library) + 1,099 icons (7 variants each). Zero-runtime, tree-shakeable, fully TypeScript-typed, accessible, and themeable. The most complete premium UI library on npm.
+> **Why Toolverse?** 274 components (31 handcrafted + 243 library) + 1,009 icons (7 variants each). Zero-runtime, tree-shakeable, fully TypeScript-typed, accessible, and themeable. The most complete premium UI library on npm.
 
 ---
 
 ## Why Toolverse?
 
-- **263 components** — 17 handcrafted premium (Button, Card, Modal, etc.) + 246 library components (SolidButton, GradientCard, etc.)
-- **1,099 icons** — 100 handcrafted + 999 library icons. **7 variants each** (line, solid, duotone, aurora, neon, glass, crystal3d)
+- **274 components** — 31 handcrafted premium (Button, Card, Modal, Tabs, Drawer, Hero, Navbar…) + 243 library components (SolidButton, GlassCard, NeonCard…)
+- **1,009 icons** — original crystal-style set, zero copies. **7 variants each** (line, solid, duotone, aurora, neon, glass, crystal3d)
+- **🆕 v1.5.0 CLI** — `add` (18 component files), `icons` search engine, `theme` presets (midnight/rose/ocean/cyber…), `stats`, `doctor`
+- **Real theme system** — every component reads colors/radii/shadows from context; override anything via `<ToolverseProvider>`
 - **Single-file React export** — No more 2-file problem (`.tsx` + `.css`). Customized components export as ONE file with embedded styles.
 - **Zero-runtime** — No CSS-in-JS at runtime. Inline styles. Fast.
-- **Tree-shakeable** — Import only what you need. Bundler removes the rest.
+- **Tree-shakeable — verified**: `import { Button, Plus }` bundles to **8.8 KB minified (~2.5 KB gzipped)** with esbuild. Unused components & icons are fully dropped from your bundle.
 - **Themeable** — One `ToolverseProvider` configures colors, radii, spacing, shadows for all components.
 - **8 export formats** — React, Vue, Svelte, Angular, HTML, Tailwind, CSS, SCSS. Pick your framework.
 - **TypeScript** — Full type definitions for every component and icon.
@@ -187,7 +189,7 @@ import { SolidButton, GradientCard, NeonAlert, GlowInput } from "toolverse";
 - `shadowX`, `shadowY`, `shadowBlur`, `shadowColor` — shadows
 - `useGradient`, `gradientFrom`, `gradientTo` — gradients
 
-### Icons (1,099 icons, 7 variants each)
+### Icons (1,009 icons, 7 variants each)
 
 ```tsx
 import { Heart, Home, Search, Bell, Star, Plus, Github } from "toolverse";
@@ -317,14 +319,26 @@ The web app's Icon Library supports 8 export formats:
 ## CLI Commands
 
 ```bash
-# Add a single component to your project
-npx toolverse add button
+# ── Add components (own the code — shadcn-style) ──
+npx toolverse add button        # 18 files available: button, card, alert, badge, input,
+                                # avatar, tooltip, progress, divider, loader, tag, code,
+                                # hero, navbar, navigation, overlay, states, icons
+npx toolverse add all           # Copy all 18 real .tsx sources to src/components/toolverse/
+npx toolverse list              # Every component + exact exports
 
-# Add all handcrafted components
-npx toolverse add all
+# ── Icon search engine ──
+npx toolverse icons             # Browse categories + counts
+npx toolverse icons wallet      # Search by name/tag → exact import snippet
+npx toolverse icons rocket neon
 
-# List available components
-npx toolverse list
+# ── Theme presets (real ToolverseTheme tokens) ──
+npx toolverse theme             # List 7 presets: indigo · midnight · rose · ocean ·
+                                # forest · cyber · mono
+npx toolverse theme midnight    # Writes src/toolverse-theme.ts + usage snippet
+
+# ── Utilities ──
+npx toolverse stats             # What's inside (counts, deps)
+npx toolverse doctor            # Node/React/package health check
 ```
 
 ---
@@ -344,19 +358,14 @@ npx toolverse list
 ## Publishing (for maintainers)
 
 ```bash
-cd toolverse-npm
-
-# Regenerate from web app source (components + icons)
-node /home/z/my-project/scripts/generate-npm-package.js
-
 # Build
 npm install
 npm run build
 
 # Bump version
-npm version patch    # 1.3.0 → 1.3.1
-npm version minor    # 1.3.0 → 1.4.0
-npm version major    # 1.3.0 → 2.0.0
+npm version patch    # 1.5.0 → 1.5.1
+npm version minor    # 1.5.0 → 1.6.0
+npm version major    # 1.5.0 → 2.0.0
 
 # Publish
 npm publish

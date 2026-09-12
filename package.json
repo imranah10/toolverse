@@ -1,7 +1,7 @@
 {
   "name": "toolverse",
-  "version": "1.4.0",
-  "description": "Toolverse — 263 UI components + 1,099 icons. Premium themeable React component library with 7 icon variants, CLI, and zero runtime overhead.",
+  "version": "1.5.0",
+  "description": "Toolverse — 274 React components + 1,009 icons × 7 variants (line, solid, duotone, aurora, neon, glass, crystal3d). Real theme system, zero-dependency CLI (add · icons · theme), tree-shakeable, TypeScript strict, MIT.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -28,6 +28,7 @@
   "keywords": [
     "react",
     "react-components",
+    "cli",
     "vue",
     "svelte",
     "angular",

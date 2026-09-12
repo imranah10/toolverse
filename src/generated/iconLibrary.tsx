@@ -1750,7 +1750,7 @@ export interface ToolverseIconProps {
 }
 
 export const Plus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "plus");
+  const icon = { id: "plus", name: "Plus", category: "Actions", tags: ["add", "new", "create", "insert"], body: `<path d="M12 4v16"/><path d="M4 12h16"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1763,7 +1763,7 @@ export const Plus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Minus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "minus");
+  const icon = { id: "minus", name: "Minus", category: "Actions", tags: ["remove", "subtract", "delete"], body: `<path d="M4 12h16"/><path d="M6 9l1.5 0M16.5 15l1.5 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1776,7 +1776,7 @@ export const Minus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Check: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "check");
+  const icon = { id: "check", name: "Check", category: "Actions", tags: ["done", "tick", "confirm", "yes"], body: `<path d="M4 13l5 5L20 6"/><circle cx="6" cy="18" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1789,7 +1789,7 @@ export const Check: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cross: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cross");
+  const icon = { id: "cross", name: "Cross", category: "Spiritual", tags: ["christian", "faith"], body: `<path d="M12 21V8M5 11h14M9 8h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1802,7 +1802,7 @@ export const Cross: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Edit: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "edit");
+  const icon = { id: "edit", name: "Edit", category: "Actions", tags: ["pencil", "write", "modify"], body: `<path d="M14 4l6 6L8 22H2v-6L14 4z"/><path d="M11 7l6 6"/><circle cx="5" cy="19" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1815,7 +1815,7 @@ export const Edit: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Trash: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trash");
+  const icon = { id: "trash", name: "Trash", category: "Actions", tags: ["delete", "bin", "remove"], body: `<path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14"/><path d="M10 11v6M14 11v6"/><circle cx="12" cy="2.5" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1828,7 +1828,7 @@ export const Trash: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Save: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "save");
+  const icon = { id: "save", name: "Save", category: "Actions", tags: ["disk", "store", "persist"], body: `<path d="M5 4h11l3 3v13H5z"/><path d="M8 4v6h7V4"/><path d="M8 14h8v6H8z"/><circle cx="16" cy="17" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1841,7 +1841,7 @@ export const Save: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Copy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "copy");
+  const icon = { id: "copy", name: "Copy", category: "Actions", tags: ["duplicate", "clone", "paste"], body: `<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4V4h11v1"/><circle cx="4" cy="4" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1854,7 +1854,7 @@ export const Copy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cut: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cut");
+  const icon = { id: "cut", name: "Cut", category: "Actions", tags: ["scissors", "slice"], body: `<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8 8l12 8M8 16L20 8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1867,7 +1867,7 @@ export const Cut: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Paste: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "paste");
+  const icon = { id: "paste", name: "Paste", category: "Actions", tags: ["clipboard", "copy"], body: `<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2"/><path d="M9 11h6M9 15h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1880,7 +1880,7 @@ export const Paste: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowUp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-up");
+  const icon = { id: "arrow-up", name: "Arrow Up", category: "Arrows", tags: ["up", "north", "rise"], body: `<path d="M12 20V4"/><path d="M5 11l7-7 7 7"/><circle cx="12" cy="20" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1893,7 +1893,7 @@ export const ArrowUp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowDown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-down");
+  const icon = { id: "arrow-down", name: "Arrow Down", category: "Arrows", tags: ["down", "south", "fall"], body: `<path d="M12 4v16"/><path d="M5 13l7 7 7-7"/><circle cx="12" cy="4" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1906,7 +1906,7 @@ export const ArrowDown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowLeft: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-left");
+  const icon = { id: "arrow-left", name: "Arrow Left", category: "Arrows", tags: ["left", "west", "back"], body: `<path d="M20 12H4"/><path d="M11 5l-7 7 7 7"/><circle cx="20" cy="12" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1919,7 +1919,7 @@ export const ArrowLeft: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowRight: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-right");
+  const icon = { id: "arrow-right", name: "Arrow Right", category: "Arrows", tags: ["right", "east", "next"], body: `<path d="M4 12h16"/><path d="M13 5l7 7-7 7"/><circle cx="4" cy="12" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1932,7 +1932,7 @@ export const ArrowRight: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Refresh: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "refresh");
+  const icon = { id: "refresh", name: "Refresh", category: "Arrows", tags: ["reload", "sync", "rotate"], body: `<path d="M4 12a8 8 0 0 1 14-5l2 2"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5l-2-2"/><path d="M4 20v-5h5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1945,7 +1945,7 @@ export const Refresh: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChevronUp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chevron-up");
+  const icon = { id: "chevron-up", name: "Chevron Up", category: "Arrows", tags: ["collapse", "up"], body: `<path d="M5 14l7-7 7 7"/><path d="M5 18h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1958,7 +1958,7 @@ export const ChevronUp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChevronDown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chevron-down");
+  const icon = { id: "chevron-down", name: "Chevron Down", category: "Arrows", tags: ["expand", "down"], body: `<path d="M5 10l7 7 7-7"/><path d="M5 6h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1971,7 +1971,7 @@ export const ChevronDown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChevronLeft: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chevron-left");
+  const icon = { id: "chevron-left", name: "Chevron Left", category: "Arrows", tags: ["back", "left"], body: `<path d="M14 5l-7 7 7 7"/><path d="M18 5v14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1984,7 +1984,7 @@ export const ChevronLeft: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChevronRight: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chevron-right");
+  const icon = { id: "chevron-right", name: "Chevron Right", category: "Arrows", tags: ["forward", "right"], body: `<path d="M10 5l7 7-7 7"/><path d="M6 5v14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -1997,7 +1997,7 @@ export const ChevronRight: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Expand: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "expand");
+  const icon = { id: "expand", name: "Expand", category: "Arrows", tags: ["maximize", "fullscreen"], body: `<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2010,7 +2010,7 @@ export const Expand: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Menu: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "menu");
+  const icon = { id: "menu", name: "Menu", category: "UI", tags: ["hamburger", "lines", "navigation"], body: `<path d="M4 7h16M4 12h16M4 17h16"/><circle cx="4" cy="7" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2023,7 +2023,7 @@ export const Menu: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Close: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "close");
+  const icon = { id: "close", name: "Close", category: "UI", tags: ["x", "dismiss", "cancel"], body: `<path d="M5 5l14 14M19 5L5 19"/><path d="M5 5l2 0M17 19l2 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2036,7 +2036,7 @@ export const Close: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Search: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "search");
+  const icon = { id: "search", name: "Search", category: "UI", tags: ["find", "lookup", "magnify"], body: `<circle cx="11" cy="11" r="6"/><path d="M16 16l5 5"/><path d="M8 11h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2049,7 +2049,7 @@ export const Search: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Filter: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "filter");
+  const icon = { id: "filter", name: "Filter", category: "UI", tags: ["funnel", "sort", "refine"], body: `<path d="M4 5h16l-6 8v6l-4 2v-8z"/><circle cx="12" cy="3" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2062,7 +2062,7 @@ export const Filter: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Settings: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "settings");
+  const icon = { id: "settings", name: "Settings", category: "UI", tags: ["gear", "cog", "config"], body: `<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M22 12h-3M5 12H2M19 5l-2 2M7 17l-2 2M19 19l-2-2M7 7L5 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2075,7 +2075,7 @@ export const Settings: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sliders: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sliders");
+  const icon = { id: "sliders", name: "Sliders", category: "UI", tags: ["adjust", "tune", "controls"], body: `<path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2" fill="currentColor" stroke="currentColor"/><circle cx="8" cy="17" r="2" fill="currentColor" stroke="currentColor"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2088,7 +2088,7 @@ export const Sliders: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Grid: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "grid");
+  const icon = { id: "grid", name: "Grid", category: "UI", tags: ["layout", "tiles", "squares"], body: `<rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/><circle cx="7.5" cy="7.5" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2101,7 +2101,7 @@ export const Grid: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const List: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "list");
+  const icon = { id: "list", name: "List", category: "UI", tags: ["bullet", "items", "menu-list"], body: `<path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1.3" fill="currentColor" stroke="none"/><circle cx="4" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="4" cy="18" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2114,7 +2114,7 @@ export const List: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Eye: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eye");
+  const icon = { id: "eye", name: "Eye", category: "UI", tags: ["view", "show", "watch"], body: `<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><circle cx="18" cy="6" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2127,7 +2127,7 @@ export const Eye: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EyeOff: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eye-off");
+  const icon = { id: "eye-off", name: "Eye Off", category: "UI", tags: ["hide", "invisible", "blind"], body: `<path d="M3 3l18 18"/><path d="M10.6 10.6a3 3 0 0 0 4.2 4.2"/><path d="M9.4 5.2A10.4 10.4 0 0 1 12 5c6 0 10 7 10 7a17.5 17.5 0 0 1-3.1 3.8M6.1 6.1A17.4 17.4 0 0 0 2 12s4 7 10 7a10 10 0 0 0 4.5-1.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2140,7 +2140,7 @@ export const EyeOff: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mail: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mail");
+  const icon = { id: "mail", name: "Mail", category: "Communication", tags: ["email", "envelope", "message"], body: `<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/><circle cx="3" cy="5" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2153,7 +2153,7 @@ export const Mail: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Phone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "phone");
+  const icon = { id: "phone", name: "Phone", category: "Communication", tags: ["call", "telephone", "contact"], body: `<path d="M5 4h4l2 5-3 2a14 14 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 6a2 2 0 0 1 2-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2166,7 +2166,7 @@ export const Phone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Message: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "message");
+  const icon = { id: "message", name: "Message", category: "Communication", tags: ["chat", "bubble", "speech"], body: `<path d="M4 5h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M7 10h6M7 13h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2179,7 +2179,7 @@ export const Message: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bell: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bell");
+  const icon = { id: "bell", name: "Bell", category: "Communication", tags: ["notification", "alert", "alarm"], body: `<path d="M6 9a6 6 0 0 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9z"/><path d="M10 21a2 2 0 0 0 4 0"/><circle cx="18" cy="5" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2192,7 +2192,7 @@ export const Bell: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Send: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "send");
+  const icon = { id: "send", name: "Send", category: "Communication", tags: ["paper-plane", "share", "submit"], body: `<path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4z"/><circle cx="22" cy="2" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2205,7 +2205,7 @@ export const Send: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Share: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "share");
+  const icon = { id: "share", name: "Share", category: "Communication", tags: ["distribute", "social"], body: `<circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 11l6-4M9 13l6 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2218,7 +2218,7 @@ export const Share: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const AtSign: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "at");
+  const icon = { id: "at", name: "At Sign", category: "Communication", tags: ["email", "mention", "handle"], body: `<circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2231,7 +2231,7 @@ export const AtSign: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Inbox: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "inbox");
+  const icon = { id: "inbox", name: "Inbox", category: "Communication", tags: ["tray", "receive"], body: `<path d="M3 13l3-8h12l3 8"/><path d="M3 13h5l2 4h4l2-4h5v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2244,7 +2244,7 @@ export const Inbox: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Reply: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "reply");
+  const icon = { id: "reply", name: "Reply", category: "Communication", tags: ["undo", "respond"], body: `<path d="M9 17l-6-6 6-6"/><path d="M3 11h11a6 6 0 0 1 6 6v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2257,7 +2257,7 @@ export const Reply: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Forward: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "forward");
+  const icon = { id: "forward", name: "Forward", category: "Communication", tags: ["send", "pass-on"], body: `<path d="M15 17l6-6-6-6"/><path d="M21 11H10a6 6 0 0 0-6 6v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2270,7 +2270,7 @@ export const Forward: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Play: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "play");
+  const icon = { id: "play", name: "Play", category: "Media", tags: ["start", "video", "triangle"], body: `<path d="M6 4l14 8-14 8z"/><circle cx="6" cy="4" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2283,7 +2283,7 @@ export const Play: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pause: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pause");
+  const icon = { id: "pause", name: "Pause", category: "Media", tags: ["hold", "stop"], body: `<rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2296,7 +2296,7 @@ export const Pause: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stop: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stop");
+  const icon = { id: "stop", name: "Stop", category: "Media", tags: ["halt", "square"], body: `<rect x="5" y="5" width="14" height="14" rx="2"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2309,7 +2309,7 @@ export const Stop: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SkipForward: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "skip");
+  const icon = { id: "skip", name: "Skip Forward", category: "Media", tags: ["next", "forward-media"], body: `<path d="M5 5l9 7-9 7z"/><rect x="16" y="5" width="3" height="14" rx="1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2322,7 +2322,7 @@ export const SkipForward: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Volume: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "volume");
+  const icon = { id: "volume", name: "Volume", category: "Media", tags: ["sound", "audio", "speaker"], body: `<path d="M3 10v4h4l5 4V6L7 10z"/><path d="M15 9a4 4 0 0 1 0 6"/><path d="M18 7a8 8 0 0 1 0 10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2335,7 +2335,7 @@ export const Volume: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mute: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mute");
+  const icon = { id: "mute", name: "Mute", category: "Media", tags: ["silent", "off", "no-sound"], body: `<path d="M3 10v4h4l5 4V6L7 10z"/><path d="M22 9l-6 6M16 9l6 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2348,7 +2348,7 @@ export const Mute: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Camera: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "camera");
+  const icon = { id: "camera", name: "Camera", category: "Media", tags: ["photo", "capture", "lens"], body: `<rect x="3" y="6" width="18" height="14" rx="2"/><path d="M8 6l2-3h4l2 3"/><circle cx="12" cy="13" r="4"/><circle cx="18" cy="9" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2361,7 +2361,7 @@ export const Camera: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Image: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "image");
+  const icon = { id: "image", name: "Image", category: "Media", tags: ["picture", "photo", "gallery"], body: `<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 18l5-5 4 4 3-3 6 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2374,7 +2374,7 @@ export const Image: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Video: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "video");
+  const icon = { id: "video", name: "Video", category: "Media", tags: ["film", "movie", "record"], body: `<rect x="3" y="6" width="14" height="12" rx="2"/><path d="M17 10l5-3v10l-5-3z"/><circle cx="3" cy="6" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2387,7 +2387,7 @@ export const Video: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Music: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "music");
+  const icon = { id: "music", name: "Music", category: "Media", tags: ["audio", "note", "song"], body: `<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2400,7 +2400,7 @@ export const Music: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Folder: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "folder");
+  const icon = { id: "folder", name: "Folder", category: "Files", tags: ["directory", "container"], body: `<path d="M3 7a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="3" cy="7" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2413,7 +2413,7 @@ export const Folder: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FolderOpen: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "folder-open");
+  const icon = { id: "folder-open", name: "Folder Open", category: "Files", tags: ["open", "directory"], body: `<path d="M3 7a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2H3z"/><path d="M3 9h18l-2 9a2 2 0 0 1-2 1H5a2 2 0 0 1-2-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2426,7 +2426,7 @@ export const FolderOpen: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const File: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file");
+  const icon = { id: "file", name: "File", category: "Files", tags: ["document", "page"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4"/><circle cx="5" cy="3" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2439,7 +2439,7 @@ export const File: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Download: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "download");
+  const icon = { id: "download", name: "Download", category: "Files", tags: ["save", "fetch", "down"], body: `<path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 21h16"/><circle cx="12" cy="3" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2452,7 +2452,7 @@ export const Download: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Upload: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "upload");
+  const icon = { id: "upload", name: "Upload", category: "Files", tags: ["push", "up", "send"], body: `<path d="M12 21V9"/><path d="M7 13l5-5 5 5"/><path d="M4 21h16"/><circle cx="12" cy="21" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2465,7 +2465,7 @@ export const Upload: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cloud: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cloud");
+  const icon = { id: "cloud", name: "Cloud", category: "Files", tags: ["weather", "storage", "sky"], body: `<path d="M7 18a5 5 0 0 1-1-9.9A6 6 0 0 1 18 9a4 4 0 0 1 1 7.9"/><circle cx="6" cy="18" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2478,7 +2478,7 @@ export const Cloud: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drive: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drive");
+  const icon = { id: "drive", name: "Drive", category: "Files", tags: ["storage", "disk"], body: `<path d="M5 4h14l4 8-11 8L5 12z"/><path d="M5 12h14l4-8M5 12l4-8M19 12l-4 8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2491,7 +2491,7 @@ export const Drive: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Archive: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "archive");
+  const icon = { id: "archive", name: "Archive", category: "Files", tags: ["box", "store", "backup"], body: `<rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2504,7 +2504,7 @@ export const Archive: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Book: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "book");
+  const icon = { id: "book", name: "Book", category: "Files", tags: ["read", "manual", "guide"], body: `<path d="M5 4h11a3 3 0 0 1 3 3v14H8a3 3 0 0 1-3-3z"/><path d="M5 4a3 3 0 0 0-3 3v14a3 3 0 0 1 3-3"/><path d="M9 9h6M9 13h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2517,7 +2517,7 @@ export const Book: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Notebook: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "notebook");
+  const icon = { id: "notebook", name: "Notebook", category: "Files", tags: ["notes", "journal"], body: `<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v18M3 8h4M3 12h4M3 16h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2530,7 +2530,7 @@ export const Notebook: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const User: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "user");
+  const icon = { id: "user", name: "User", category: "People", tags: ["person", "profile", "account"], body: `<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><circle cx="4" cy="21" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2543,7 +2543,7 @@ export const User: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Users: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "users");
+  const icon = { id: "users", name: "Users", category: "People", tags: ["group", "people", "team"], body: `<circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8"/><path d="M18 21a7 7 0 0 0-3-5.7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2556,7 +2556,7 @@ export const Users: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const UserPlus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "user-plus");
+  const icon = { id: "user-plus", name: "User Plus", category: "People", tags: ["add-user", "invite"], body: `<circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M19 5v6M16 8h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2569,7 +2569,7 @@ export const UserPlus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const UserMinus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "user-minus");
+  const icon = { id: "user-minus", name: "User Minus", category: "People", tags: ["remove-user"], body: `<circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 8h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2582,7 +2582,7 @@ export const UserMinus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ProfileCard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "profile");
+  const icon = { id: "profile", name: "Profile Card", category: "People", tags: ["id", "card"], body: `<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2.5"/><path d="M5 16a4 4 0 0 1 8 0M14 9h5M14 13h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2595,7 +2595,7 @@ export const ProfileCard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const IDBadge: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "id");
+  const icon = { id: "id", name: "ID Badge", category: "People", tags: ["identification", "badge"], body: `<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8 16a4 4 0 0 1 8 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2608,7 +2608,7 @@ export const IDBadge: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lock");
+  const icon = { id: "lock", name: "Lock", category: "People", tags: ["secure", "closed", "padlock"], body: `<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2621,7 +2621,7 @@ export const Lock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Unlock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "unlock");
+  const icon = { id: "unlock", name: "Unlock", category: "People", tags: ["open", "unlocked"], body: `<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.5-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2634,7 +2634,7 @@ export const Unlock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Key: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "key");
+  const icon = { id: "key", name: "Key", category: "People", tags: ["password", "token", "access"], body: `<circle cx="8" cy="8" r="4"/><path d="M11 11l9 9"/><path d="M16 16l2-2M19 19l2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2647,7 +2647,7 @@ export const Key: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Shield: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shield");
+  const icon = { id: "shield", name: "Shield", category: "People", tags: ["protect", "security", "armor"], body: `<path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2660,7 +2660,7 @@ export const Shield: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ShoppingCart: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cart");
+  const icon = { id: "cart", name: "Shopping Cart", category: "Commerce", tags: ["basket", "buy", "checkout"], body: `<path d="M3 4h2l2 11h11l2-7H7"/><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><circle cx="3" cy="4" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2673,7 +2673,7 @@ export const ShoppingCart: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ShoppingBag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bag");
+  const icon = { id: "bag", name: "Shopping Bag", category: "Commerce", tags: ["shop", "purchase"], body: `<path d="M5 8h14l-1 13H6z"/><path d="M9 8V5a3 3 0 0 1 6 0v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2686,7 +2686,7 @@ export const ShoppingBag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tag");
+  const icon = { id: "tag", name: "Tag", category: "Commerce", tags: ["label", "price", "marker"], body: `<path d="M3 3h8l10 10-8 8L3 11z"/><circle cx="7" cy="7" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2699,7 +2699,7 @@ export const Tag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Gift: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gift");
+  const icon = { id: "gift", name: "Gift", category: "Commerce", tags: ["present", "wrap", "ribbon"], body: `<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9"/><path d="M12 8v13"/><path d="M12 8C9 8 6 6 9 4c2-1 3 2 3 4 0-2 1-5 3-4 3 2 0 4-3 4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2712,7 +2712,7 @@ export const Gift: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CreditCard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "credit-card");
+  const icon = { id: "credit-card", name: "Credit Card", category: "Commerce", tags: ["pay", "money", "bank"], body: `<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 14h3"/><circle cx="3" cy="5" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2725,7 +2725,7 @@ export const CreditCard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wallet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wallet");
+  const icon = { id: "wallet", name: "Wallet", category: "Commerce", tags: ["money", "purse"], body: `<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 8V5a2 2 0 0 1 2-2h12"/><circle cx="17" cy="13" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2738,7 +2738,7 @@ export const Wallet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Coins: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "coins");
+  const icon = { id: "coins", name: "Coins", category: "Commerce", tags: ["money", "cash", "currency"], body: `<circle cx="9" cy="14" r="5"/><path d="M14 9a5 5 0 1 1 6 6"/><path d="M9 11v8M7 12.5l4 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2751,7 +2751,7 @@ export const Coins: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Receipt: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "receipt");
+  const icon = { id: "receipt", name: "Receipt", category: "Commerce", tags: ["invoice", "bill"], body: `<path d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2z"/><path d="M8 8h8M8 12h8M8 16h5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2764,7 +2764,7 @@ export const Receipt: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Store: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "store");
+  const icon = { id: "store", name: "Store", category: "Commerce", tags: ["shop", "market"], body: `<path d="M4 9l1-5h14l1 5"/><path d="M4 9h16v11H4z"/><path d="M4 9a2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0"/><path d="M10 20v-5h4v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2777,7 +2777,7 @@ export const Store: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Crown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "crown");
+  const icon = { id: "crown", name: "Crown", category: "Commerce", tags: ["king", "premium", "vip"], body: `<path d="M3 18h18M4 8l4 4 4-7 4 7 4-4-2 10H6z"/><circle cx="4" cy="8" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2790,7 +2790,7 @@ export const Crown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Code: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "code");
+  const icon = { id: "code", name: "Code", category: "Dev", tags: ["programming", "developer", "brackets"], body: `<path d="M9 8l-5 4 5 4M15 8l5 4-5 4"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2803,7 +2803,7 @@ export const Code: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Terminal: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "terminal");
+  const icon = { id: "terminal", name: "Terminal", category: "Dev", tags: ["console", "command", "shell"], body: `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4"/><circle cx="3" cy="4" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2816,7 +2816,7 @@ export const Terminal: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bug: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bug");
+  const icon = { id: "bug", name: "Bug", category: "Dev", tags: ["insect", "error", "issue"], body: `<path d="M8 9a4 4 0 0 1 8 0v4a4 4 0 0 1-8 0z"/><path d="M8 9L5 7M16 9l3-2M8 13H4M16 13h4M8 17l-3 2M16 17l3 2M12 9v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2829,7 +2829,7 @@ export const Bug: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Branch: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "branch");
+  const icon = { id: "branch", name: "Branch", category: "Dev", tags: ["git", "version", "fork"], body: `<circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="8" r="2"/><path d="M6 8v8M6 12c0-3 4-3 7-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2842,7 +2842,7 @@ export const Branch: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Server: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "server");
+  const icon = { id: "server", name: "Server", category: "Dev", tags: ["host", "cloud", "stack"], body: `<rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><circle cx="7" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="7" cy="16.5" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2855,7 +2855,7 @@ export const Server: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Database: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "database");
+  const icon = { id: "database", name: "Database", category: "Dev", tags: ["storage", "data", "db"], body: `<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2868,7 +2868,7 @@ export const Database: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cube: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cube");
+  const icon = { id: "cube", name: "Cube", category: "Dev", tags: ["3d", "box", "package"], body: `<path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12L3 7M12 12v10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2881,7 +2881,7 @@ export const Cube: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Git: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "git");
+  const icon = { id: "git", name: "Git", category: "Dev", tags: ["version", "vcs"], body: `<circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 8v8M8 6h6a4 4 0 0 1 4 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2894,7 +2894,7 @@ export const Git: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const API: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "api");
+  const icon = { id: "api", name: "API", category: "Dev", tags: ["endpoint", "service", "interface"], body: `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l-2 3 2 3M17 9l2 3-2 3M13 8l-2 8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2907,7 +2907,7 @@ export const API: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Package: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "package");
+  const icon = { id: "package", name: "Package", category: "Dev", tags: ["npm", "module", "library"], body: `<path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/><path d="M7.5 4.5l9 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2920,7 +2920,7 @@ export const Package: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Home: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "home");
+  const icon = { id: "home", name: "Home", category: "Misc", tags: ["house", "main", "landing"], body: `<path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/><circle cx="3" cy="12" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2933,7 +2933,7 @@ export const Home: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Star: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "star");
+  const icon = { id: "star", name: "Star", category: "Misc", tags: ["favorite", "rate", "review"], body: `<path d="M12 3l3 7 7 .5-5 4.5 1.5 7L12 18l-6.5 4 1.5-7-5-4.5 7-.5z"/><circle cx="12" cy="3" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2946,7 +2946,7 @@ export const Star: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Heart: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "heart");
+  const icon = { id: "heart", name: "Heart", category: "Misc", tags: ["love", "like", "favorite"], body: `<path d="M12 21C5 16 3 12 3 8a4 4 0 0 1 7-2.5A4 4 0 0 1 21 8c0 4-2 8-9 13z"/><circle cx="3" cy="8" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2959,7 +2959,7 @@ export const Heart: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bookmark: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bookmark");
+  const icon = { id: "bookmark", name: "Bookmark", category: "Misc", tags: ["save", "mark", "tag"], body: `<path d="M5 3h14v18l-7-5-7 5z"/><circle cx="5" cy="3" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2972,7 +2972,7 @@ export const Bookmark: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Flag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flag");
+  const icon = { id: "flag", name: "Flag", category: "Misc", tags: ["mark", "report", "milestone"], body: `<path d="M5 21V4M5 4h11l-2 4 2 4H5"/><circle cx="5" cy="21" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2985,7 +2985,7 @@ export const Flag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lightbulb: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lightbulb");
+  const icon = { id: "lightbulb", name: "Lightbulb", category: "Misc", tags: ["idea", "tip", "innovation"], body: `<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10c1 1 1 2 1 3h6c0-1 0-2 1-3a6 6 0 0 0-4-10z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -2998,7 +2998,7 @@ export const Lightbulb: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fire: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fire");
+  const icon = { id: "fire", name: "Fire", category: "Misc", tags: ["flame", "hot", "trending"], body: `<path d="M12 3c0 4-6 5-6 11a6 6 0 0 0 12 0c0-3-2-4-2-7 0 0-2 1-2 3 0-3-2-5-2-7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3011,7 +3011,7 @@ export const Fire: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Zap: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "zap");
+  const icon = { id: "zap", name: "Zap", category: "Misc", tags: ["lightning", "fast", "quick"], body: `<path d="M13 3L4 14h7l-2 7 9-11h-7z"/><circle cx="13" cy="3" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3024,7 +3024,7 @@ export const Zap: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Trophy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trophy");
+  const icon = { id: "trophy", name: "Trophy", category: "Misc", tags: ["award", "winner", "prize"], body: `<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 5H4v2a3 3 0 0 0 3 3M17 5h3v2a3 3 0 0 1-3 3M9 14h6M10 18h4M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3037,7 +3037,7 @@ export const Trophy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Rocket: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rocket");
+  const icon = { id: "rocket", name: "Rocket", category: "Misc", tags: ["launch", "space", "start"], body: `<path d="M5 19c2-7 5-13 12-15-2 7-8 10-15 12z"/><path d="M5 19l3 3c2-3 2-5 0-8M14 5a3 3 0 1 0-4 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3050,7 +3050,7 @@ export const Rocket: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Clock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "clock");
+  const icon = { id: "clock", name: "Clock", category: "Time", tags: ["time", "watch", "hour"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3063,7 +3063,7 @@ export const Clock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Calendar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "calendar");
+  const icon = { id: "calendar", name: "Calendar", category: "Time", tags: ["date", "schedule", "event"], body: `<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/><circle cx="3" cy="5" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3076,7 +3076,7 @@ export const Calendar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const History: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "history");
+  const icon = { id: "history", name: "History", category: "Time", tags: ["past", "undo", "recent"], body: `<path d="M3 12a9 9 0 1 0 3-7L3 8M3 3v5h5"/><path d="M12 7v5l3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3089,7 +3089,7 @@ export const History: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Timer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "timer");
+  const icon = { id: "timer", name: "Timer", category: "Time", tags: ["stopwatch", "countdown"], body: `<circle cx="12" cy="13" r="8"/><path d="M12 13V9M9 2h6M19 4l2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3102,7 +3102,7 @@ export const Timer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Alarm: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "alarm");
+  const icon = { id: "alarm", name: "Alarm", category: "Time", tags: ["wake", "ring", "alert"], body: `<circle cx="12" cy="13" r="8"/><path d="M12 13V8M5 3L3 5M19 3l2 2M5 19l-2 2M19 19l2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3115,7 +3115,7 @@ export const Alarm: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Compass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "compass");
+  const icon = { id: "compass", name: "Compass", category: "Navigation", tags: ["direction", "north", "explore"], body: `<circle cx="12" cy="12" r="9"/><path d="M16 8l-2 6-6 2 2-6z"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3128,7 +3128,7 @@ export const Compass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Map: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "map");
+  const icon = { id: "map", name: "Map", category: "Navigation", tags: ["location", "pin", "guide"], body: `<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3141,7 +3141,7 @@ export const Map: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pin");
+  const icon = { id: "pin", name: "Pin", category: "Office", tags: ["pushpin", "marker"], body: `<path d="M9 3h6l-1 7 3 4H7l3-4z"/><path d="M12 14v7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3154,7 +3154,7 @@ export const Pin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Navigation: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "navigation");
+  const icon = { id: "navigation", name: "Navigation", category: "Navigation", tags: ["arrow", "compass"], body: `<path d="M3 11l18-8-8 18-2-8z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3167,7 +3167,7 @@ export const Navigation: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Route: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "route");
+  const icon = { id: "route", name: "Route", category: "Navigation", tags: ["path", "direction", "journey"], body: `<circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a3 3 0 0 1 3 3v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3180,7 +3180,7 @@ export const Route: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sun: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sun");
+  const icon = { id: "sun", name: "Sun", category: "Weather", tags: ["day", "light", "bright"], body: `<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3193,7 +3193,7 @@ export const Sun: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Moon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "moon");
+  const icon = { id: "moon", name: "Moon", category: "Weather", tags: ["night", "dark", "sleep"], body: `<path d="M21 13A9 9 0 0 1 11 3a7 7 0 1 0 10 10z"/><circle cx="11" cy="3" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3206,7 +3206,7 @@ export const Moon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CloudRain: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cloud-rain");
+  const icon = { id: "cloud-rain", name: "Cloud Rain", category: "Weather", tags: ["weather", "rain", "storm"], body: `<path d="M7 14a5 5 0 0 1-1-9.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><path d="M8 18l-1 3M12 18l-1 3M16 18l-1 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3219,7 +3219,7 @@ export const CloudRain: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Snowflake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "snow");
+  const icon = { id: "snow", name: "Snowflake", category: "Weather", tags: ["cold", "winter", "ice"], body: `<path d="M12 2v20M4 7l16 10M20 7L4 17M2 12h20"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3232,7 +3232,7 @@ export const Snowflake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wind: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wind");
+  const icon = { id: "wind", name: "Wind", category: "Weather", tags: ["air", "breeze", "flow"], body: `<path d="M3 8h12a3 3 0 1 0-3-3M3 16h16a3 3 0 1 1-3 3M3 12h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3245,7 +3245,7 @@ export const Wind: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Info: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "info");
+  const icon = { id: "info", name: "Info", category: "Status", tags: ["information", "help", "details"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 8v0.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3258,7 +3258,7 @@ export const Info: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Warning: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "warning");
+  const icon = { id: "warning", name: "Warning", category: "Status", tags: ["alert", "caution", "triangle"], body: `<path d="M12 3l10 18H2z"/><path d="M12 9v5M12 17v0.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3271,7 +3271,7 @@ export const Warning: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Success: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "success");
+  const icon = { id: "success", name: "Success", category: "Status", tags: ["ok", "complete", "verified"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3284,7 +3284,7 @@ export const Success: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Error: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "error");
+  const icon = { id: "error", name: "Error", category: "Status", tags: ["fail", "danger", "wrong"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3297,7 +3297,7 @@ export const Error: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Loading: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "loading");
+  const icon = { id: "loading", name: "Loading", category: "Status", tags: ["spinner", "wait", "progress"], body: `<path d="M12 3a9 9 0 1 0 9 9" /><circle cx="12" cy="3" r="1.4" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3310,7 +3310,7 @@ export const Loading: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Laptop: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "laptop");
+  const icon = { id: "laptop", name: "Laptop", category: "Devices", tags: ["computer", "notebook", "screen"], body: `<rect x="3" y="5" width="18" height="11" rx="2"/><path d="M2 20h20l-2-3H4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3323,7 +3323,7 @@ export const Laptop: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Desktop: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "desktop");
+  const icon = { id: "desktop", name: "Desktop", category: "Devices", tags: ["monitor", "pc", "computer"], body: `<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3336,7 +3336,7 @@ export const Desktop: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mobile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mobile");
+  const icon = { id: "mobile", name: "Mobile", category: "Devices", tags: ["phone", "smartphone", "device"], body: `<rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3349,7 +3349,7 @@ export const Mobile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tablet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tablet");
+  const icon = { id: "tablet", name: "Tablet", category: "Devices", tags: ["ipad", "device"], body: `<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="18" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3362,7 +3362,7 @@ export const Tablet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Watch: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "watch");
+  const icon = { id: "watch", name: "Watch", category: "Devices", tags: ["smartwatch", "wearable"], body: `<rect x="7" y="7" width="10" height="10" rx="3"/><path d="M9 7V3h6v4M9 17v4h6v-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3375,7 +3375,7 @@ export const Watch: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Headphones: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "headphones");
+  const icon = { id: "headphones", name: "Headphones", category: "Devices", tags: ["audio", "music", "sound"], body: `<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3388,7 +3388,7 @@ export const Headphones: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Speaker: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "speaker");
+  const icon = { id: "speaker", name: "Speaker", category: "Devices", tags: ["audio", "loud", "sound"], body: `<rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="12" cy="14" r="3"/><circle cx="12" cy="7" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3401,7 +3401,7 @@ export const Speaker: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Keyboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "keyboard");
+  const icon = { id: "keyboard", name: "Keyboard", category: "Devices", tags: ["type", "input", "keys"], body: `<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h0M11 10h0M15 10h0M7 13h0M11 13h0M15 13h0M9 16h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3414,7 +3414,7 @@ export const Keyboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mouse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mouse");
+  const icon = { id: "mouse", name: "Mouse", category: "Devices", tags: ["click", "pointer", "computer"], body: `<rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 7v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3427,7 +3427,7 @@ export const Mouse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Printer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "printer");
+  const icon = { id: "printer", name: "Printer", category: "Devices", tags: ["print", "office"], body: `<path d="M6 9V3h12v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M7 14h10v6H7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3440,7 +3440,7 @@ export const Printer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CameraFront: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "camera-front");
+  const icon = { id: "camera-front", name: "Camera Front", category: "Devices", tags: ["selfie", "front"], body: `<rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3"/><path d="M9 6l1-2h4l1 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3453,7 +3453,7 @@ export const CameraFront: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TV: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tv");
+  const icon = { id: "tv", name: "TV", category: "Devices", tags: ["television", "screen", "display"], body: `<rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3466,7 +3466,7 @@ export const TV: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Circle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "circle");
+  const icon = { id: "circle", name: "Circle", category: "Shapes", tags: ["round", "ring"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3479,7 +3479,7 @@ export const Circle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Square: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "square");
+  const icon = { id: "square", name: "Square", category: "Shapes", tags: ["box", "rect"], body: `<rect x="4" y="4" width="16" height="16" rx="1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3492,7 +3492,7 @@ export const Square: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Triangle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "triangle");
+  const icon = { id: "triangle", name: "Triangle", category: "Shapes", tags: ["delta", "three"], body: `<path d="M12 3l9 17H3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3505,7 +3505,7 @@ export const Triangle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hexagon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hexagon");
+  const icon = { id: "hexagon", name: "Hexagon", category: "Shapes", tags: ["six", "honey"], body: `<path d="M12 2l9 5v10l-9 5-9-5V7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3518,7 +3518,7 @@ export const Hexagon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Octagon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "octagon");
+  const icon = { id: "octagon", name: "Octagon", category: "Shapes", tags: ["eight", "stop-sign"], body: `<path d="M8 3h8l5 5v8l-5 5H8l-5-5V8z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3531,7 +3531,7 @@ export const Octagon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Diamond: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "diamond");
+  const icon = { id: "diamond", name: "Diamond", category: "Shapes", tags: ["rhombus", "gem"], body: `<path d="M12 3l9 9-9 9-9-9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3544,7 +3544,7 @@ export const Diamond: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pentagon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pentagon");
+  const icon = { id: "pentagon", name: "Pentagon", category: "Shapes", tags: ["five", "star-base"], body: `<path d="M12 3l9 7-3.5 11h-11L3 10z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3557,7 +3557,7 @@ export const Pentagon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const StarOutline: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "star-outline");
+  const icon = { id: "star-outline", name: "Star Outline", category: "Shapes", tags: ["outline", "shape"], body: `<path d="M12 3l3 7 7 .5-5 4.5 1.5 7L12 18l-6.5 4 1.5-7-5-4.5 7-.5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3570,7 +3570,7 @@ export const StarOutline: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Crescent: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "crescent");
+  const icon = { id: "crescent", name: "Crescent", category: "Shapes", tags: ["moon", "curve"], body: `<path d="M16 4a8 8 0 1 0 4 14 6 6 0 0 1-4-14z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3583,7 +3583,7 @@ export const Crescent: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HeartOutline: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "heart-outline");
+  const icon = { id: "heart-outline", name: "Heart Outline", category: "Shapes", tags: ["love", "outline"], body: `<path d="M12 21C5 16 3 12 3 8a4 4 0 0 1 7-2.5A4 4 0 0 1 21 8c0 4-2 8-9 13z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3596,7 +3596,7 @@ export const HeartOutline: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CloudShape: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cloud-shape");
+  const icon = { id: "cloud-shape", name: "Cloud Shape", category: "Shapes", tags: ["weather", "sky"], body: `<path d="M7 18a5 5 0 0 1-1-9.9A6 6 0 0 1 18 9a4 4 0 0 1 1 7.9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3609,7 +3609,7 @@ export const CloudShape: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Spiral: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "spiral");
+  const icon = { id: "spiral", name: "Spiral", category: "Shapes", tags: ["swirl", "loop"], body: `<path d="M12 12a3 3 0 1 1 3 3 5 5 0 0 1-5-5 7 7 0 0 1 7-7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3622,7 +3622,7 @@ export const Spiral: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Leaf: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "leaf");
+  const icon = { id: "leaf", name: "Leaf", category: "Nature", tags: ["plant", "green", "eco"], body: `<path d="M3 21c0-9 6-15 18-18-2 12-8 18-15 18z"/><path d="M9 15c2-2 4-3 6-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3635,7 +3635,7 @@ export const Leaf: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tree: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tree");
+  const icon = { id: "tree", name: "Tree", category: "Nature", tags: ["plant", "forest"], body: `<path d="M12 2l6 9h-3l4 6h-5v6h-4v-6H5l4-6H6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3648,7 +3648,7 @@ export const Tree: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Flower: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flower");
+  const icon = { id: "flower", name: "Flower", category: "Nature", tags: ["bloom", "petal"], body: `<circle cx="12" cy="12" r="2"/><path d="M12 10V4M14 12h6M12 14v6M10 12H4M13.5 10.5l4-4M13.5 13.5l4 4M10.5 13.5l-4 4M10.5 10.5l-4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3661,7 +3661,7 @@ export const Flower: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mountain: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mountain");
+  const icon = { id: "mountain", name: "Mountain", category: "Nature", tags: ["peak", "hill"], body: `<path d="M3 20l5-9 4 6 3-4 6 7z"/><circle cx="17" cy="6" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3674,7 +3674,7 @@ export const Mountain: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sea: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sea");
+  const icon = { id: "sea", name: "Sea", category: "Nature", tags: ["ocean", "water", "wave"], body: `<path d="M3 8c2-2 4-2 6 0s4 2 6 0 4-2 6 0M3 14c2-2 4-2 6 0s4 2 6 0 4-2 6 0M3 20c2-2 4-2 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3687,7 +3687,7 @@ export const Sea: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drop: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drop");
+  const icon = { id: "drop", name: "Drop", category: "Nature", tags: ["water", "liquid"], body: `<path d="M12 3s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3700,7 +3700,7 @@ export const Drop: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sprout: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sprout");
+  const icon = { id: "sprout", name: "Sprout", category: "Nature", tags: ["grow", "seed", "plant"], body: `<path d="M12 22V12M12 12c0-3-2-5-6-5 0 4 2 5 6 5zM12 10c0-3 2-5 6-5 0 4-2 5-6 5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3713,7 +3713,7 @@ export const Sprout: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Feather: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "feather");
+  const icon = { id: "feather", name: "Feather", category: "Nature", tags: ["bird", "soft"], body: `<path d="M3 21l6-6M20 4c-4 0-12 4-12 12l4 4c8 0 12-8 12-12z"/><path d="M14 6l-7 7M16 8l-7 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3726,7 +3726,7 @@ export const Feather: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Rainbow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rainbow");
+  const icon = { id: "rainbow", name: "Rainbow", category: "Nature", tags: ["color", "sky"], body: `<path d="M3 18a9 9 0 0 1 18 0M5 18a7 7 0 0 1 14 0M7 18a5 5 0 0 1 10 0M9 18a3 3 0 0 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3739,7 +3739,7 @@ export const Rainbow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Volcano: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "volcano");
+  const icon = { id: "volcano", name: "Volcano", category: "Nature", tags: ["mountain", "lava"], body: `<path d="M3 21l5-12 4 4 4-4 5 12z"/><path d="M8 9c0-2 1-3 3-3M14 8c0-2 1-3 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3752,7 +3752,7 @@ export const Volcano: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fish: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fish");
+  const icon = { id: "fish", name: "Fish", category: "Nature", tags: ["animal", "sea"], body: `<path d="M3 12c3-5 9-5 13 0-4 5-10 5-13 0z"/><path d="M16 12l5-3v6z"/><circle cx="8" cy="11" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3765,7 +3765,7 @@ export const Fish: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Paw: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "paw");
+  const icon = { id: "paw", name: "Paw", category: "Nature", tags: ["pet", "animal"], body: `<circle cx="7" cy="10" r="2"/><circle cx="12" cy="8" r="2"/><circle cx="17" cy="10" r="2"/><path d="M8 18c0-3 8-3 8 0a4 4 0 0 1-8 0z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3778,7 +3778,7 @@ export const Paw: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Coffee: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "coffee");
+  const icon = { id: "coffee", name: "Coffee", category: "Food", tags: ["drink", "cup", "morning"], body: `<path d="M5 8h12v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V8z"/><path d="M17 10h2a2 2 0 0 1 0 4h-2"/><path d="M7 3v2M10 3v2M13 3v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3791,7 +3791,7 @@ export const Coffee: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pizza: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pizza");
+  const icon = { id: "pizza", name: "Pizza", category: "Food", tags: ["slice", "italian"], body: `<path d="M3 18L12 2l9 16z"/><circle cx="9" cy="14" r="1.2" fill="currentColor" stroke="none"/><circle cx="13" cy="10" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3804,7 +3804,7 @@ export const Pizza: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Burger: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "burger");
+  const icon = { id: "burger", name: "Burger", category: "Food", tags: ["food", "fast"], body: `<path d="M3 8c0-3 9-3 18 0M3 14h18M4 18h16"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3817,7 +3817,7 @@ export const Burger: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const IceCream: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ice-cream");
+  const icon = { id: "ice-cream", name: "Ice Cream", category: "Food", tags: ["dessert", "sweet"], body: `<path d="M8 9a4 4 0 0 1 8 0M8 9l4 12 4-12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3830,7 +3830,7 @@ export const IceCream: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cake");
+  const icon = { id: "cake", name: "Cake", category: "Food", tags: ["birthday", "dessert"], body: `<path d="M3 21V13c0-2 2-3 4-3h10c2 0 4 1 4 3v8"/><path d="M3 16h18M11 7V3M13 7V3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3843,7 +3843,7 @@ export const Cake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Apple: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "apple");
+  const icon = { id: "apple", name: "Apple", category: "Food", tags: ["fruit", "red"], body: `<path d="M12 5c-2-1-5-1-7 1-2 3-1 9 2 12 2 2 4 1 5 0 1 1 3 2 5 0 3-3 4-9 2-12-2-2-5-2-7-1z"/><path d="M12 5c0-2 1-3 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3856,7 +3856,7 @@ export const Apple: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cherry: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cherry");
+  const icon = { id: "cherry", name: "Cherry", category: "Food", tags: ["fruit", "red"], body: `<circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M7 14c0-5 5-7 10-10M14 12c0-3 3-5 5-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3869,7 +3869,7 @@ export const Cherry: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WineGlass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wine");
+  const icon = { id: "wine", name: "Wine Glass", category: "Food", tags: ["drink", "alcohol"], body: `<path d="M7 3h10l-2 7a3 3 0 0 1-6 0z"/><path d="M12 10v8M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3882,7 +3882,7 @@ export const WineGlass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Egg: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "egg");
+  const icon = { id: "egg", name: "Egg", category: "Food", tags: ["breakfast", "food"], body: `<path d="M12 22a7 7 0 0 1-7-7c0-7 7-15 7-15s7 8 7 15a7 7 0 0 1-7 7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3895,7 +3895,7 @@ export const Egg: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Carrot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "carrot");
+  const icon = { id: "carrot", name: "Carrot", category: "Food", tags: ["vegetable", "orange"], body: `<path d="M14 4l-9 9 5 5 9-9z"/><path d="M14 4l-3 3M16 5l-2 4M18 6l-3 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3908,7 +3908,7 @@ export const Carrot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bread: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bread");
+  const icon = { id: "bread", name: "Bread", category: "Food", tags: ["bakery", "loaf"], body: `<path d="M4 14c-1-1-1-4 2-5h12c3 1 3 4 2 5v5H4z"/><path d="M4 14h16"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3921,7 +3921,7 @@ export const Bread: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Donut: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "donut");
+  const icon = { id: "donut", name: "Donut", category: "Food", tags: ["dessert", "sweet"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><circle cx="8" cy="8" r="0.8" fill="currentColor" stroke="none"/><circle cx="16" cy="9" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3934,7 +3934,7 @@ export const Donut: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Car: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "car");
+  const icon = { id: "car", name: "Car", category: "Transport", tags: ["vehicle", "auto"], body: `<path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5h-3v-2H6v2H3z"/><circle cx="7" cy="15" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="15" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3947,7 +3947,7 @@ export const Car: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Plane: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "plane");
+  const icon = { id: "plane", name: "Plane", category: "Transport", tags: ["aircraft", "fly"], body: `<path d="M2 12l8-2 2-7 2 7 8 2-8 2-2 7-2-7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3960,7 +3960,7 @@ export const Plane: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bike: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bike");
+  const icon = { id: "bike", name: "Bike", category: "Transport", tags: ["bicycle", "cycle"], body: `<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-7h6l-3 7M10 10l2 7M14 10l4 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3973,7 +3973,7 @@ export const Bike: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ship: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ship");
+  const icon = { id: "ship", name: "Ship", category: "Transport", tags: ["boat", "sea"], body: `<path d="M3 14l1-5h16l1 5M5 14v3h14v-3M12 5v4M9 7h6"/><path d="M3 19c2 1 4 1 6 0s4-1 6 0 4 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3986,7 +3986,7 @@ export const Ship: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RocketShip: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rocket-ship");
+  const icon = { id: "rocket-ship", name: "Rocket Ship", category: "Transport", tags: ["space", "launch"], body: `<path d="M5 19c2-7 5-13 12-15-2 7-8 10-15 12z"/><path d="M5 19l3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -3999,7 +3999,7 @@ export const RocketShip: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Train: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "train");
+  const icon = { id: "train", name: "Train", category: "Transport", tags: ["railway", "metro"], body: `<rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 7h6M8 17l-3 4M16 17l3 4"/><circle cx="9" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4012,7 +4012,7 @@ export const Train: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bus");
+  const icon = { id: "bus", name: "Bus", category: "Transport", tags: ["transport", "public"], body: `<rect x="3" y="5" width="18" height="13" rx="2"/><path d="M3 12h18M7 18v3M17 18v3"/><circle cx="8" cy="15" r="0.8" fill="currentColor" stroke="none"/><circle cx="16" cy="15" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4025,7 +4025,7 @@ export const Bus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Scooter: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scooter");
+  const icon = { id: "scooter", name: "Scooter", category: "Transport", tags: ["vehicle", "electric"], body: `<circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 18l3-8h4l3 8M14 10l3-4M5 10h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4038,7 +4038,7 @@ export const Scooter: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fuel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fuel");
+  const icon = { id: "fuel", name: "Fuel", category: "Transport", tags: ["gas", "petrol"], body: `<path d="M5 21V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v16M5 13h8"/><path d="M14 8l3 3v10M14 8V5l3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4051,7 +4051,7 @@ export const Fuel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wheel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wheel");
+  const icon = { id: "wheel", name: "Wheel", category: "Transport", tags: ["tyre", "circle"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4064,7 +4064,7 @@ export const Wheel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TrafficLight: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "traffic");
+  const icon = { id: "traffic", name: "Traffic Light", category: "Transport", tags: ["signal", "road"], body: `<rect x="8" y="3" width="8" height="18" rx="2"/><circle cx="12" cy="7" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="17" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4077,7 +4077,7 @@ export const TrafficLight: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Anchor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "anchor");
+  const icon = { id: "anchor", name: "Anchor", category: "Transport", tags: ["ship", "sea", "hold"], body: `<circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 14a7 7 0 0 0 14 0M8 12H5M19 12h-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4090,7 +4090,7 @@ export const Anchor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Chart: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chart");
+  const icon = { id: "chart", name: "Chart", category: "Business", tags: ["graph", "stats"], body: `<path d="M3 21V3M3 21h18M7 17v-4M11 17v-7M15 17v-10M19 17v-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4103,7 +4103,7 @@ export const Chart: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PieChart: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pie");
+  const icon = { id: "pie", name: "Pie", category: "Food3", tags: ["dessert", "bake"], body: `<ellipse cx="12" cy="14" rx="9" ry="5"/><path d="M3 14V10a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v4M7 7l2-3M12 7l1-3M17 7l-2-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4116,7 +4116,7 @@ export const PieChart: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Briefcase: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "briefcase");
+  const icon = { id: "briefcase", name: "Briefcase", category: "Business", tags: ["work", "bag", "office"], body: `<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4129,7 +4129,7 @@ export const Briefcase: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Office: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "office");
+  const icon = { id: "office", name: "Office", category: "Business", tags: ["building", "company"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-3h4v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4142,7 +4142,7 @@ export const Office: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Presentation: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "presentation");
+  const icon = { id: "presentation", name: "Presentation", category: "Business", tags: ["meeting", "slide"], body: `<rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4155,7 +4155,7 @@ export const Presentation: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Handshake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "handshake");
+  const icon = { id: "handshake", name: "Handshake", category: "Business", tags: ["deal", "agreement"], body: `<path d="M3 12l4-3 5 2 5-2 4 3M7 9v5M17 9v5M3 12v4M21 12v4M10 14l2 1 2-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4168,7 +4168,7 @@ export const Handshake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Growth: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "growth");
+  const icon = { id: "growth", name: "Growth", category: "Business", tags: ["up", "increase"], body: `<path d="M3 17l5-5 4 3 6-8M16 7h4v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4181,7 +4181,7 @@ export const Growth: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Target: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "target");
+  const icon = { id: "target", name: "Target", category: "Business", tags: ["goal", "aim"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4194,7 +4194,7 @@ export const Target: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Balance: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "balance");
+  const icon = { id: "balance", name: "Balance", category: "Business", tags: ["scale", "justice"], body: `<path d="M12 3v18M5 21h14M3 8h6l-3 5a3 3 0 0 1-6 0zM15 8h6l-3 5a3 3 0 0 1-6 0z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4207,7 +4207,7 @@ export const Balance: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Globe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "globe");
+  const icon = { id: "globe", name: "Globe", category: "Business", tags: ["world", "earth"], body: `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4220,7 +4220,7 @@ export const Globe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Factory: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "factory");
+  const icon = { id: "factory", name: "Factory", category: "Business", tags: ["industry", "production"], body: `<path d="M3 21V11l5 3V11l5 3V11l5 3v7zM7 21v-3M11 21v-3M15 21v-3M19 21v-3M3 8l4-4 4 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4233,7 +4233,7 @@ export const Factory: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stamp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stamp");
+  const icon = { id: "stamp", name: "Stamp", category: "Business", tags: ["approve", "seal"], body: `<path d="M7 14a4 4 0 0 1 1-7h8a4 4 0 0 1 1 7l-2 3H9z"/><rect x="3" y="17" width="18" height="4" rx="1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4246,7 +4246,7 @@ export const Stamp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GraduationCap: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "graduation");
+  const icon = { id: "graduation", name: "Graduation Cap", category: "Education", tags: ["study", "school"], body: `<path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v5c0 1 2 2 5 2s5-1 5-2v-5M21 9v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4259,7 +4259,7 @@ export const GraduationCap: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BookOpen: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "book-open");
+  const icon = { id: "book-open", name: "Book Open", category: "Education", tags: ["read", "study"], body: `<path d="M3 5h6a3 3 0 0 1 3 3v12a3 3 0 0 0-3-3H3zM21 5h-6a3 3 0 0 0-3 3v12a3 3 0 0 1 3-3h6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4272,7 +4272,7 @@ export const BookOpen: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pencil: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pencil");
+  const icon = { id: "pencil", name: "Pencil", category: "Education", tags: ["write", "edit"], body: `<path d="M14 4l6 6L8 22H2v-6z"/><path d="M11 7l6 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4285,7 +4285,7 @@ export const Pencil: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ruler: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ruler");
+  const icon = { id: "ruler", name: "Ruler", category: "Education", tags: ["measure", "tool"], body: `<rect x="2" y="9" width="20" height="6" rx="1" transform="rotate(-15 12 12)"/><path d="M6 11v2M9 10v3M12 10v3M15 9v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4298,7 +4298,7 @@ export const Ruler: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Calculator: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "calculator");
+  const icon = { id: "calculator", name: "Calculator", category: "Education", tags: ["math", "compute"], body: `<rect x="5" y="3" width="14" height="18" rx="2"/><rect x="8" y="6" width="8" height="3"/><circle cx="9" cy="13" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="13" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="13" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4311,7 +4311,7 @@ export const Calculator: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LightbulbOn: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lightbulb-on");
+  const icon = { id: "lightbulb-on", name: "Lightbulb On", category: "Education", tags: ["idea", "bright"], body: `<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10c1 1 1 2 1 3h6c0-1 0-2 1-3a6 6 0 0 0-4-10z"/><path d="M9 8l1 1M14 9l1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4324,7 +4324,7 @@ export const LightbulbOn: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Flask: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flask");
+  const icon = { id: "flask", name: "Flask", category: "Education", tags: ["science", "lab"], body: `<path d="M9 3v6l-5 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-9V3M7 3h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4337,7 +4337,7 @@ export const Flask: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Atom: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "atom");
+  const icon = { id: "atom", name: "Atom", category: "Education", tags: ["science", "nuclear"], body: `<circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="3"/><ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(120 12 12)"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4350,7 +4350,7 @@ export const Atom: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Microscope: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "microscope");
+  const icon = { id: "microscope", name: "Microscope", category: "Education", tags: ["science", "lab"], body: `<path d="M5 21h14M9 21v-4l3-3M14 14l3-9-3 3-3 9M11 8l3-3M7 16h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4363,7 +4363,7 @@ export const Microscope: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TestTube: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "test-tube");
+  const icon = { id: "test-tube", name: "Test Tube", category: "Education", tags: ["lab", "science"], body: `<path d="M9 3h6M9 3v15a3 3 0 0 0 6 0V3M9 12h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4376,7 +4376,7 @@ export const TestTube: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HeartPulse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "heart-pulse");
+  const icon = { id: "heart-pulse", name: "Heart Pulse", category: "Health", tags: ["health", "medical"], body: `<path d="M12 21C5 16 3 12 3 8a4 4 0 0 1 7-2.5A4 4 0 0 1 21 8c0 4-2 8-9 13z"/><path d="M3 12h4l2-3 2 6 2-4 2 1h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4389,7 +4389,7 @@ export const HeartPulse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stethoscope: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stethoscope");
+  const icon = { id: "stethoscope", name: "Stethoscope", category: "Health", tags: ["medical", "doctor"], body: `<path d="M5 3v6a4 4 0 0 0 8 0V3M5 9v6a5 5 0 0 0 10 0M19 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4402,7 +4402,7 @@ export const Stethoscope: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pill: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pill");
+  const icon = { id: "pill", name: "Pill", category: "Health", tags: ["medicine", "capsule"], body: `<rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(45 12 12)"/><path d="M9 9l6 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4415,7 +4415,7 @@ export const Pill: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hospital: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hospital");
+  const icon = { id: "hospital", name: "Hospital", category: "Health", tags: ["medical", "building"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M11 7h2v2h2v2h-2v2h-2v-2H9V9h2zM7 16h2M15 16h2M9 21v-3h6v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4428,7 +4428,7 @@ export const Hospital: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DNA: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dna");
+  const icon = { id: "dna", name: "DNA", category: "Health", tags: ["biology", "genetics"], body: `<path d="M7 3c0 6 10 6 10 12M17 3c0 6-10 6-10 12M7 3v18M17 3v18M7 6h10M7 9h10M7 15h10M7 18h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4441,7 +4441,7 @@ export const DNA: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Brain: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "brain");
+  const icon = { id: "brain", name: "Brain", category: "Health", tags: ["mind", "think"], body: `<path d="M12 5a3 3 0 0 0-3 3 3 3 0 0 0-3 3 3 3 0 0 0 1 5 3 3 0 0 0 5 1zM12 5a3 3 0 0 1 3 3 3 3 0 0 1 3 3 3 3 0 0 1-1 5 3 3 0 0 1-5 1z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4454,7 +4454,7 @@ export const Brain: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tooth: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tooth");
+  const icon = { id: "tooth", name: "Tooth", category: "Health", tags: ["dental", "medical"], body: `<path d="M12 4c-4 0-6 2-6 5 0 4 2 4 2 8 0 2 1 3 2 3s1-3 2-3 1 3 2 3 2-1 2-3c0-4 2-4 2-8 0-3-2-5-6-5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4467,7 +4467,7 @@ export const Tooth: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EyeMedical: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eye-medical");
+  const icon = { id: "eye-medical", name: "Eye Medical", category: "Health", tags: ["vision", "optometry"], body: `<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4480,7 +4480,7 @@ export const EyeMedical: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bandage: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bandage");
+  const icon = { id: "bandage", name: "Bandage", category: "Health", tags: ["first-aid", "wound"], body: `<rect x="3" y="9" width="18" height="6" rx="3"/><circle cx="9" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4493,7 +4493,7 @@ export const Bandage: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Syringe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "syringe");
+  const icon = { id: "syringe", name: "Syringe", category: "Health", tags: ["injection", "vaccine"], body: `<path d="M14 4l6 6M17 7l-9 9-3 1 1-3 9-9M5 19l2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4506,7 +4506,7 @@ export const Syringe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Gamepad: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gamepad");
+  const icon = { id: "gamepad", name: "Gamepad", category: "Gaming", tags: ["controller", "play"], body: `<rect x="2" y="7" width="20" height="11" rx="3"/><path d="M6 11v3M5 12h2M16 11h0M18 13h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4519,7 +4519,7 @@ export const Gamepad: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Joystick: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "joystick");
+  const icon = { id: "joystick", name: "Joystick", category: "Gaming", tags: ["arcade", "control"], body: `<rect x="9" y="3" width="6" height="6" rx="1"/><path d="M12 9v6M5 15h14v6H5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4532,7 +4532,7 @@ export const Joystick: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dice: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dice");
+  const icon = { id: "dice", name: "Dice", category: "Gaming", tags: ["roll", "chance"], body: `<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.2" fill="currentColor" stroke="none"/><circle cx="16" cy="8" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="8" cy="16" r="1.2" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4545,7 +4545,7 @@ export const Dice: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Puzzle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "puzzle");
+  const icon = { id: "puzzle", name: "Puzzle", category: "Gaming", tags: ["piece", "fit"], body: `<path d="M9 3v3a2 2 0 0 1-4 0V6a3 3 0 0 0-1 6v3h4a2 2 0 0 1 0 4v3h8v-3a2 2 0 0 1 4 0v3h2v-8h-3a2 2 0 0 1 0-4h3V3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4558,7 +4558,7 @@ export const Puzzle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TrophyCup: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trophy-cup");
+  const icon = { id: "trophy-cup", name: "Trophy Cup", category: "Gaming", tags: ["award", "winner"], body: `<path d="M7 4h10v6a5 5 0 0 1-10 0z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3M9 18h6M10 21h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4571,7 +4571,7 @@ export const TrophyCup: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sword: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sword");
+  const icon = { id: "sword", name: "Sword", category: "Gaming", tags: ["weapon", "blade"], body: `<path d="M14 3l7 7-9 9-7-7zM4 16l-2 4 4-2M16 5l3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4584,7 +4584,7 @@ export const Sword: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ShieldCross: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shield-cross");
+  const icon = { id: "shield-cross", name: "Shield Cross", category: "Gaming", tags: ["defense", "cross"], body: `<path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M12 8v8M8 12h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4597,7 +4597,7 @@ export const ShieldCross: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Castle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "castle");
+  const icon = { id: "castle", name: "Castle", category: "Gaming", tags: ["fortress", "kingdom"], body: `<path d="M3 21V10l3-2v3l3-2v2l3-2v2l3-2v3l3 2v8zM9 21v-3h6v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4610,7 +4610,7 @@ export const Castle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MagicWand: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "magic-wand");
+  const icon = { id: "magic-wand", name: "Magic Wand", category: "Gaming", tags: ["spell", "wizard"], body: `<path d="M3 21l12-12M14 4l2 4 4 2-4 2-2 4-2-4-4-2 4-2zM5 16l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4623,7 +4623,7 @@ export const MagicWand: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ghost: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ghost");
+  const icon = { id: "ghost", name: "Ghost", category: "Gaming", tags: ["spooky", "spirit"], body: `<path d="M5 21v-9a7 7 0 0 1 14 0v9l-2-2-2 2-2-2-2 2-2-2-2 2z"/><circle cx="9" cy="10" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4636,7 +4636,7 @@ export const Ghost: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MusicNote: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "music-note");
+  const icon = { id: "music-note", name: "Music Note", category: "MusicExt", tags: ["audio", "sound"], body: `<circle cx="6" cy="18" r="3"/><path d="M9 18V4l9-1v3l-9 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4649,7 +4649,7 @@ export const MusicNote: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HeadphonesMusic: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "headphones-music");
+  const icon = { id: "headphones-music", name: "Headphones Music", category: "MusicExt", tags: ["audio", "listen"], body: `<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/><path d="M10 8c0 2 2 3 2 3s2-1 2-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4662,7 +4662,7 @@ export const HeadphonesMusic: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Microphone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "microphone");
+  const icon = { id: "microphone", name: "Microphone", category: "MusicExt", tags: ["record", "voice"], body: `<rect x="9" y="3" width="6" height="10" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4675,7 +4675,7 @@ export const Microphone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Playlist: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "playlist");
+  const icon = { id: "playlist", name: "Playlist", category: "MusicExt", tags: ["queue", "music"], body: `<path d="M3 6h10M3 10h10M3 14h7M3 18h7M16 8l5 3-5 3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4688,7 +4688,7 @@ export const Playlist: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Disc: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "disc");
+  const icon = { id: "disc", name: "Disc", category: "MusicExt", tags: ["cd", "vinyl"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4701,7 +4701,7 @@ export const Disc: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Guitar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "guitar");
+  const icon = { id: "guitar", name: "Guitar", category: "MusicExt", tags: ["instrument", "string"], body: `<path d="M14 3l7 7M14 7l3-3-1-1M11 9l-7 7c-2 2-2 4 0 6s4 2 6 0l7-7"/><circle cx="8" cy="16" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4714,7 +4714,7 @@ export const Guitar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drum: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drum");
+  const icon = { id: "drum", name: "Drum", category: "MusicExt", tags: ["instrument", "beat"], body: `<ellipse cx="12" cy="6" rx="8" ry="2"/><path d="M4 6v11c0 2 4 3 8 3s8-1 8-3V6M12 6v14M8 4l-4-2M16 4l4-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4727,7 +4727,7 @@ export const Drum: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Equalizer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "equalizer");
+  const icon = { id: "equalizer", name: "Equalizer", category: "MusicExt", tags: ["audio", "bars"], body: `<path d="M6 4v16M12 4v16M18 4v16M3 8h6M9 14h6M15 8h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4740,7 +4740,7 @@ export const Equalizer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Radio: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "radio");
+  const icon = { id: "radio", name: "Radio", category: "MusicExt", tags: ["broadcast", "tune"], body: `<rect x="3" y="9" width="18" height="11" rx="2"/><circle cx="9" cy="14" r="2"/><path d="M14 12h4M14 15h4M5 9l8-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4753,7 +4753,7 @@ export const Radio: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MicOff: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mic-off");
+  const icon = { id: "mic-off", name: "Mic Off", category: "MusicExt", tags: ["mute", "silent"], body: `<path d="M3 3l18 18M9 9v3a3 3 0 0 0 5 2M5 11a7 7 0 0 0 11 5M12 18v3M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4766,7 +4766,7 @@ export const MicOff: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const AnalyticsUp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "analytics-up");
+  const icon = { id: "analytics-up", name: "Analytics Up", category: "Analytics", tags: ["growth", "data"], body: `<path d="M3 21V3M3 21h18M7 17l4-5 3 3 5-7M16 8h4v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4779,7 +4779,7 @@ export const AnalyticsUp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dashboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dashboard");
+  const icon = { id: "dashboard", name: "Dashboard", category: "Analytics", tags: ["panel", "stats"], body: `<rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="5" rx="1"/><rect x="13" y="10" width="8" height="11" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4792,7 +4792,7 @@ export const Dashboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const UsersGraph: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "users-graph");
+  const icon = { id: "users-graph", name: "Users Graph", category: "Analytics", tags: ["people", "stats"], body: `<circle cx="9" cy="8" r="3"/><path d="M3 19a6 6 0 0 1 12 0"/><circle cx="17" cy="6" r="2"/><path d="M15 19a4 4 0 0 1 6-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4805,7 +4805,7 @@ export const UsersGraph: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Activity: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "activity");
+  const icon = { id: "activity", name: "Activity", category: "Analytics", tags: ["pulse", "monitor"], body: `<path d="M3 12h4l3-7 4 14 3-7h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4818,7 +4818,7 @@ export const Activity: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BarChart: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bar-chart");
+  const icon = { id: "bar-chart", name: "Bar Chart", category: "Analytics", tags: ["graph", "stats"], body: `<path d="M3 21V3M3 21h18M7 21v-4M11 21v-8M15 21v-12M19 21v-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4831,7 +4831,7 @@ export const BarChart: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TrendingDown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trending-down");
+  const icon = { id: "trending-down", name: "Trending Down", category: "Analytics", tags: ["decrease", "fall"], body: `<path d="M3 7l5 5 4-3 6 7M16 16h4v-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4844,7 +4844,7 @@ export const TrendingDown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dollar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dollar");
+  const icon = { id: "dollar", name: "Dollar", category: "Analytics", tags: ["money", "currency"], body: `<path d="M12 3v18M16 7c-1-2-3-3-5-3-3 0-5 2-5 4s2 3 5 4 5 2 5 4-2 4-5 4-4-1-5-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4857,7 +4857,7 @@ export const Dollar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Percent: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "percent");
+  const icon = { id: "percent", name: "Percent", category: "Analytics", tags: ["ratio", "discount"], body: `<path d="M19 5L5 19"/><circle cx="7" cy="7" r="2"/><circle cx="17" cy="17" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4870,7 +4870,7 @@ export const Percent: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Signal: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "signal");
+  const icon = { id: "signal", name: "Signal", category: "Analytics", tags: ["bars", "network"], body: `<path d="M3 21h2v-4H3zM8 21h2v-9H8zM13 21h2v-13h-2zM18 21h2V5h-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4883,7 +4883,7 @@ export const Signal: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WiFi: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wifi");
+  const icon = { id: "wifi", name: "WiFi", category: "Analytics", tags: ["network", "wireless"], body: `<path d="M5 12a10 10 0 0 1 14 0M8 15a6 6 0 0 1 8 0"/><circle cx="12" cy="18" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4896,7 +4896,7 @@ export const WiFi: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ShieldCheck: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shield-check");
+  const icon = { id: "shield-check", name: "Shield Check", category: "Security", tags: ["safe", "verified"], body: `<path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4909,7 +4909,7 @@ export const ShieldCheck: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fingerprint: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fingerprint");
+  const icon = { id: "fingerprint", name: "Fingerprint", category: "Security", tags: ["biometric", "scan"], body: `<path d="M5 12a7 7 0 0 1 14 0M7 12a5 5 0 0 1 10 0v3M9 12a3 3 0 0 1 6 0M12 12v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4922,7 +4922,7 @@ export const Fingerprint: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EyeShield: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eye-shield");
+  const icon = { id: "eye-shield", name: "Eye Shield", category: "Security", tags: ["privacy", "protect"], body: `<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4935,7 +4935,7 @@ export const EyeShield: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LockKey: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lock-key");
+  const icon = { id: "lock-key", name: "Lock Key", category: "Security", tags: ["secure", "key"], body: `<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4948,7 +4948,7 @@ export const LockKey: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ShieldAlert: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shield-alert");
+  const icon = { id: "shield-alert", name: "Shield Alert", category: "Security", tags: ["warning", "danger"], body: `<path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M12 8v4M12 16v0.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4961,7 +4961,7 @@ export const ShieldAlert: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Keyhole: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "keyhole");
+  const icon = { id: "keyhole", name: "Keyhole", category: "Security", tags: ["locked", "secure"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="2"/><path d="M11 12l-1 4h4l-1-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4974,7 +4974,7 @@ export const Keyhole: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fingerprint2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fingerprint-2");
+  const icon = { id: "fingerprint-2", name: "Fingerprint 2", category: "Security", tags: ["biometric", "scan"], body: `<path d="M3 12a9 9 0 0 1 18 0M6 12a6 6 0 0 1 12 0M9 12a3 3 0 0 1 6 0v3M12 12v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -4987,7 +4987,7 @@ export const Fingerprint2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Password: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "password");
+  const icon = { id: "password", name: "Password", category: "Security", tags: ["auth", "secret"], body: `<rect x="3" y="9" width="18" height="11" rx="2"/><path d="M7 9V6a5 5 0 0 1 10 0v3"/><circle cx="8" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="16" cy="14" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5000,7 +5000,7 @@ export const Password: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Verified: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "verified");
+  const icon = { id: "verified", name: "Verified", category: "Security", tags: ["check", "badge"], body: `<path d="M12 2l3 2 4-1 1 4 2 3-2 3 1 4-4 1-3 2-3-2-4 1-1-4-2-3 2-3 3-2-1-4 4-1z"/><path d="M9 12l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5013,7 +5013,7 @@ export const Verified: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Block: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "block");
+  const icon = { id: "block", name: "Block", category: "Security", tags: ["forbidden", "ban"], body: `<circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5026,7 +5026,7 @@ export const Block: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Smile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smile");
+  const icon = { id: "smile", name: "Smile", category: "Emoji", tags: ["happy", "face"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 14a3 3 0 0 0 6 0"/><circle cx="9" cy="10" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5039,7 +5039,7 @@ export const Smile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Frown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "frown");
+  const icon = { id: "frown", name: "Frown", category: "Emoji", tags: ["sad", "face"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 16a3 3 0 0 1 6 0"/><circle cx="9" cy="10" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5052,7 +5052,7 @@ export const Frown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Angry: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "angry");
+  const icon = { id: "angry", name: "Angry", category: "Emoji", tags: ["mad", "rage"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 16a4 4 0 0 1 8 0M8 9l3 1M16 9l-3 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5065,7 +5065,7 @@ export const Angry: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Laugh: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "laugh");
+  const icon = { id: "laugh", name: "Laugh", category: "Emoji", tags: ["happy", "lol"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 14a4 4 0 0 0 8 0z"/><path d="M8 10c1-1 1-1 2 0M14 10c1-1 1-1 2 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5078,7 +5078,7 @@ export const Laugh: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wink: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wink");
+  const icon = { id: "wink", name: "Wink", category: "Emoji", tags: ["playful", "face"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 14a3 3 0 0 0 6 0"/><path d="M9 10h0.1M15 10h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5091,7 +5091,7 @@ export const Wink: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LoveFace: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "love");
+  const icon = { id: "love", name: "Love Face", category: "Emoji", tags: ["heart", "smitten"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 14a3 3 0 0 0 6 0"/><path d="M9 9l1-1.5 1 1.5-1 1.5zM15 9l1-1.5 1 1.5-1 1.5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5104,7 +5104,7 @@ export const LoveFace: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Neutral: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "neutral");
+  const icon = { id: "neutral", name: "Neutral", category: "Emoji", tags: ["meh", "face"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 15h6M9 10h0.1M15 10h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5117,7 +5117,7 @@ export const Neutral: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cool: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cool");
+  const icon = { id: "cool", name: "Cool", category: "Emoji", tags: ["sunglasses", "chill"], body: `<circle cx="12" cy="12" r="9"/><rect x="6" y="9" width="5" height="3" rx="1"/><rect x="13" y="9" width="5" height="3" rx="1"/><path d="M11 10h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5130,7 +5130,7 @@ export const Cool: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sleep: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sleep");
+  const icon = { id: "sleep", name: "Sleep", category: "Emoji", tags: ["tired", "zzz"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 15h6M9 10l3-1M15 10l-3-1M19 4l2 0M21 7l1 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5143,7 +5143,7 @@ export const Sleep: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Shock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shock");
+  const icon = { id: "shock", name: "Shock", category: "Emoji", tags: ["surprised", "wow"], body: `<circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.2"/><circle cx="15" cy="10" r="1.2"/><circle cx="12" cy="16" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5156,7 +5156,7 @@ export const Shock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ThumbsUp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "thumbs-up");
+  const icon = { id: "thumbs-up", name: "Thumbs Up", category: "Emoji", tags: ["like", "approve"], body: `<path d="M7 22V11l4-4V3a2 2 0 0 1 4 0v6h5a2 2 0 0 1 2 2l-2 9a3 3 0 0 1-3 2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5169,7 +5169,7 @@ export const ThumbsUp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ThumbsDown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "thumbs-down");
+  const icon = { id: "thumbs-down", name: "Thumbs Down", category: "Emoji", tags: ["dislike", "reject"], body: `<path d="M7 2v11l4 4v4a2 2 0 0 0 4 0v-6h5a2 2 0 0 0 2-2l-2-9a3 3 0 0 0-3-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5182,7 +5182,7 @@ export const ThumbsDown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SoccerBall: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "soccer");
+  const icon = { id: "soccer", name: "Soccer Ball", category: "Sports", tags: ["football", "ball"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 7l3 2-1 4h-4l-1-4z"/><path d="M12 7V3M14 12l3 4M10 12l-3 4M5 9l4 0M19 9l-4 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5195,7 +5195,7 @@ export const SoccerBall: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Basketball: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "basketball");
+  const icon = { id: "basketball", name: "Basketball", category: "Sports", tags: ["ball", "court"], body: `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5 5c3 3 5 7 7 14M19 5c-3 3-5 7-7 14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5208,7 +5208,7 @@ export const Basketball: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Medal: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trophy-medal");
+  const icon = { id: "trophy-medal", name: "Medal", category: "Sports", tags: ["award", "winner"], body: `<circle cx="12" cy="14" r="5"/><path d="M12 9V3M9 3h6M8 7l4 2 4-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5221,7 +5221,7 @@ export const Medal: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Whistle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "whistle");
+  const icon = { id: "whistle", name: "Whistle", category: "Sports", tags: ["referee", "blow"], body: `<path d="M3 11a5 5 0 0 1 10 0 5 5 0 0 1-10 0z"/><path d="M13 11h8M21 8v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5234,7 +5234,7 @@ export const Whistle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stopwatch: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stopwatch");
+  const icon = { id: "stopwatch", name: "Stopwatch", category: "Sports", tags: ["time", "track"], body: `<circle cx="12" cy="13" r="8"/><path d="M12 13l3-3M10 3h4M19 5l2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5247,7 +5247,7 @@ export const Stopwatch: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dumbbell: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dumbbell");
+  const icon = { id: "dumbbell", name: "Dumbbell", category: "Sports", tags: ["gym", "weight"], body: `<rect x="2" y="9" width="3" height="6"/><rect x="5" y="7" width="3" height="10"/><rect x="16" y="7" width="3" height="10"/><rect x="19" y="9" width="3" height="6"/><path d="M8 12h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5260,7 +5260,7 @@ export const Dumbbell: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Skate: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "skate");
+  const icon = { id: "skate", name: "Skate", category: "Sports", tags: ["ice", "blade"], body: `<path d="M3 18h13l4-12M3 18v3M16 18v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5273,7 +5273,7 @@ export const Skate: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BoxingGlove: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "boxing-glove");
+  const icon = { id: "boxing-glove", name: "Boxing Glove", category: "Sports", tags: ["fight", "punch"], body: `<path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v3h2v6h-3a4 4 0 0 1-4 4z"/><path d="M9 11h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5286,7 +5286,7 @@ export const BoxingGlove: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Volleyball: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "volleyball");
+  const icon = { id: "volleyball", name: "Volleyball", category: "Sports", tags: ["ball", "court"], body: `<circle cx="12" cy="12" r="9"/><path d="M3 12c3-3 9-3 9-3M12 3c-3 4-9 9-9 9M21 12c-3-3-9 0-9 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5299,7 +5299,7 @@ export const Volleyball: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GolfFlag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "golf");
+  const icon = { id: "golf", name: "Golf Flag", category: "Sports", tags: ["hole", "club"], body: `<path d="M12 21V3M12 3l8 3-8 3"/><circle cx="12" cy="21" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5312,7 +5312,7 @@ export const GolfFlag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TennisRacket: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "racket");
+  const icon = { id: "racket", name: "Tennis Racket", category: "Sports", tags: ["tennis", "bat"], body: `<ellipse cx="9" cy="9" rx="6" ry="7"/><path d="M14 14l6 6M5 5c2 2 6 6 8 8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5325,7 +5325,7 @@ export const TennisRacket: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Helmet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "helmet");
+  const icon = { id: "helmet", name: "Helmet", category: "Sports", tags: ["safety", "bike"], body: `<path d="M3 14a9 9 0 0 1 18 0M3 14v2h18v-2M5 18h14M9 14a3 3 0 0 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5338,7 +5338,7 @@ export const Helmet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const OmSymbol: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "om");
+  const icon = { id: "om", name: "Om Symbol", category: "Spiritual", tags: ["hindu", "mantra"], body: `<path d="M3 14c2 2 5 2 7 0s2-5-1-6c-2 0-3 2-1 3M11 8c2 0 4 2 4 4M14 6a2 2 0 1 0 0-0.1M3 18c3 2 6 2 9 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5351,7 +5351,7 @@ export const OmSymbol: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CrescentStar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "crescent-star");
+  const icon = { id: "crescent-star", name: "Crescent Star", category: "Spiritual", tags: ["islam", "moon"], body: `<path d="M16 4a8 8 0 1 0 4 14 6 6 0 0 1-4-14z"/><path d="M19 2l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5364,7 +5364,7 @@ export const CrescentStar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lotus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lotus");
+  const icon = { id: "lotus", name: "Lotus", category: "Spiritual", tags: ["buddhism", "flower"], body: `<path d="M12 21c-5 0-9-3-9-7 3 0 5 2 9 6 4-4 6-6 9-6 0 4-4 7-9 7zM12 21V8M8 11c0 3 2 6 4 7M16 11c0 3-2 6-4 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5377,7 +5377,7 @@ export const Lotus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Menorah: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "menorah");
+  const icon = { id: "menorah", name: "Menorah", category: "Spiritual", tags: ["judaism", "candle"], body: `<path d="M3 3v4a2 2 0 0 0 4 0V3M9 3v4a2 2 0 0 0 4 0V3M15 3v4a2 2 0 0 0 4 0V3M5 21h12M11 7v14M7 5h0.1M17 5h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5390,7 +5390,7 @@ export const Menorah: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DharmaWheel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dharma-wheel");
+  const icon = { id: "dharma-wheel", name: "Dharma Wheel", category: "Spiritual", tags: ["buddhism", "wheel"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6M5 5l4 4M15 15l4 4M5 19l4-4M15 9l4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5403,7 +5403,7 @@ export const DharmaWheel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Khanda: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "khanda");
+  const icon = { id: "khanda", name: "Khanda", category: "Spiritual", tags: ["sikh", "sword"], body: `<circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5416,7 +5416,7 @@ export const Khanda: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const StarofDavid: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "star-of-david");
+  const icon = { id: "star-of-david", name: "Star of David", category: "Spiritual", tags: ["judaism", "hexagram"], body: `<path d="M12 3l9 16H3z"/><path d="M12 21L3 5h18z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5429,7 +5429,7 @@ export const StarofDavid: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Thunderstorm: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "thunderstorm");
+  const icon = { id: "thunderstorm", name: "Thunderstorm", category: "WeatherExt", tags: ["lightning", "rain"], body: `<path d="M7 14a5 5 0 0 1-1-9.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><path d="M13 14l-3 5h3l-2 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5442,7 +5442,7 @@ export const Thunderstorm: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fog: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fog");
+  const icon = { id: "fog", name: "Fog", category: "WeatherExt", tags: ["mist", "cloud"], body: `<path d="M3 8h18M3 12h14M5 16h14M3 20h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5455,7 +5455,7 @@ export const Fog: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tornado: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tornado");
+  const icon = { id: "tornado", name: "Tornado", category: "WeatherExt", tags: ["cyclone", "wind"], body: `<path d="M3 4h18M5 8h14M7 12h10M9 16h6M11 20h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5468,7 +5468,7 @@ export const Tornado: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Thermometer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "thermometer");
+  const icon = { id: "thermometer", name: "Thermometer", category: "WeatherExt", tags: ["temperature", "hot"], body: `<path d="M14 14V5a2 2 0 0 0-4 0v9a4 4 0 1 0 4 0z"/><circle cx="12" cy="17" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5481,7 +5481,7 @@ export const Thermometer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Umbrella: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "umbrella");
+  const icon = { id: "umbrella", name: "Umbrella", category: "WeatherExt", tags: ["rain", "shelter"], body: `<path d="M3 12a9 9 0 0 1 18 0M3 12h18M12 12v6a2 2 0 0 1-4 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5494,7 +5494,7 @@ export const Umbrella: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RainbowFull: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rainbow-full");
+  const icon = { id: "rainbow-full", name: "Rainbow Full", category: "WeatherExt", tags: ["color", "sky"], body: `<path d="M3 21a9 9 0 0 1 18 0M6 21a6 6 0 0 1 12 0M9 21a3 3 0 0 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5507,7 +5507,7 @@ export const RainbowFull: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Humidity: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "humidity");
+  const icon = { id: "humidity", name: "Humidity", category: "WeatherExt", tags: ["moisture", "water"], body: `<path d="M12 3s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/><path d="M9 14a3 3 0 0 0 3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5520,7 +5520,7 @@ export const Humidity: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sunrise: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sunrise");
+  const icon = { id: "sunrise", name: "Sunrise", category: "WeatherExt", tags: ["morning", "dawn"], body: `<path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 8V3M9 6l3-3 3 3M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5533,7 +5533,7 @@ export const Sunrise: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cat");
+  const icon = { id: "cat", name: "Cat", category: "Animals", tags: ["pet", "feline"], body: `<path d="M5 4l3 3h6l3-3v6a6 6 0 0 1-12 0z"/><circle cx="9" cy="10" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.8" fill="currentColor" stroke="none"/><path d="M11 13l1 1 1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5546,7 +5546,7 @@ export const Cat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dog: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dog");
+  const icon = { id: "dog", name: "Dog", category: "Animals", tags: ["pet", "canine"], body: `<path d="M5 5l2 4v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9l2-4M9 13h0M15 13h0M11 16h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5559,7 +5559,7 @@ export const Dog: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bird: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bird");
+  const icon = { id: "bird", name: "Bird", category: "Animals", tags: ["fly", "animal"], body: `<path d="M3 12c4-2 7-5 9-9 2 4 5 7 9 9-4 2-7 5-9 9-2-4-5-7-9-9z"/><circle cx="8" cy="11" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5572,7 +5572,7 @@ export const Bird: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Rabbit: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rabbit");
+  const icon = { id: "rabbit", name: "Rabbit", category: "Animals", tags: ["bunny", "pet"], body: `<path d="M8 8c-2-2-3-5-1-7 2 1 3 3 3 5M16 8c2-2 3-5 1-7-2 1-3 3-3 5M5 14a7 7 0 0 1 14 0v3a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><circle cx="10" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="14" cy="14" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5585,7 +5585,7 @@ export const Rabbit: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Turtle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "turtle");
+  const icon = { id: "turtle", name: "Turtle", category: "Animals", tags: ["sea", "slow"], body: `<ellipse cx="12" cy="13" rx="6" ry="4"/><circle cx="18" cy="11" r="1.5"/><path d="M6 13l-3-2M6 15l-3 1M18 15l3 1M18 13l3-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5598,7 +5598,7 @@ export const Turtle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Butterfly: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "butterfly");
+  const icon = { id: "butterfly", name: "Butterfly", category: "Animals", tags: ["insect", "fly"], body: `<path d="M12 6v14M9 9c-3-3-6-1-6 2s3 5 6 2zM15 9c3-3 6-1 6 2s-3 5-6 2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5611,7 +5611,7 @@ export const Butterfly: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Horse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "horse");
+  const icon = { id: "horse", name: "Horse", category: "Animals", tags: ["animal", "stallion"], body: `<path d="M3 21l4-7 2-7 3 1 4-3v6l5 5v5M7 14l3 1M14 7h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5624,7 +5624,7 @@ export const Horse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Snake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "snake");
+  const icon = { id: "snake", name: "Snake", category: "Animals", tags: ["reptile", "serpent"], body: `<path d="M5 21c0-3 3-3 6-3s6 0 6-3-3-3-6-3-6 0-6-3 3-3 6-3 6 0 6-3M19 3l-2 2 2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5637,7 +5637,7 @@ export const Snake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Whale: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "whale");
+  const icon = { id: "whale", name: "Whale", category: "Animals", tags: ["sea", "mammal"], body: `<path d="M3 14c0-5 6-9 12-7 4 1 6 5 6 9l-3 3-9 0-3-3z"/><path d="M21 11l3-3M9 11v0.1M14 11v0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5650,7 +5650,7 @@ export const Whale: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Elephant: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "elephant");
+  const icon = { id: "elephant", name: "Elephant", category: "Animals", tags: ["animal", "trunk"], body: `<path d="M3 12c0-4 4-7 9-7s9 3 9 7v4a3 3 0 0 1-3 3h-3M3 12v3a2 2 0 0 0 2 2M15 19v2M9 19v2M9 12v0.1M13 12v0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5663,7 +5663,7 @@ export const Elephant: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Spider: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "spider");
+  const icon = { id: "spider", name: "Spider", category: "Animals", tags: ["insect", "halloween"], body: `<circle cx="12" cy="13" r="4"/><path d="M8 11l-5-3M8 13l-6 1M8 15l-5 5M16 11l5-3M16 13l6 1M16 15l5 5M10 9V3M14 9V3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5676,7 +5676,7 @@ export const Spider: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ant: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ant");
+  const icon = { id: "ant", name: "Ant", category: "Animals", tags: ["insect", "tiny"], body: `<circle cx="12" cy="7" r="2"/><circle cx="12" cy="12" r="2.5"/><circle cx="12" cy="17" r="2"/><path d="M10 5L6 3M14 5l4-3M10 12l-5 1M14 12l5 1M10 17l-4 3M14 17l4 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5689,7 +5689,7 @@ export const Ant: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Paperclip: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "paperclip");
+  const icon = { id: "paperclip", name: "Paperclip", category: "Office", tags: ["attach", "clip"], body: `<path d="M19 5l-9 9a3 3 0 0 1-4-4l8-8a5 5 0 0 1 7 7l-9 9a7 7 0 0 1-10-10l8-8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5702,7 +5702,7 @@ export const Paperclip: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stapler: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stapler");
+  const icon = { id: "stapler", name: "Stapler", category: "Office", tags: ["bind", "clip"], body: `<path d="M3 14l3-3h13v6H3z"/><path d="M3 17h16M6 11V8h13"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5715,7 +5715,7 @@ export const Stapler: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Scissors: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scissors-2");
+  const icon = { id: "scissors-2", name: "Scissors", category: "Office", tags: ["cut", "tool"], body: `<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8 8l12 8M8 16L20 8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5728,7 +5728,7 @@ export const Scissors: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BinderClip: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "clip");
+  const icon = { id: "clip", name: "Binder Clip", category: "Office", tags: ["clip", "hold"], body: `<path d="M5 4h14v10H5z"/><path d="M5 14v3a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-3M9 8v2M12 8v2M15 8v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5741,7 +5741,7 @@ export const BinderClip: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Globe2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "globe-2");
+  const icon = { id: "globe-2", name: "Globe 2", category: "Office", tags: ["world", "earth"], body: `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5754,7 +5754,7 @@ export const Globe2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CalendarCheck: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "calendar-2");
+  const icon = { id: "calendar-2", name: "Calendar Check", category: "Office", tags: ["date", "schedule"], body: `<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4M9 14l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5767,7 +5767,7 @@ export const CalendarCheck: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const AlarmClock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "clock-alarm");
+  const icon = { id: "clock-alarm", name: "Alarm Clock", category: "Office", tags: ["wake", "time"], body: `<circle cx="12" cy="13" r="8"/><path d="M12 13V9M5 5L3 3M19 5l2-2M12 13l3 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5780,7 +5780,7 @@ export const AlarmClock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Calculator2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "calculator-2");
+  const icon = { id: "calculator-2", name: "Calculator 2", category: "Office", tags: ["math", "compute"], body: `<rect x="5" y="3" width="14" height="18" rx="2"/><rect x="8" y="6" width="8" height="3"/><circle cx="9" cy="13" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="13" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="13" r="0.8" fill="currentColor" stroke="none"/><circle cx="9" cy="17" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="17" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="17" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5793,7 +5793,7 @@ export const Calculator2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Label: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "label");
+  const icon = { id: "label", name: "Label", category: "Office", tags: ["tag", "marker"], body: `<path d="M3 3h10l8 8-8 8H3z"/><circle cx="8" cy="8" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5806,7 +5806,7 @@ export const Label: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TongueOut: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tongue");
+  const icon = { id: "tongue", name: "Tongue Out", category: "EmojiExt", tags: ["playful", "face"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 14a4 4 0 0 0 8 0"/><path d="M11 14v5h2a2 2 0 0 0 0-5"/><circle cx="9" cy="10" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5819,7 +5819,7 @@ export const TongueOut: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cry: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cry");
+  const icon = { id: "cry", name: "Cry", category: "EmojiExt", tags: ["sad", "tears"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 16a4 4 0 0 1 8 0"/><path d="M9 11l-2-2M15 11l2-2M9 14l-1 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5832,7 +5832,7 @@ export const Cry: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Kiss: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "kiss");
+  const icon = { id: "kiss", name: "Kiss", category: "EmojiExt", tags: ["love", "lips"], body: `<circle cx="12" cy="12" r="9"/><path d="M10 14a2 2 0 0 1 4 0M9 10c0-1 1-1 1 0M15 10c0-1-1-1-1 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5845,7 +5845,7 @@ export const Kiss: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tired: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tired");
+  const icon = { id: "tired", name: "Tired", category: "EmojiExt", tags: ["sleepy", "exhausted"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 16h8M9 10l2 2M15 10l-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5858,7 +5858,7 @@ export const Tired: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dizzy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dizzy");
+  const icon = { id: "dizzy", name: "Dizzy", category: "EmojiExt", tags: ["spiral", "confused"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 9l-1 1 1 1-1 1M15 9l1 1-1 1 1 1M8 16h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5871,7 +5871,7 @@ export const Dizzy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Meh: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "meh");
+  const icon = { id: "meh", name: "Meh", category: "EmojiExt", tags: ["unimpressed", "face"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 15h8M9 10h0.1M15 10h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5884,7 +5884,7 @@ export const Meh: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Thinking: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "thinking");
+  const icon = { id: "thinking", name: "Thinking", category: "EmojiExt", tags: ["ponder", "hand"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 14h4M9 10l3-1M15 10l-3-1M16 14l3 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5897,7 +5897,7 @@ export const Thinking: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sick: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "vomit");
+  const icon = { id: "vomit", name: "Sick", category: "EmojiExt", tags: ["unwell", "ill"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 14a4 4 0 0 0 8 0M9 9l2-1M15 9l-2-1M9 19l1-3 2 1 1-2 2 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5910,7 +5910,7 @@ export const Sick: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Nerd: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "nerd");
+  const icon = { id: "nerd", name: "Nerd", category: "EmojiExt", tags: ["glasses", "smart"], body: `<circle cx="12" cy="12" r="9"/><circle cx="8" cy="11" r="2"/><circle cx="16" cy="11" r="2"/><path d="M10 11h4M8 16h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5923,7 +5923,7 @@ export const Nerd: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Crazy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "crazy");
+  const icon = { id: "crazy", name: "Crazy", category: "EmojiExt", tags: ["wild", "eyes"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 14a4 4 0 0 0 8 0M7 10c1-1 2-1 3 0M14 10c1-1 2-1 3 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5936,7 +5936,7 @@ export const Crazy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowUpRight: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-up-right");
+  const icon = { id: "arrow-up-right", name: "Arrow Up Right", category: "ArrowsExt", tags: ["diagonal", "northeast"], body: `<path d="M7 17L17 7M9 7h8v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5949,7 +5949,7 @@ export const ArrowUpRight: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowUpLeft: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-up-left");
+  const icon = { id: "arrow-up-left", name: "Arrow Up Left", category: "ArrowsExt", tags: ["diagonal", "northwest"], body: `<path d="M17 17L7 7M15 7H7v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5962,7 +5962,7 @@ export const ArrowUpLeft: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowDownRight: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-down-right");
+  const icon = { id: "arrow-down-right", name: "Arrow Down Right", category: "ArrowsExt", tags: ["diagonal", "southeast"], body: `<path d="M7 7l10 10M17 9v8H9"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5975,7 +5975,7 @@ export const ArrowDownRight: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArrowDownLeft: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-down-left");
+  const icon = { id: "arrow-down-left", name: "Arrow Down Left", category: "ArrowsExt", tags: ["diagonal", "southwest"], body: `<path d="M17 7L7 17M15 17H7V9"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -5988,7 +5988,7 @@ export const ArrowDownLeft: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CornerUp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "corner-up");
+  const icon = { id: "corner-up", name: "Corner Up", category: "ArrowsExt", tags: ["turn", "curve"], body: `<path d="M9 21V9c0-3 3-6 6-6h3M15 9l3-3-3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6001,7 +6001,7 @@ export const CornerUp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CornerDown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "corner-down");
+  const icon = { id: "corner-down", name: "Corner Down", category: "ArrowsExt", tags: ["turn", "curve"], body: `<path d="M9 3v12c0 3 3 6 6 6h3M15 15l3 3-3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6014,7 +6014,7 @@ export const CornerDown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LoopArrow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-loop");
+  const icon = { id: "arrow-loop", name: "Loop Arrow", category: "ArrowsExt", tags: ["cycle", "repeat"], body: `<path d="M3 12a4 4 0 0 1 4-4h10M13 5l4 3-4 3M21 12a4 4 0 0 1-4 4H7M11 19l-4-3 4-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6027,7 +6027,7 @@ export const LoopArrow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Shuffle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-shuffle");
+  const icon = { id: "arrow-shuffle", name: "Shuffle", category: "ArrowsExt", tags: ["random", "mix"], body: `<path d="M3 5h4l10 14h4M3 19h4l4-5M17 5h4l-4 4M17 19l4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6040,7 +6040,7 @@ export const Shuffle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Swap: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-swap");
+  const icon = { id: "arrow-swap", name: "Swap", category: "ArrowsExt", tags: ["exchange", "switch"], body: `<path d="M7 4v16M3 8l4-4 4 4M17 20V4M21 16l-4 4-4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6053,7 +6053,7 @@ export const Swap: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Rotate: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arrow-rotate");
+  const icon = { id: "arrow-rotate", name: "Rotate", category: "ArrowsExt", tags: ["spin", "turn"], body: `<path d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9M3 12l-2-2M3 12l2-2M21 12l2-2M21 12l-2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6066,7 +6066,7 @@ export const Rotate: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fork: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fork");
+  const icon = { id: "fork", name: "Fork", category: "Kitchen", tags: ["utensil", "eat"], body: `<path d="M5 3v6a3 3 0 0 0 6 0V3M8 3v18M16 3c-2 0-3 2-3 4v6h3v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6079,7 +6079,7 @@ export const Fork: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Spoon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "spoon");
+  const icon = { id: "spoon", name: "Spoon", category: "Kitchen", tags: ["utensil", "eat"], body: `<ellipse cx="12" cy="6" rx="3" ry="4"/><path d="M12 10v12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6092,7 +6092,7 @@ export const Spoon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Knife: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "knife");
+  const icon = { id: "knife", name: "Knife", category: "Kitchen", tags: ["cut", "kitchen"], body: `<path d="M9 3c-2 4-2 10 0 14v4h2V17c2-4 2-10 0-14z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6105,7 +6105,7 @@ export const Knife: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Plate: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "plate");
+  const icon = { id: "plate", name: "Plate", category: "Kitchen", tags: ["dish", "serve"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6118,7 +6118,7 @@ export const Plate: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mug: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mug");
+  const icon = { id: "mug", name: "Mug", category: "Kitchen", tags: ["cup", "drink"], body: `<path d="M5 8h11v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/><path d="M16 10h3a2 2 0 0 1 0 4h-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6131,7 +6131,7 @@ export const Mug: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bottle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bottle");
+  const icon = { id: "bottle", name: "Bottle", category: "Kitchen", tags: ["drink", "water"], body: `<path d="M10 2h4v3l1 2v13a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2V7l1-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6144,7 +6144,7 @@ export const Bottle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Kettle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "kettle");
+  const icon = { id: "kettle", name: "Kettle", category: "Kitchen", tags: ["boil", "tea"], body: `<path d="M5 12h12v6a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/><path d="M5 12l-2-2M17 12l3-3M9 6h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6157,7 +6157,7 @@ export const Kettle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HotCup: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cup-hot");
+  const icon = { id: "cup-hot", name: "Hot Cup", category: "Kitchen", tags: ["tea", "coffee", "steam"], body: `<path d="M5 9h12v6a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/><path d="M17 11h3a2 2 0 0 1 0 4h-3M9 3v2M12 3v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6170,7 +6170,7 @@ export const HotCup: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WineBottle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wine-2");
+  const icon = { id: "wine-2", name: "Wine Bottle", category: "Kitchen", tags: ["alcohol", "drink"], body: `<path d="M10 2h4v3l2 3v11a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3V8l2-3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6183,7 +6183,7 @@ export const WineBottle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Jar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "jar");
+  const icon = { id: "jar", name: "Jar", category: "Kitchen", tags: ["container", "store"], body: `<rect x="5" y="6" width="14" height="15" rx="2"/><path d="M5 9h14M7 6V4h10v2M9 13v4M13 13v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6196,7 +6196,7 @@ export const Jar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CookingPot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pot");
+  const icon = { id: "pot", name: "Cooking Pot", category: "Kitchen", tags: ["cook", "stove"], body: `<path d="M4 11h16v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M2 11h20M6 8l1-3M10 8l1-3M14 8l1-3M18 8l1-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6209,7 +6209,7 @@ export const CookingPot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fridge: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fridge");
+  const icon = { id: "fridge", name: "Fridge", category: "Kitchen", tags: ["cool", "appliance"], body: `<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M5 10h14M8 6v2M8 13v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6222,7 +6222,7 @@ export const Fridge: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Chair: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chair");
+  const icon = { id: "chair", name: "Chair", category: "Furniture", tags: ["seat", "furniture"], body: `<path d="M6 3v10M18 3v10M6 13h12M7 13l-1 8M17 13l1 8M6 8h12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6235,7 +6235,7 @@ export const Chair: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sofa: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sofa");
+  const icon = { id: "sofa", name: "Sofa", category: "Furniture", tags: ["couch", "lounge"], body: `<path d="M3 11V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3"/><path d="M3 11a2 2 0 0 0-2 2v5h2v3h18v-3h2v-5a2 2 0 0 0-2-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6248,7 +6248,7 @@ export const Sofa: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bed: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bed");
+  const icon = { id: "bed", name: "Bed", category: "Furniture", tags: ["sleep", "mattress"], body: `<path d="M3 18V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10M3 18h18M3 14h18M5 6V4h4v2M15 6V4h4v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6261,7 +6261,7 @@ export const Bed: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Table: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "table");
+  const icon = { id: "table", name: "Table", category: "Furniture", tags: ["desk", "surface"], body: `<path d="M3 9h18M5 9v11M19 9v11M3 9V7h18v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6274,7 +6274,7 @@ export const Table: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lamp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lamp");
+  const icon = { id: "lamp", name: "Lamp", category: "Furniture", tags: ["light", "desk"], body: `<path d="M9 3h6l3 8H6zM12 11v6M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6287,7 +6287,7 @@ export const Lamp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bookshelf: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bookshelf");
+  const icon = { id: "bookshelf", name: "Bookshelf", category: "Furniture", tags: ["books", "shelf"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M6 5v2M10 5v2M14 11v2M9 17v2M16 17v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6300,7 +6300,7 @@ export const Bookshelf: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drawer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drawer");
+  const icon = { id: "drawer", name: "Drawer", category: "Furniture", tags: ["storage", "chest"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M4 9h16M4 15h16M10 6h4M10 12h4M10 18h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6313,7 +6313,7 @@ export const Drawer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mirror: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mirror");
+  const icon = { id: "mirror", name: "Mirror", category: "Furniture", tags: ["reflection", "glass"], body: `<ellipse cx="12" cy="12" rx="5" ry="9"/><path d="M12 3v3M12 18v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6326,7 +6326,7 @@ export const Mirror: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WallClock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "clock-wall");
+  const icon = { id: "clock-wall", name: "Wall Clock", category: "Furniture", tags: ["time", "wall"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3M9 2h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6339,7 +6339,7 @@ export const WallClock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PottedPlant: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "plant-pot");
+  const icon = { id: "plant-pot", name: "Potted Plant", category: "Furniture", tags: ["decor", "green"], body: `<path d="M12 14c-2-3-2-7 0-10 2 3 2 7 0 10z"/><path d="M7 14h10l-1 7H8z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6352,7 +6352,7 @@ export const PottedPlant: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Shirt: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shirt");
+  const icon = { id: "shirt", name: "Shirt", category: "Fashion", tags: ["clothing", "top"], body: `<path d="M5 6l4-3h6l4 3-2 3v12H7V9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6365,7 +6365,7 @@ export const Shirt: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pants: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pants");
+  const icon = { id: "pants", name: "Pants", category: "Fashion", tags: ["trousers", "clothing"], body: `<path d="M6 3h12l-1 18h-5l-1-10-1 10H5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6378,7 +6378,7 @@ export const Pants: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dress: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dress");
+  const icon = { id: "dress", name: "Dress", category: "Fashion", tags: ["clothing", "gown"], body: `<path d="M9 3h6l2 5-2 13H7L9 8z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6391,7 +6391,7 @@ export const Dress: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Shoe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shoe");
+  const icon = { id: "shoe", name: "Shoe", category: "Fashion", tags: ["footwear", "sneaker"], body: `<path d="M3 16c0-2 4-3 6-3l3-6 4 3 5 1v5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6404,7 +6404,7 @@ export const Shoe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hat");
+  const icon = { id: "hat", name: "Hat", category: "Fashion", tags: ["cap", "head"], body: `<path d="M3 18c0-2 4-3 9-3s9 1 9 3M9 18L11 6h2l2 12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6417,7 +6417,7 @@ export const Hat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Glasses: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "glasses");
+  const icon = { id: "glasses", name: "Glasses", category: "Fashion", tags: ["sunglasses", "vision"], body: `<rect x="3" y="8" width="6" height="5" rx="1"/><rect x="15" y="8" width="6" height="5" rx="1"/><path d="M9 10h6M3 10H1M23 10h-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6430,7 +6430,7 @@ export const Glasses: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FashionUmbrella: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "umbrella-fashion");
+  const icon = { id: "umbrella-fashion", name: "Fashion Umbrella", category: "Fashion", tags: ["accessory", "rain"], body: `<path d="M3 12a9 9 0 0 1 18 0M3 12h18M12 12v6a2 2 0 0 1-4 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6443,7 +6443,7 @@ export const FashionUmbrella: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Glove: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "glove");
+  const icon = { id: "glove", name: "Glove", category: "Fashion", tags: ["hand", "winter"], body: `<path d="M7 14V6a2 2 0 0 1 4 0v4M11 10V4a2 2 0 0 1 4 0v6M15 10V5a2 2 0 0 1 4 0v9a6 6 0 0 1-6 6h-4a4 4 0 0 1-4-4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6456,7 +6456,7 @@ export const Glove: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WatchFashion: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "watch-fashion");
+  const icon = { id: "watch-fashion", name: "Watch Fashion", category: "Fashion", tags: ["wrist", "time"], body: `<rect x="7" y="7" width="10" height="10" rx="3"/><path d="M9 7V3h6v4M9 17v4h6v-4M12 11v2l1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6469,7 +6469,7 @@ export const WatchFashion: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sock");
+  const icon = { id: "sock", name: "Sock", category: "Fashion", tags: ["foot", "wool"], body: `<path d="M8 3h7v10l3 5a3 3 0 0 1-3 3H8a2 2 0 0 1-2-2V3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6482,7 +6482,7 @@ export const Sock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Home2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "home-2");
+  const icon = { id: "home-2", name: "Home 2", category: "Buildings", tags: ["house", "residence"], body: `<path d="M3 12l9-9 9 9M5 10v10h14V10M9 20v-6h6v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6495,7 +6495,7 @@ export const Home2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Building: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "building");
+  const icon = { id: "building", name: "Building", category: "Buildings", tags: ["office", "tower"], body: `<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6508,7 +6508,7 @@ export const Building: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Skyscraper: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "skyscraper");
+  const icon = { id: "skyscraper", name: "Skyscraper", category: "Buildings", tags: ["tall", "city"], body: `<path d="M7 21V5l5-2 5 2v16M7 21h10M10 8h0M14 8h0M10 12h0M14 12h0M10 16h0M14 16h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6521,7 +6521,7 @@ export const Skyscraper: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tent: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tent");
+  const icon = { id: "tent", name: "Tent", category: "Buildings", tags: ["camp", "shelter"], body: `<path d="M3 21l9-18 9 18z"/><path d="M12 3v18M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6534,7 +6534,7 @@ export const Tent: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Garage: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "garage");
+  const icon = { id: "garage", name: "Garage", category: "Buildings", tags: ["parking", "car"], body: `<path d="M3 20V9l9-5 9 5v11M3 20h18M6 20v-7h12v7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6547,7 +6547,7 @@ export const Garage: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Church: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "church");
+  const icon = { id: "church", name: "Church", category: "Buildings", tags: ["religious", "building"], body: `<path d="M5 21V12l7-7 7 7v9M5 21h14M12 5V2M11 3h2M9 21v-5h6v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6560,7 +6560,7 @@ export const Church: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const School: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "school");
+  const icon = { id: "school", name: "School", category: "Buildings", tags: ["education", "building"], body: `<path d="M3 21V9l9-5 9 5v12M3 21h18M9 21v-7h6v7M11 7h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6573,7 +6573,7 @@ export const School: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HospitalBuilding: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hospital-2");
+  const icon = { id: "hospital-2", name: "Hospital Building", category: "Buildings", tags: ["medical", "building"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M11 7h2v2h2v2h-2v2h-2v-2H9V9h2zM8 16h2M14 16h2M9 21v-3h6v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6586,7 +6586,7 @@ export const HospitalBuilding: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bridge: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bridge");
+  const icon = { id: "bridge", name: "Bridge", category: "Buildings", tags: ["cross", "river"], body: `<path d="M2 18h20M2 18v-6c4 0 6-3 10-3s6 3 10 3v6M5 18v3M19 18v3M10 9v9M14 9v9"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6599,7 +6599,7 @@ export const Bridge: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tower: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tower");
+  const icon = { id: "tower", name: "Tower", category: "Buildings", tags: ["signal", "tall"], body: `<path d="M9 21V8l3-5 3 5v13M9 21h6M10 11h4M10 15h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6612,7 +6612,7 @@ export const Tower: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Piano: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "piano");
+  const icon = { id: "piano", name: "Piano", category: "Instruments", tags: ["keys", "music"], body: `<rect x="3" y="6" width="18" height="14" rx="1"/><path d="M7 6v9M11 6v9M15 6v9M19 6v9M9 15v5M13 15v5M17 15v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6625,7 +6625,7 @@ export const Piano: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Violin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "violin");
+  const icon = { id: "violin", name: "Violin", category: "Instruments", tags: ["strings", "music"], body: `<path d="M10 3l4 4-2 2-7 7-2 4 4-2 7-7 2 2 4-4z"/><path d="M10 7l4 4M5 18l3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6638,7 +6638,7 @@ export const Violin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Trumpet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trumpet");
+  const icon = { id: "trumpet", name: "Trumpet", category: "Instruments", tags: ["horn", "brass"], body: `<path d="M3 11h11l4-3v6l-4-3M14 11v0M3 9v6M7 11v2M10 11v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6651,7 +6651,7 @@ export const Trumpet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const AcousticGuitar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "guitar-2");
+  const icon = { id: "guitar-2", name: "Acoustic Guitar", category: "Instruments", tags: ["music", "string"], body: `<path d="M14 4l6 6-7 7c-3 3-7 3-9 0s-1-6 2-9z"/><circle cx="8" cy="14" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6664,7 +6664,7 @@ export const AcousticGuitar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drums: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drums");
+  const icon = { id: "drums", name: "Drums", category: "Instruments", tags: ["beat", "percussion"], body: `<ellipse cx="12" cy="13" rx="8" ry="3"/><path d="M4 13v6c0 1.5 3.5 3 8 3s8-1.5 8-3v-6M12 4v6M9 6h6M9 6l-5 4M15 6l5 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6677,7 +6677,7 @@ export const Drums: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Harp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "harp");
+  const icon = { id: "harp", name: "Harp", category: "Instruments", tags: ["strings", "music"], body: `<path d="M5 21V5l14 14M5 21h14M7 7l10 10M9 5l8 8M11 3l6 6M13 1l4 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6690,7 +6690,7 @@ export const Harp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const StudioMic: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "microphone-2");
+  const icon = { id: "microphone-2", name: "Studio Mic", category: "Instruments", tags: ["record", "studio"], body: `<rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6703,7 +6703,7 @@ export const StudioMic: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const StudioHeadphones: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "headphones-studio");
+  const icon = { id: "headphones-studio", name: "Studio Headphones", category: "Instruments", tags: ["audio", "music"], body: `<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6716,7 +6716,7 @@ export const StudioHeadphones: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FlagPlain: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flag-plain");
+  const icon = { id: "flag-plain", name: "Flag Plain", category: "Flags", tags: ["banner", "mark"], body: `<path d="M5 21V4M5 4h12l-2 4 2 4H5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6729,7 +6729,7 @@ export const FlagPlain: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CheckeredFlag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flag-checkered");
+  const icon = { id: "flag-checkered", name: "Checkered Flag", category: "Flags", tags: ["race", "finish"], body: `<path d="M5 21V4M5 4h12l-2 4 2 4H5"/><rect x="5" y="4" width="3" height="2"/><rect x="8" y="6" width="3" height="2"/><rect x="11" y="4" width="3" height="2"/><rect x="14" y="6" width="3" height="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6742,7 +6742,7 @@ export const CheckeredFlag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WavingFlag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flag-wave");
+  const icon = { id: "flag-wave", name: "Waving Flag", category: "Flags", tags: ["wave", "wind"], body: `<path d="M5 21V4M5 4c2-1 4 1 6 0s4-1 6 0v8c-2-1-4 1-6 0s-4-1-6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6755,7 +6755,7 @@ export const WavingFlag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MastFlag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flag-mast");
+  const icon = { id: "flag-mast", name: "Mast Flag", category: "Flags", tags: ["pole", "banner"], body: `<path d="M5 21V3M5 3h12l-3 4 3 4H5M4 21h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6768,7 +6768,7 @@ export const MastFlag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pennant: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pennant");
+  const icon = { id: "pennant", name: "Pennant", category: "Flags", tags: ["triangle", "banner"], body: `<path d="M5 21V4M5 4l12 4-12 4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6781,7 +6781,7 @@ export const Pennant: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Banner: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "banner");
+  const icon = { id: "banner", name: "Banner", category: "Flags", tags: ["ribbon", "scroll"], body: `<path d="M3 5h18v10l-3 2-3-2-3 2-3-2-3 2-3-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6794,7 +6794,7 @@ export const Banner: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ribbon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ribbon");
+  const icon = { id: "ribbon", name: "Ribbon", category: "Flags", tags: ["award", "decoration"], body: `<path d="M9 3h6l-1 7 3 11-4-3-1 0-4 3 3-11z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6807,7 +6807,7 @@ export const Ribbon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Scroll: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scroll");
+  const icon = { id: "scroll", name: "Scroll", category: "Flags", tags: ["document", "paper"], body: `<path d="M5 4a2 2 0 0 1 4 0v14a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v14a2 2 0 0 1-4 0H5a2 2 0 0 1-2-2V6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6820,7 +6820,7 @@ export const Scroll: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Luggage: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "luggage");
+  const icon = { id: "luggage", name: "Luggage", category: "Travel", tags: ["suitcase", "travel"], body: `<rect x="5" y="6" width="14" height="15" rx="2"/><path d="M9 6V3h6v3M5 11h14M9 21v2M15 21v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6833,7 +6833,7 @@ export const Luggage: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Passport: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "passport");
+  const icon = { id: "passport", name: "Passport", category: "Travel", tags: ["travel", "document"], body: `<rect x="5" y="3" width="14" height="18" rx="1"/><circle cx="12" cy="9" r="3"/><path d="M9 14h6M8 17h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6846,7 +6846,7 @@ export const Passport: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ticket: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ticket");
+  const icon = { id: "ticket", name: "Ticket", category: "Travel", tags: ["pass", "entry"], body: `<path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6859,7 +6859,7 @@ export const Ticket: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MapPin2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "map-pin-2");
+  const icon = { id: "map-pin-2", name: "Map Pin 2", category: "Travel", tags: ["location", "place"], body: `<path d="M12 22s8-7 8-13a8 8 0 0 0-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/><path d="M12 22v-7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6872,7 +6872,7 @@ export const MapPin2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Compass2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "compass-2");
+  const icon = { id: "compass-2", name: "Compass 2", category: "Travel", tags: ["direction", "navigate"], body: `<circle cx="12" cy="12" r="9"/><path d="M16 8l-2 6-6 2 2-6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6885,7 +6885,7 @@ export const Compass2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GlobeAsia: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "globe-asia");
+  const icon = { id: "globe-asia", name: "Globe Asia", category: "Travel", tags: ["world", "earth"], body: `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M5 5c4 4 4 10 0 14M19 5c-4 4-4 10 0 14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6898,7 +6898,7 @@ export const GlobeAsia: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Beach: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "beach");
+  const icon = { id: "beach", name: "Beach", category: "Travel", tags: ["vacation", "sea"], body: `<path d="M3 21h18M5 21c2-5 6-7 10-7s4 0 4 7M12 14V6M12 6c-2-2-4-2-4-4M12 6c2-2 4-2 4-4M9 8c-1-1-3-1-4-2M15 8c1-1 3-1 4-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6911,7 +6911,7 @@ export const Beach: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MountainRange: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mountain-2");
+  const icon = { id: "mountain-2", name: "Mountain Range", category: "Travel", tags: ["hiking", "trek"], body: `<path d="M3 20l5-9 4 5 3-4 6 8z"/><circle cx="17" cy="5" r="2"/><path d="M3 20h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6924,7 +6924,7 @@ export const MountainRange: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TravelCamera: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "camera-travel");
+  const icon = { id: "camera-travel", name: "Travel Camera", category: "Travel", tags: ["photo", "capture"], body: `<rect x="3" y="6" width="18" height="14" rx="2"/><path d="M8 6l2-3h4l2 3"/><circle cx="12" cy="13" r="4"/><circle cx="18" cy="9" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6937,7 +6937,7 @@ export const TravelCamera: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Binoculars: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "binoculars");
+  const icon = { id: "binoculars", name: "Binoculars", category: "Travel", tags: ["view", "observe"], body: `<path d="M5 4h4v16H5zM15 4h4v16h-4zM9 8h6M9 14h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6950,7 +6950,7 @@ export const Binoculars: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CampingTent: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "camping");
+  const icon = { id: "camping", name: "Camping Tent", category: "Travel", tags: ["outdoor", "camp"], body: `<path d="M3 21l9-18 9 18z"/><path d="M12 3v18M3 21h18M9 21l3-5 3 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6963,7 +6963,7 @@ export const CampingTent: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TravelSunglasses: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sunglasses-travel");
+  const icon = { id: "sunglasses-travel", name: "Travel Sunglasses", category: "Travel", tags: ["vacation", "beach"], body: `<rect x="3" y="8" width="7" height="5" rx="1"/><rect x="14" y="8" width="7" height="5" rx="1"/><path d="M10 10h4M3 10H1M23 10h-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6976,7 +6976,7 @@ export const TravelSunglasses: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hammer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hammer");
+  const icon = { id: "hammer", name: "Hammer", category: "Tools", tags: ["tool", "build"], body: `<path d="M14 4l6 6-3 3-6-6z"/><path d="M11 7L3 15v6h6l8-8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -6989,7 +6989,7 @@ export const Hammer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Screwdriver: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "screwdriver");
+  const icon = { id: "screwdriver", name: "Screwdriver", category: "Tools", tags: ["tool", "fix"], body: `<path d="M5 19l3 3 9-9-3-3z"/><path d="M14 7l3 3 5-5-3-3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7002,7 +7002,7 @@ export const Screwdriver: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wrench: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wrench");
+  const icon = { id: "wrench", name: "Wrench", category: "Tools", tags: ["tool", "repair"], body: `<path d="M14 7a4 4 0 1 1 4 4l-9 9-4 1 1-4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7015,7 +7015,7 @@ export const Wrench: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Saw: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "saw");
+  const icon = { id: "saw", name: "Saw", category: "Tools", tags: ["cut", "tool"], body: `<path d="M3 17l14-14 4 4-14 14z"/><path d="M3 17l-1 4 4-1M5 13l2 2M9 9l2 2M13 5l2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7028,7 +7028,7 @@ export const Saw: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drill: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drill");
+  const icon = { id: "drill", name: "Drill", category: "Tools", tags: ["tool", "power"], body: `<path d="M3 7h11l3-3v6l-3-3M14 7v6a3 3 0 0 1-3 3H8M3 7v4a3 3 0 0 0 3 3M14 13h8M22 10v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7041,7 +7041,7 @@ export const Drill: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Axe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "axe");
+  const icon = { id: "axe", name: "Axe", category: "Tools", tags: ["chop", "tool"], body: `<path d="M3 21l9-9M12 12l5-5M5 4c2 4 6 6 10 6l2-2c-4-6-12-4-12-4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7054,7 +7054,7 @@ export const Axe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pickaxe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pickaxe");
+  const icon = { id: "pickaxe", name: "Pickaxe", category: "Tools", tags: ["mine", "dig"], body: `<path d="M3 21l9-9M5 4c2 4 6 4 9 0M14 4c-2 4-2 8 0 12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7067,7 +7067,7 @@ export const Pickaxe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pliers: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pliers");
+  const icon = { id: "pliers", name: "Pliers", category: "Tools", tags: ["grip", "tool"], body: `<path d="M5 3l3 4 4 2 4-2 3-4M8 7l3 5-1 9-2-3v-4l-3-4M16 7l-3 5 1 9 2-3v-4l3-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7080,7 +7080,7 @@ export const Pliers: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LevelTool: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "level");
+  const icon = { id: "level", name: "Level Tool", category: "Tools", tags: ["measure", "straight"], body: `<rect x="2" y="9" width="20" height="6" rx="1"/><circle cx="6" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="18" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M9 12h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7093,7 +7093,7 @@ export const LevelTool: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TapeMeasure: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tape-measure");
+  const icon = { id: "tape-measure", name: "Tape Measure", category: "Tools", tags: ["measure", "ruler"], body: `<circle cx="9" cy="12" r="6"/><circle cx="9" cy="12" r="2"/><path d="M15 12h6v6h-6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7106,7 +7106,7 @@ export const TapeMeasure: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bolt: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bolt");
+  const icon = { id: "bolt", name: "Bolt", category: "Tools", tags: ["screw", "metal"], body: `<path d="M12 2l-4 4h3l-2 4h3l-2 4h3l-2 4h3l-1 4h4V2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7119,7 +7119,7 @@ export const Bolt: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Nut: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "nut");
+  const icon = { id: "nut", name: "Nut", category: "Tools", tags: ["hardware", "bolt"], body: `<path d="M12 3l9 5v8l-9 5-9-5V8z"/><circle cx="12" cy="12" r="3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7132,7 +7132,7 @@ export const Nut: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MathPlus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-plus");
+  const icon = { id: "math-plus", name: "Math Plus", category: "Math", tags: ["add", "sum"], body: `<path d="M12 4v16M4 12h16"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7145,7 +7145,7 @@ export const MathPlus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MathMinus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-minus");
+  const icon = { id: "math-minus", name: "Math Minus", category: "Math", tags: ["subtract"], body: `<path d="M4 12h16"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7158,7 +7158,7 @@ export const MathMinus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MathMultiply: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-multiply");
+  const icon = { id: "math-multiply", name: "Math Multiply", category: "Math", tags: ["times", "x"], body: `<path d="M5 5l14 14M19 5L5 19"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7171,7 +7171,7 @@ export const MathMultiply: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MathDivide: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-divide");
+  const icon = { id: "math-divide", name: "Math Divide", category: "Math", tags: ["fraction"], body: `<path d="M4 12h16"/><circle cx="12" cy="6" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="18" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7184,7 +7184,7 @@ export const MathDivide: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MathEquals: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-equals");
+  const icon = { id: "math-equals", name: "Math Equals", category: "Math", tags: ["equal"], body: `<path d="M4 9h16M4 15h16"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7197,7 +7197,7 @@ export const MathEquals: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MathPercent: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-percent");
+  const icon = { id: "math-percent", name: "Math Percent", category: "Math", tags: ["ratio"], body: `<path d="M19 5L5 19"/><circle cx="7" cy="7" r="2"/><circle cx="17" cy="17" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7210,7 +7210,7 @@ export const MathPercent: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MathPi: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-pi");
+  const icon = { id: "math-pi", name: "Math Pi", category: "Math", tags: ["constant", "3.14"], body: `<path d="M3 6h18M5 6v3M19 6v3M9 9c0 5 0 9-2 11M15 9c0 5 0 9 2 11"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7223,7 +7223,7 @@ export const MathPi: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Infinity: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-infinity");
+  const icon = { id: "math-infinity", name: "Infinity", category: "Math", tags: ["endless", "loop"], body: `<path d="M3 12c0-3 3-5 5-5s4 2 4 5-2 5-4 5-5-2-5-5M12 12c0-3 3-5 5-5s4 2 4 5-2 5-4 5-5-2-5-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7236,7 +7236,7 @@ export const Infinity: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SquareRoot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-square-root");
+  const icon = { id: "math-square-root", name: "Square Root", category: "Math", tags: ["root", "sqrt"], body: `<path d="M3 12l3 0 2 5 4-12 8 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7249,7 +7249,7 @@ export const SquareRoot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SigmaSum: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-sigma");
+  const icon = { id: "math-sigma", name: "Sigma Sum", category: "Math", tags: ["sum", "greek"], body: `<path d="M4 4h16l-8 8 8 8H4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7262,7 +7262,7 @@ export const SigmaSum: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Beaker: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "beaker");
+  const icon = { id: "beaker", name: "Beaker", category: "Chemistry", tags: ["lab", "experiment"], body: `<path d="M7 3v6l-3 11a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-3-11V3M7 3h10M9 13h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7275,7 +7275,7 @@ export const Beaker: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Molecule: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "molecule");
+  const icon = { id: "molecule", name: "Molecule", category: "Chemistry", tags: ["atoms", "bond"], body: `<circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7.5 7.5l3 8M16.5 7.5l-3 8M8 6h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7288,7 +7288,7 @@ export const Molecule: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RoundFlask: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flask-2");
+  const icon = { id: "flask-2", name: "Round Flask", category: "Chemistry", tags: ["lab", "round"], body: `<path d="M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3M8 3h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7301,7 +7301,7 @@ export const RoundFlask: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TestTubeRack: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "test-tube-2");
+  const icon = { id: "test-tube-2", name: "Test Tube Rack", category: "Chemistry", tags: ["lab", "rack"], body: `<path d="M3 21h18M5 21V8M9 21V8M15 21V8M19 21V8M5 8h14M5 14h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7314,7 +7314,7 @@ export const TestTubeRack: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BunsenBurner: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fire-chem");
+  const icon = { id: "fire-chem", name: "Bunsen Burner", category: "Chemistry", tags: ["flame", "lab"], body: `<path d="M10 3c0 3 4 4 4 8a4 4 0 0 1-8 0c0-3 4-5 4-8z"/><path d="M8 15v6M16 15v6M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7327,7 +7327,7 @@ export const BunsenBurner: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Microscope2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "microscope-2");
+  const icon = { id: "microscope-2", name: "Microscope 2", category: "Chemistry", tags: ["science", "view"], body: `<path d="M5 21h14M9 21v-4l3-3M14 14l3-9-3 3-3 9M11 8l3-3M7 16h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7340,7 +7340,7 @@ export const Microscope2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PetriDish: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "petri");
+  const icon = { id: "petri", name: "Petri Dish", category: "Chemistry", tags: ["biology", "culture"], body: `<circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.2" fill="currentColor" stroke="none"/><circle cx="14" cy="11" r="1.2" fill="currentColor" stroke="none"/><circle cx="11" cy="15" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7353,7 +7353,7 @@ export const PetriDish: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LabSyringe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "syringe-2");
+  const icon = { id: "syringe-2", name: "Lab Syringe", category: "Chemistry", tags: ["inject", "lab"], body: `<path d="M14 4l6 6M17 7l-9 9-3 1 1-3 9-9M5 19l2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7366,7 +7366,7 @@ export const LabSyringe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Saturn: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "saturn");
+  const icon = { id: "saturn", name: "Saturn", category: "Astronomy", tags: ["planet", "ring"], body: `<circle cx="12" cy="12" r="5"/><ellipse cx="12" cy="12" rx="10" ry="3" transform="rotate(-20 12 12)"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7379,7 +7379,7 @@ export const Saturn: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Planet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "planet");
+  const icon = { id: "planet", name: "Planet", category: "Astronomy", tags: ["space", "orbit"], body: `<circle cx="12" cy="12" r="5"/><ellipse cx="12" cy="12" rx="10" ry="3" transform="rotate(-15 12 12)"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7392,7 +7392,7 @@ export const Planet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MoonPhases: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "moon-2");
+  const icon = { id: "moon-2", name: "Moon Phases", category: "Astronomy", tags: ["lunar", "phases"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18 5 5 0 0 1 0-18z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7405,7 +7405,7 @@ export const MoonPhases: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RocketLaunch: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rocket-launch");
+  const icon = { id: "rocket-launch", name: "Rocket Launch", category: "Astronomy", tags: ["space", "shuttle"], body: `<path d="M5 19c2-7 5-13 12-15-2 7-8 10-15 12z"/><path d="M5 19l3 3M14 5a3 3 0 1 0-4 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7418,7 +7418,7 @@ export const RocketLaunch: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Satellite: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "satellite");
+  const icon = { id: "satellite", name: "Satellite", category: "Astronomy", tags: ["space", "orbit"], body: `<rect x="9" y="9" width="6" height="6" rx="1"/><path d="M5 7l4 2M19 7l-4 2M5 17l4-2M19 17l-4-2M9 12H3M21 12h-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7431,7 +7431,7 @@ export const Satellite: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const UFO: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ufo");
+  const icon = { id: "ufo", name: "UFO", category: "Astronomy", tags: ["alien", "saucer"], body: `<ellipse cx="12" cy="12" rx="9" ry="3"/><path d="M9 12a3 3 0 0 1 6 0M9 15l-1 4M15 15l1 4M7 12l-2 2M17 12l2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7444,7 +7444,7 @@ export const UFO: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Constellation: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "constellation");
+  const icon = { id: "constellation", name: "Constellation", category: "Astronomy", tags: ["stars", "pattern"], body: `<circle cx="5" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="8" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="6" r="1.5" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="1.5" fill="currentColor" stroke="none"/><circle cx="7" cy="18" r="1.5" fill="currentColor" stroke="none"/><path d="M5 5l7 3 7-2M12 8l4 8-9 0-2-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7457,7 +7457,7 @@ export const Constellation: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Meteor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "meteor");
+  const icon = { id: "meteor", name: "Meteor", category: "Astronomy", tags: ["shooting", "star"], body: `<path d="M3 21L15 9"/><circle cx="17" cy="7" r="3"/><path d="M9 9l-3 1M11 11l-3 1M13 13l-3 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7470,7 +7470,7 @@ export const Meteor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Telescope: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "telescope");
+  const icon = { id: "telescope", name: "Telescope", category: "Astronomy", tags: ["observe", "view"], body: `<path d="M3 14l9-3 5 4-9 3z"/><path d="M12 11l2-7M11 18l1 3M5 21h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7483,7 +7483,7 @@ export const Telescope: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Galaxy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "galaxy");
+  const icon = { id: "galaxy", name: "Galaxy", category: "Astronomy", tags: ["spiral", "space"], body: `<circle cx="12" cy="12" r="2"/><path d="M3 12c0-5 4-9 9-9M21 12c0 5-4 9-9 9M12 3c5 0 9 4 9 9M12 21c-5 0-9-4-9-9"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7496,7 +7496,7 @@ export const Galaxy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Banana: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "banana");
+  const icon = { id: "banana", name: "Banana", category: "Fruits", tags: ["fruit", "yellow"], body: `<path d="M5 18c0-7 5-13 14-13-1 9-7 14-14 13z"/><path d="M5 18l-1 3M19 5l1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7509,7 +7509,7 @@ export const Banana: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Strawberry: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "strawberry");
+  const icon = { id: "strawberry", name: "Strawberry", category: "Fruits", tags: ["fruit", "red"], body: `<path d="M12 6c-3-3-7-2-7 2 0 5 4 13 7 13s7-8 7-13c0-4-4-5-7-2z"/><path d="M9 6L7 3M15 6l2-3M12 5V2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7522,7 +7522,7 @@ export const Strawberry: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Watermelon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "watermelon");
+  const icon = { id: "watermelon", name: "Watermelon", category: "Fruits", tags: ["fruit", "summer"], body: `<path d="M3 12a9 9 0 0 0 18 0"/><path d="M3 12c0 2 3 4 9 4s9-2 9-4M7 12l1 1M11 12l1 1M15 12l1 1M9 14l1 1M13 14l1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7535,7 +7535,7 @@ export const Watermelon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Grape: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "grape");
+  const icon = { id: "grape", name: "Grape", category: "Fruits", tags: ["fruit", "wine"], body: `<circle cx="9" cy="9" r="2"/><circle cx="15" cy="9" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="9" cy="15" r="2"/><circle cx="15" cy="15" r="2"/><circle cx="12" cy="18" r="2"/><path d="M12 7V3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7548,7 +7548,7 @@ export const Grape: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lemon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lemon");
+  const icon = { id: "lemon", name: "Lemon", category: "Fruits", tags: ["fruit", "citrus"], body: `<path d="M8 4c-3 1-5 4-4 8s4 7 8 8 7-1 8-4-1-7-4-9-5-4-8-3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7561,7 +7561,7 @@ export const Lemon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Peach: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "peach");
+  const icon = { id: "peach", name: "Peach", category: "Fruits", tags: ["fruit", "sweet"], body: `<path d="M12 4c-4 0-7 3-7 7s3 9 7 9 7-5 7-9-3-7-7-7z"/><path d="M12 4c0-2 1-3 3-3M9 6c1 1 2 1 3 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7574,7 +7574,7 @@ export const Peach: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pear: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pear");
+  const icon = { id: "pear", name: "Pear", category: "Fruits", tags: ["fruit", "green"], body: `<path d="M12 3c-2 0-4 2-4 5 0 2 1 3 1 5-2 1-3 3-3 5 0 2 2 3 6 3s6-1 6-3c0-2-1-4-3-5 0-2 1-3 1-5 0-3-2-5-4-5z"/><path d="M12 3V1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7587,7 +7587,7 @@ export const Pear: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pineapple: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pineapple");
+  const icon = { id: "pineapple", name: "Pineapple", category: "Fruits", tags: ["fruit", "tropical"], body: `<rect x="7" y="10" width="10" height="11" rx="1"/><path d="M9 13l3 3 3-3M9 17l3 3 3-3M9 5l3-2 3 2M10 7l2-1 2 1M12 3v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7600,7 +7600,7 @@ export const Pineapple: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mango: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mango");
+  const icon = { id: "mango", name: "Mango", category: "Fruits", tags: ["fruit", "tropical"], body: `<path d="M5 14c0-5 4-9 9-9 3 0 5 2 5 5 0 5-4 9-9 9-3 0-5-2-5-5z"/><path d="M14 5c0-2 1-3 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7613,7 +7613,7 @@ export const Mango: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Coconut: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "coconut");
+  const icon = { id: "coconut", name: "Coconut", category: "Fruits", tags: ["fruit", "tropical"], body: `<circle cx="12" cy="13" r="7"/><circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="14" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="11" cy="15" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7626,7 +7626,7 @@ export const Coconut: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Carrot2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "carrot-2");
+  const icon = { id: "carrot-2", name: "Carrot 2", category: "Vegetables", tags: ["vegetable", "orange"], body: `<path d="M14 4l-9 9 5 5 9-9z"/><path d="M14 4l-3 3M16 5l-2 4M18 6l-3 2M9 13l1 1M11 15l1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7639,7 +7639,7 @@ export const Carrot2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tomato: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tomato");
+  const icon = { id: "tomato", name: "Tomato", category: "Vegetables", tags: ["vegetable", "red"], body: `<circle cx="12" cy="14" r="7"/><path d="M12 7c0-2-1-3-3-3M12 7c0-2 1-3 3-3M9 7l3-2 3 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7652,7 +7652,7 @@ export const Tomato: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Potato: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "potato");
+  const icon = { id: "potato", name: "Potato", category: "Vegetables", tags: ["vegetable", "root"], body: `<ellipse cx="12" cy="12" rx="8" ry="5"/><circle cx="9" cy="11" r="0.8" fill="currentColor" stroke="none"/><circle cx="14" cy="13" r="0.8" fill="currentColor" stroke="none"/><circle cx="11" cy="14" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7665,7 +7665,7 @@ export const Potato: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Onion: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "onion");
+  const icon = { id: "onion", name: "Onion", category: "Vegetables", tags: ["vegetable", "bulb"], body: `<path d="M12 4c-4 0-7 4-7 9s3 7 7 7 7-3 7-7-3-9-7-9z"/><path d="M9 8c2 2 2 6 0 8M15 8c-2 2-2 6 0 8M12 4V1M9 2l3 1 3-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7678,7 +7678,7 @@ export const Onion: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Garlic: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "garlic");
+  const icon = { id: "garlic", name: "Garlic", category: "Vegetables", tags: ["vegetable", "bulb"], body: `<path d="M12 4c-3 1-5 3-5 6 0 4 3 9 5 9s5-5 5-9c0-3-2-5-5-6z"/><path d="M12 4V2M10 4l-1-2M14 4l1-2M9 8c1 2 1 5 0 8M15 8c-1 2-1 5 0 8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7691,7 +7691,7 @@ export const Garlic: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BellPepper: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pepper");
+  const icon = { id: "pepper", name: "Bell Pepper", category: "Vegetables", tags: ["vegetable", "capsicum"], body: `<path d="M9 4c-3 0-5 2-5 5 0 5 4 10 8 10s8-5 8-10c0-3-2-5-5-5-2 0-3 1-3 3 0-2-1-3-3-3z"/><path d="M12 4V1M9 3l3 1 3-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7704,7 +7704,7 @@ export const BellPepper: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChiliPepper: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chili");
+  const icon = { id: "chili", name: "Chili Pepper", category: "Vegetables", tags: ["spicy", "hot"], body: `<path d="M5 14c0-3 3-6 7-6 4 0 7 3 7 6 0 2-2 4-4 4-3 0-5-2-5-4 0-2-2-2-3-2l-2 0z"/><path d="M19 8c-2-1-4 0-5 2M21 5l-3 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7717,7 +7717,7 @@ export const ChiliPepper: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Corn: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "corn");
+  const icon = { id: "corn", name: "Corn", category: "Vegetables", tags: ["vegetable", "maize"], body: `<path d="M9 4c0 5 0 14 3 16 3-2 3-11 3-16z"/><path d="M9 8h6M9 12h6M9 16h6M12 4V2M10 4l1-2M14 4l-1-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7730,7 +7730,7 @@ export const Corn: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Broccoli: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "broccoli");
+  const icon = { id: "broccoli", name: "Broccoli", category: "Vegetables", tags: ["vegetable", "green"], body: `<circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="6" r="3"/><path d="M9 11v8M15 11v8M9 19h6M12 9v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7743,7 +7743,7 @@ export const Broccoli: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mushroom: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mushroom");
+  const icon = { id: "mushroom", name: "Mushroom", category: "Vegetables", tags: ["fungus", "food"], body: `<path d="M4 11a8 8 0 0 1 16 0H4z"/><path d="M9 11v6a3 3 0 0 0 6 0v-6"/><circle cx="9" cy="8" r="1" fill="currentColor" stroke="none"/><circle cx="14" cy="9" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7756,7 +7756,7 @@ export const Mushroom: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CoffeeCup: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "coffee-2");
+  const icon = { id: "coffee-2", name: "Coffee Cup", category: "Drinks", tags: ["drink", "morning"], body: `<path d="M5 8h12v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M17 10h2a2 2 0 0 1 0 4h-2M7 3v2M10 3v2M13 3v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7769,7 +7769,7 @@ export const CoffeeCup: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TeaCup: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tea");
+  const icon = { id: "tea", name: "Tea Cup", category: "Drinks", tags: ["drink", "tea"], body: `<path d="M5 9h12v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M17 11h3a2 2 0 0 1 0 4h-3M10 3c0 2-1 2-1 4M13 3c0 2-1 2-1 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7782,7 +7782,7 @@ export const TeaCup: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const JuiceGlass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "juice");
+  const icon = { id: "juice", name: "Juice Glass", category: "Drinks", tags: ["drink", "fresh"], body: `<path d="M5 4h14l-2 16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5 9h14M9 14h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7795,7 +7795,7 @@ export const JuiceGlass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Smoothie: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smoothie");
+  const icon = { id: "smoothie", name: "Smoothie", category: "Drinks", tags: ["drink", "fruit"], body: `<path d="M5 4h14l-2 16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><circle cx="10" cy="11" r="1.5" fill="currentColor" stroke="none"/><circle cx="14" cy="13" r="1.5" fill="currentColor" stroke="none"/><path d="M12 4V1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7808,7 +7808,7 @@ export const Smoothie: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cocktail: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cocktail");
+  const icon = { id: "cocktail", name: "Cocktail", category: "Drinks", tags: ["drink", "party"], body: `<path d="M3 4h18l-9 9z"/><path d="M12 13v7M8 21h8M9 4l1 3M15 4l-1 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7821,7 +7821,7 @@ export const Cocktail: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BeerMug: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "beer");
+  const icon = { id: "beer", name: "Beer Mug", category: "Drinks", tags: ["drink", "alcohol"], body: `<path d="M5 4h12v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M17 8h3a2 2 0 0 1 0 4h-3M7 8v10M11 8v10M9 4c0-1 1-2 2-2M13 4c0-1-1-2-2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7834,7 +7834,7 @@ export const BeerMug: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WaterGlass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "water-glass");
+  const icon = { id: "water-glass", name: "Water Glass", category: "Drinks", tags: ["drink", "water"], body: `<path d="M5 4h14l-2 16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M5.5 12h13"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7847,7 +7847,7 @@ export const WaterGlass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MilkCarton: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "milk");
+  const icon = { id: "milk", name: "Milk Carton", category: "Drinks", tags: ["drink", "dairy"], body: `<path d="M6 8l-1 12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1L18 8M6 8l3-4h6l3 4M9 4l3 2 3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7860,7 +7860,7 @@ export const MilkCarton: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChristmasTree: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "christmas-tree");
+  const icon = { id: "christmas-tree", name: "Christmas Tree", category: "Seasonal", tags: ["holiday", "christmas"], body: `<path d="M12 2l5 7h-3l4 5h-3l4 5H5l4-5H6l4-5H7z"/><path d="M12 19v3M9 22h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7873,7 +7873,7 @@ export const ChristmasTree: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pumpkin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pumpkin");
+  const icon = { id: "pumpkin", name: "Pumpkin", category: "Seasonal", tags: ["halloween", "autumn"], body: `<ellipse cx="12" cy="13" rx="9" ry="7"/><path d="M9 6V3M9 6c-2 0-3 2-3 7s1 7 3 7M15 6c2 0 3 2 3 7s-1 7-3 7M12 6v14M9 6c0-1 1-3 3-3s3 2 3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7886,7 +7886,7 @@ export const Pumpkin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EasterEgg: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "easter-egg");
+  const icon = { id: "easter-egg", name: "Easter Egg", category: "Seasonal", tags: ["easter", "egg"], body: `<path d="M12 3c-4 0-7 5-7 11 0 4 3 7 7 7s7-3 7-7c0-6-3-11-7-11z"/><path d="M5 12c4 0 4-2 7-2s3 2 7 2M6 17c3 0 3-2 6-2s3 2 6 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7899,7 +7899,7 @@ export const EasterEgg: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Snowman: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "snowman");
+  const icon = { id: "snowman", name: "Snowman", category: "Seasonal", tags: ["winter", "snow"], body: `<circle cx="12" cy="17" r="5"/><circle cx="12" cy="9" r="3"/><path d="M9 21h6M10 9h0.1M14 9h0M11 17h0.1M13 17h0M9 6L7 4M15 6l2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7912,7 +7912,7 @@ export const Snowman: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Firework: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "firework");
+  const icon = { id: "firework", name: "Firework", category: "Seasonal", tags: ["celebration", "new year"], body: `<path d="M12 12V3M12 12l5-5M12 12l5 5M12 12l-5 5M12 12l-5-5M12 12l8 0M12 12l-8 0"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7925,7 +7925,7 @@ export const Firework: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GiftBox: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gift-2");
+  const icon = { id: "gift-2", name: "Gift Box", category: "Seasonal", tags: ["present", "wrap"], body: `<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13M12 8C9 8 6 6 9 4c2-1 3 2 3 4 0-2 1-5 3-4 3 2 0 4-3 4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7938,7 +7938,7 @@ export const GiftBox: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CandyCane: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "candy-cane");
+  const icon = { id: "candy-cane", name: "Candy Cane", category: "Seasonal", tags: ["christmas", "sweet"], body: `<path d="M5 21V11a5 5 0 0 1 10 0M15 11v10M5 17h4M11 17h4M7 13h2M13 13h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7951,7 +7951,7 @@ export const CandyCane: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bat");
+  const icon = { id: "bat", name: "Bat", category: "Seasonal", tags: ["halloween", "animal"], body: `<path d="M12 8v8M12 8C8 4 4 4 2 8c2 1 4 1 6 4M12 8c4-4 8-4 10 0-2 1-4 1-6 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7964,7 +7964,7 @@ export const Bat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SantaHat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "santa-hat");
+  const icon = { id: "santa-hat", name: "Santa Hat", category: "Seasonal", tags: ["christmas", "santa"], body: `<path d="M3 18l12-12 6 4-12 12z"/><path d="M3 18h6M15 6l1-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7977,7 +7977,7 @@ export const SantaHat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ValentineHeart: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "heart-valentine");
+  const icon = { id: "heart-valentine", name: "Valentine Heart", category: "Seasonal", tags: ["love", "valentine"], body: `<path d="M12 21C5 16 3 12 3 8a4 4 0 0 1 7-2.5A4 4 0 0 1 21 8c0 4-2 8-9 13z"/><path d="M9 11l3 3 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -7990,7 +7990,7 @@ export const ValentineHeart: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lightning: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lightning");
+  const icon = { id: "lightning", name: "Lightning", category: "Weather3", tags: ["strike", "bolt"], body: `<path d="M13 3L4 14h7l-1 7 9-11h-7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8003,7 +8003,7 @@ export const Lightning: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LightRain: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rain-light");
+  const icon = { id: "rain-light", name: "Light Rain", category: "Weather3", tags: ["drizzle", "shower"], body: `<path d="M7 14a5 5 0 0 1-1-9.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><path d="M9 18l-1 3M13 18l-1 3M17 18l-1 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8016,7 +8016,7 @@ export const LightRain: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SnowFlurry: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "snow-flurry");
+  const icon = { id: "snow-flurry", name: "Snow Flurry", category: "Weather3", tags: ["snow", "winter"], body: `<path d="M7 14a5 5 0 0 1-1-9.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><path d="M9 18v3M13 18v3M17 18v3M8 20h2M12 20h2M16 20h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8029,7 +8029,7 @@ export const SnowFlurry: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SunCloud: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sun-cloud");
+  const icon = { id: "sun-cloud", name: "Sun Cloud", category: "Weather3", tags: ["partly", "cloudy"], body: `<circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3 3l1.5 1.5M11.5 3L13 4.5"/><path d="M11 18a4 4 0 0 1-1-7.9 5 5 0 0 1 9 1 3 3 0 0 1 1 6.9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8042,7 +8042,7 @@ export const SunCloud: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MoonStars: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "moon-stars");
+  const icon = { id: "moon-stars", name: "Moon Stars", category: "Weather3", tags: ["night", "stars"], body: `<path d="M21 13A9 9 0 0 1 11 3a7 7 0 1 0 10 10z"/><path d="M18 4l1 2 2 1-2 1-1 2-1-2-2-1 2-1zM5 5l0.5 1L7 6.5 6 7l-0.5 1L5 7l-1-0.5L5 6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8055,7 +8055,7 @@ export const MoonStars: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Windy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "windy");
+  const icon = { id: "windy", name: "Windy", category: "Weather3", tags: ["breeze", "air"], body: `<path d="M3 8h12a3 3 0 1 0-3-3M3 16h16a3 3 0 1 1-3 3M3 12h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8068,7 +8068,7 @@ export const Windy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hail: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hail");
+  const icon = { id: "hail", name: "Hail", category: "Weather3", tags: ["ice", "storm"], body: `<path d="M7 14a5 5 0 0 1-1-9.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><circle cx="9" cy="19" r="1.5"/><circle cx="14" cy="20" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8081,7 +8081,7 @@ export const Hail: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RainbowArc: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rainbow-arc");
+  const icon = { id: "rainbow-arc", name: "Rainbow Arc", category: "Weather3", tags: ["color", "arc"], body: `<path d="M3 18a9 9 0 0 1 18 0"/><path d="M6 18a6 6 0 0 1 12 0"/><path d="M9 18a3 3 0 0 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8094,7 +8094,7 @@ export const RainbowArc: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TrebleClef: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "treble-clef");
+  const icon = { id: "treble-clef", name: "Treble Clef", category: "MusicSymbols", tags: ["clef", "music"], body: `<path d="M11 21a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM11 13c0-5 5-5 5-9 0-2-2-3-4-3-2 0-3 1-3 3 0 1 0 2 1 3l1 11"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8107,7 +8107,7 @@ export const TrebleClef: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BassClef: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bass-clef");
+  const icon = { id: "bass-clef", name: "Bass Clef", category: "MusicSymbols", tags: ["clef", "bass"], body: `<path d="M9 4a3 3 0 1 0 3 5c0-3-3-4-3-5zM12 9c2 2 2 8-1 10-2 1-4 0-5-2"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/><circle cx="17" cy="11" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8120,7 +8120,7 @@ export const BassClef: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sharp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sharp");
+  const icon = { id: "sharp", name: "Sharp", category: "MusicSymbols", tags: ["sharp", "note"], body: `<path d="M9 4v16M15 4v16M6 8l12-2M6 14l12-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8133,7 +8133,7 @@ export const Sharp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Flat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flat");
+  const icon = { id: "flat", name: "Flat", category: "MusicSymbols", tags: ["flat", "note"], body: `<path d="M10 4v14a3 3 0 1 0 2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8146,7 +8146,7 @@ export const Flat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Natural: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "natural");
+  const icon = { id: "natural", name: "Natural", category: "MusicSymbols", tags: ["natural", "note"], body: `<path d="M9 4v16M15 4v16M9 8l6 2M9 14l6 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8159,7 +8159,7 @@ export const Natural: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EighthNote: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eighth-note");
+  const icon = { id: "eighth-note", name: "Eighth Note", category: "MusicSymbols", tags: ["quaver", "music"], body: `<circle cx="6" cy="18" r="2.5"/><path d="M8.5 18V4l9-1v3l-9 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8172,7 +8172,7 @@ export const EighthNote: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BeamedNotes: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "beamed-notes");
+  const icon = { id: "beamed-notes", name: "Beamed Notes", category: "MusicSymbols", tags: ["connected", "music"], body: `<circle cx="6" cy="18" r="2.5"/><circle cx="16" cy="18" r="2.5"/><path d="M8.5 18V6h11v12M8.5 9h11"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8185,7 +8185,7 @@ export const BeamedNotes: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RestSymbol: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rest");
+  const icon = { id: "rest", name: "Rest Symbol", category: "MusicSymbols", tags: ["silence", "rest"], body: `<path d="M5 6c2 0 4 2 5 4 1-2 3-4 5-4-2 2-3 4-3 6 0 3 2 5 4 6-3 0-5-2-6-4-1 2-3 4-6 4 2-1 4-3 4-6 0-2-1-4-3-6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8198,7 +8198,7 @@ export const RestSymbol: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CPUChip: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cpu");
+  const icon = { id: "cpu", name: "CPU Chip", category: "ComputerParts", tags: ["processor", "chip"], body: `<rect x="6" y="6" width="12" height="12" rx="1"/><rect x="9" y="9" width="6" height="6"/><path d="M9 3v3M12 3v3M15 3v3M9 18v3M12 18v3M15 18v3M3 9h3M3 12h3M3 15h3M18 9h3M18 12h3M18 15h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8211,7 +8211,7 @@ export const CPUChip: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RAMModule: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ram");
+  const icon = { id: "ram", name: "RAM Module", category: "ComputerParts", tags: ["memory", "ram"], body: `<rect x="2" y="8" width="20" height="8" rx="1"/><path d="M5 12v2M8 12v2M11 12v2M14 12v2M17 12v2M2 16v2M22 16v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8224,7 +8224,7 @@ export const RAMModule: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GPUCard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gpu");
+  const icon = { id: "gpu", name: "GPU Card", category: "ComputerParts", tags: ["graphics", "card"], body: `<rect x="2" y="6" width="20" height="12" rx="1"/><circle cx="8" cy="12" r="2.5"/><circle cx="15" cy="12" r="2.5"/><path d="M2 18v3M22 18v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8237,7 +8237,7 @@ export const GPUCard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Motherboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "motherboard");
+  const icon = { id: "motherboard", name: "Motherboard", category: "ComputerParts", tags: ["board", "circuit"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><rect x="6" y="6" width="4" height="4"/><rect x="14" y="6" width="4" height="4"/><rect x="6" y="14" width="4" height="4"/><rect x="14" y="14" width="4" height="4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8250,7 +8250,7 @@ export const Motherboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SSDDrive: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ssd");
+  const icon = { id: "ssd", name: "SSD Drive", category: "ComputerParts", tags: ["storage", "drive"], body: `<rect x="3" y="5" width="18" height="14" rx="1"/><path d="M6 9h2M10 9h2M14 9h2M6 13h2M10 13h2M14 13h2M6 17h12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8263,7 +8263,7 @@ export const SSDDrive: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CoolingFan: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fan");
+  const icon = { id: "fan", name: "Cooling Fan", category: "ComputerParts", tags: ["cool", "fan"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 10c0-3-1-5-3-6-1 2 0 4 1 5M14 12c3 0 5-1 6-3-2-1-4 0-5 1M12 14c0 3 1 5 3 6 1-2 0-4-1-5M10 12c-3 0-5 1-6 3 2 1 4 0 5-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8276,7 +8276,7 @@ export const CoolingFan: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Battery: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "battery");
+  const icon = { id: "battery", name: "Battery", category: "ComputerParts", tags: ["power", "charge"], body: `<rect x="2" y="7" width="18" height="10" rx="1"/><path d="M22 11v2"/><rect x="4" y="9" width="6" height="6" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8289,7 +8289,7 @@ export const Battery: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Webcam: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "webcam");
+  const icon = { id: "webcam", name: "Webcam", category: "ComputerParts", tags: ["camera", "web"], body: `<circle cx="12" cy="11" r="6"/><circle cx="12" cy="11" r="2.5"/><path d="M9 17l-2 4M15 17l2 4M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8302,7 +8302,7 @@ export const Webcam: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Router: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "router");
+  const icon = { id: "router", name: "Router", category: "ComputerParts", tags: ["network", "wifi"], body: `<rect x="3" y="12" width="18" height="7" rx="1"/><circle cx="7" cy="15.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="10" cy="15.5" r="0.8" fill="currentColor" stroke="none"/><path d="M8 12V8M8 8a4 4 0 0 1 8 0M16 8v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8315,7 +8315,7 @@ export const Router: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EthernetCable: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ethernet");
+  const icon = { id: "ethernet", name: "Ethernet Cable", category: "ComputerParts", tags: ["network", "cable"], body: `<path d="M8 21V11l4-4 4 4v10M8 21h8M9 11h6M10 13h4M10 15h4M10 17h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8328,7 +8328,7 @@ export const EthernetCable: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartBulb: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-bulb");
+  const icon = { id: "smart-bulb", name: "Smart Bulb", category: "SmartHome", tags: ["iot", "light"], body: `<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10c1 1 1 2 1 3h6c0-1 0-2 1-3a6 6 0 0 0-4-10z"/><path d="M12 6v5M9 8l1 1M15 8l-1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8341,7 +8341,7 @@ export const SmartBulb: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartPlug: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-plug");
+  const icon = { id: "smart-plug", name: "Smart Plug", category: "SmartHome", tags: ["iot", "plug"], body: `<rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="9" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/><path d="M7 13h2M11 13h2M15 13h2M7 17h2M11 17h2M15 17h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8354,7 +8354,7 @@ export const SmartPlug: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartLock: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-lock");
+  const icon = { id: "smart-lock", name: "Smart Lock", category: "SmartHome", tags: ["iot", "secure"], body: `<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="2" fill="currentColor" stroke="none"/><path d="M12 18v1M9 7l1-1M15 7l1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8367,7 +8367,7 @@ export const SmartLock: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartThermostat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-thermostat");
+  const icon = { id: "smart-thermostat", name: "Smart Thermostat", category: "SmartHome", tags: ["iot", "temperature"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 7v8M9 14l3 3 3-3M9 6h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8380,7 +8380,7 @@ export const SmartThermostat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartSpeaker: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-speaker");
+  const icon = { id: "smart-speaker", name: "Smart Speaker", category: "SmartHome", tags: ["iot", "audio"], body: `<rect x="7" y="3" width="10" height="18" rx="3"/><circle cx="12" cy="9" r="1.5"/><path d="M9 16h6M10 19h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8393,7 +8393,7 @@ export const SmartSpeaker: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartDoorbell: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-doorbell");
+  const icon = { id: "smart-doorbell", name: "Smart Doorbell", category: "SmartHome", tags: ["iot", "bell"], body: `<path d="M6 9a6 6 0 0 1 12 0v6l2 3H4l2-3z"/><circle cx="12" cy="12" r="2"/><path d="M10 21a2 2 0 0 0 4 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8406,7 +8406,7 @@ export const SmartDoorbell: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartBlinds: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-blinds");
+  const icon = { id: "smart-blinds", name: "Smart Blinds", category: "SmartHome", tags: ["iot", "window"], body: `<rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 7h18M3 10h18M3 13h18M3 16h18M3 19h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8419,7 +8419,7 @@ export const SmartBlinds: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartCamera: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-camera");
+  const icon = { id: "smart-camera", name: "Smart Camera", category: "SmartHome", tags: ["iot", "security"], body: `<rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M9 6l1-2h4l1 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8432,7 +8432,7 @@ export const SmartCamera: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartVacuum: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-vacuum");
+  const icon = { id: "smart-vacuum", name: "Smart Vacuum", category: "SmartHome", tags: ["iot", "robot"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><path d="M3 12h2M19 12h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8445,7 +8445,7 @@ export const SmartVacuum: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartACUnit: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-ac");
+  const icon = { id: "smart-ac", name: "Smart AC Unit", category: "SmartHome", tags: ["iot", "cool"], body: `<rect x="2" y="5" width="20" height="10" rx="2"/><path d="M5 15c0 2 1 4 3 4M9 15c0 2 1 4 3 4M13 15c0 2 1 4 3 4M17 15c0 2 1 4 3 4M5 9h14M5 11h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8458,7 +8458,7 @@ export const SmartACUnit: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bitcoin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bitcoin");
+  const icon = { id: "bitcoin", name: "Bitcoin", category: "Crypto", tags: ["btc", "crypto"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 8h5a2 2 0 0 1 0 4H9zM9 12h6a2 2 0 0 1 0 4H9zM10 6v12M13 6v12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8471,7 +8471,7 @@ export const Bitcoin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ethereum: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ethereum");
+  const icon = { id: "ethereum", name: "Ethereum", category: "Crypto", tags: ["eth", "crypto"], body: `<path d="M12 3l6 10-6 4-6-4z"/><path d="M6 14l6 4 6-4M12 3v9M6 13l6-1 6 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8484,7 +8484,7 @@ export const Ethereum: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Litecoin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "litecoin");
+  const icon = { id: "litecoin", name: "Litecoin", category: "Crypto", tags: ["ltc", "crypto"], body: `<circle cx="12" cy="12" r="9"/><path d="M13 5l-3 7h4l-3 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8497,7 +8497,7 @@ export const Litecoin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dogecoin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dogecoin");
+  const icon = { id: "dogecoin", name: "Dogecoin", category: "Crypto", tags: ["doge", "crypto"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 9h5a4 4 0 0 1 0 8H9zM10 7v12M10 9h3M10 14h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8510,7 +8510,7 @@ export const Dogecoin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cardano: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cardano");
+  const icon = { id: "cardano", name: "Cardano", category: "Crypto", tags: ["ada", "crypto"], body: `<circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="7" cy="7" r="1.2" fill="currentColor" stroke="none"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r="1.2" fill="currentColor" stroke="none"/><circle cx="17" cy="17" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8523,7 +8523,7 @@ export const Cardano: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Solana: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "solana");
+  const icon = { id: "solana", name: "Solana", category: "Crypto", tags: ["sol", "crypto"], body: `<path d="M5 8l11-2 3 2-11 2zM5 12l11-2 3 2-11 2zM5 16l11-2 3 2-11 2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8536,7 +8536,7 @@ export const Solana: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Polygon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "polygon");
+  const icon = { id: "polygon", name: "Polygon", category: "Crypto", tags: ["matic", "crypto"], body: `<path d="M7 7l5-3 5 3v10l-5 3-5-3z"/><path d="M7 7l5 3 5-3M12 10v10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8549,7 +8549,7 @@ export const Polygon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Binance: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "binance");
+  const icon = { id: "binance", name: "Binance", category: "Crypto", tags: ["bnb", "crypto"], body: `<path d="M12 3l3 3-3 3-3-3zM9 6l3 3-3 3-3-3zM15 6l3 3-3 3-3-3zM12 9l3 3-3 3-3-3zM9 12l3 3-3 3-3-3zM15 12l3 3-3 3-3-3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8562,7 +8562,7 @@ export const Binance: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tether: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tether");
+  const icon = { id: "tether", name: "Tether", category: "Crypto", tags: ["usdt", "stablecoin"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 8h6v2h-2v3h2v2H9v-2h2v-3H9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8575,7 +8575,7 @@ export const Tether: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const XRP: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "xrp");
+  const icon = { id: "xrp", name: "XRP", category: "Crypto", tags: ["ripple", "crypto"], body: `<circle cx="12" cy="12" r="9"/><path d="M7 8c2 4 8 4 10 0M7 16c2-4 8-4 10 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8588,7 +8588,7 @@ export const XRP: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CricketBat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cricket-bat");
+  const icon = { id: "cricket-bat", name: "Cricket Bat", category: "Sports2", tags: ["bat", "cricket"], body: `<path d="M5 4l9 9-7 7H3v-4z"/><path d="M14 13l6-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8601,7 +8601,7 @@ export const CricketBat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HockeyStick: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hockey-stick");
+  const icon = { id: "hockey-stick", name: "Hockey Stick", category: "Sports2", tags: ["hockey", "stick"], body: `<path d="M3 4l8 14 4-2 6-8M11 18v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8614,7 +8614,7 @@ export const HockeyStick: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BaseballBat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "baseball-bat");
+  const icon = { id: "baseball-bat", name: "Baseball Bat", category: "Sports2", tags: ["bat", "baseball"], body: `<path d="M14 3l7 7-9 11-7-7z"/><circle cx="3" cy="21" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8627,7 +8627,7 @@ export const BaseballBat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Badminton: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "badminton");
+  const icon = { id: "badminton", name: "Badminton", category: "Sports2", tags: ["shuttle", "racket"], body: `<ellipse cx="8" cy="8" rx="5" ry="6"/><path d="M3 8c0 4 5 7 5 7l3 3 9 9M11 11l8-8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8640,7 +8640,7 @@ export const Badminton: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SurfBoard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "surf-board");
+  const icon = { id: "surf-board", name: "Surf Board", category: "Sports2", tags: ["surf", "wave"], body: `<path d="M12 3c-3 5-6 10-9 16 6-1 12-2 18-4-3-4-6-8-9-12z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8653,7 +8653,7 @@ export const SurfBoard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Skateboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "skateboard");
+  const icon = { id: "skateboard", name: "Skateboard", category: "Sports2", tags: ["board", "skate"], body: `<path d="M3 8h18M5 8c0 2-2 2-2 4s2 2 2 4M19 8c0 2 2 2 2 4s-2 2-2 4"/><circle cx="7" cy="14" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="14" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8666,7 +8666,7 @@ export const Skateboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Snowboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "snowboard");
+  const icon = { id: "snowboard", name: "Snowboard", category: "Sports2", tags: ["snow", "board"], body: `<ellipse cx="12" cy="12" rx="3" ry="9" transform="rotate(-30 12 12)"/><circle cx="6" cy="14" r="1" fill="currentColor" stroke="none"/><circle cx="18" cy="10" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8679,7 +8679,7 @@ export const Snowboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Climbing: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "climbing");
+  const icon = { id: "climbing", name: "Climbing", category: "Sports2", tags: ["mountain", "rock"], body: `<circle cx="12" cy="3" r="2"/><path d="M5 21l4-7 3 2 4-3 3 8M9 14l1-4M16 13l-1-5M5 21h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8692,7 +8692,7 @@ export const Climbing: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hand: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hand");
+  const icon = { id: "hand", name: "Hand", category: "Body", tags: ["palm", "fingers"], body: `<path d="M8 11V5a1.5 1.5 0 0 1 3 0v5M11 10V4a1.5 1.5 0 0 1 3 0v6M14 10V5a1.5 1.5 0 0 1 3 0v6M17 11V8a1.5 1.5 0 0 1 3 0v8a6 6 0 0 1-6 6h-2a4 4 0 0 1-4-4l-2-5c0-1 1-2 2-1l3 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8705,7 +8705,7 @@ export const Hand: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Foot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "foot");
+  const icon = { id: "foot", name: "Foot", category: "Body", tags: ["sole", "toes"], body: `<path d="M5 14c0-4 2-8 5-8 2 0 3 1 3 3v3c0 3 2 5 4 5 2 0 3 1 3 2 0 1-1 2-3 2H8c-2 0-3-2-3-5z"/><circle cx="9" cy="9" r="0.8" fill="currentColor" stroke="none"/><circle cx="11" cy="7" r="0.8" fill="currentColor" stroke="none"/><circle cx="13" cy="7" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="8" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8718,7 +8718,7 @@ export const Foot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BrainHead: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "brain-2");
+  const icon = { id: "brain-2", name: "Brain Head", category: "Body", tags: ["mind", "think"], body: `<path d="M5 13a4 4 0 0 1-1-7 5 5 0 0 1 9-1 4 4 0 0 1 7 2 4 4 0 0 1-1 5 3 3 0 0 1-3 5 3 3 0 0 1-5 1 3 3 0 0 1-4-1 4 4 0 0 1-2-4z"/><path d="M9 8c1 1 1 2 0 3M14 9c1 1 1 2 0 3M9 14c1 1 1 2 0 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8731,7 +8731,7 @@ export const BrainHead: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lungs: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lungs");
+  const icon = { id: "lungs", name: "Lungs", category: "Body", tags: ["breath", "organ"], body: `<path d="M12 3v7M8 10c0 4-3 5-3 8s2 4 3 3 1-3 1-5 0-4-1-6zM16 10c0 4 3 5 3 8s-2 4-3 3-1-3-1-5 0-4 1-6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8744,7 +8744,7 @@ export const Lungs: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HeartAnatomical: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "heart-2");
+  const icon = { id: "heart-2", name: "Heart Anatomical", category: "Body", tags: ["organ", "blood"], body: `<path d="M12 21c-5-3-9-7-9-12a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5-4 9-5 12z"/><path d="M12 9v6M9 12h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8757,7 +8757,7 @@ export const HeartAnatomical: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Liver: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "liver");
+  const icon = { id: "liver", name: "Liver", category: "Body", tags: ["organ", "body"], body: `<path d="M3 8c4-1 8-1 12 0 3 1 6 0 6 4 0 3-3 5-7 6-4 1-8 0-10-3-2-2-2-6-1-7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8770,7 +8770,7 @@ export const Liver: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Kidney: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "kidney");
+  const icon = { id: "kidney", name: "Kidney", category: "Body", tags: ["organ", "filter"], body: `<path d="M5 6c2-1 4 0 4 3v8c0 2-1 4-3 4-2 0-3-2-3-4 0-3 2-4 2-7s-1-3 0-4zM19 6c-2-1-4 0-4 3v8c0 2 1 4 3 4 2 0 3-2 3-4 0-3-2-4-2-7s1-3 0-4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8783,7 +8783,7 @@ export const Kidney: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SkeletonBody: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "skeleton");
+  const icon = { id: "skeleton", name: "Skeleton Body", category: "Body", tags: ["bones", "anatomy"], body: `<circle cx="12" cy="4" r="2"/><path d="M12 6v4M9 10h6M10 14v6M14 14v6M9 11l-1 4M15 11l1 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8796,7 +8796,7 @@ export const SkeletonBody: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Truck: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "truck");
+  const icon = { id: "truck", name: "Truck", category: "Vehicles2", tags: ["lorry", "cargo"], body: `<rect x="1" y="9" width="13" height="9" rx="1"/><path d="M14 11h5l3 3v4h-8z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8809,7 +8809,7 @@ export const Truck: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ambulance: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ambulance");
+  const icon = { id: "ambulance", name: "Ambulance", category: "Vehicles2", tags: ["medical", "emergency"], body: `<rect x="1" y="9" width="13" height="9" rx="1"/><path d="M14 11h5l3 3v4h-8z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 12h2v2h2v2H8v2H6v-2H4v-2h2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8822,7 +8822,7 @@ export const Ambulance: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tractor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tractor");
+  const icon = { id: "tractor", name: "Tractor", category: "Vehicles2", tags: ["farm", "agriculture"], body: `<circle cx="6" cy="17" r="4"/><circle cx="18" cy="18" r="2"/><path d="M2 17h0M10 17h6l1-7h-8z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8835,7 +8835,7 @@ export const Tractor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FireTruck: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fire-truck");
+  const icon = { id: "fire-truck", name: "Fire Truck", category: "Vehicles2", tags: ["fire", "emergency"], body: `<rect x="1" y="8" width="14" height="9" rx="1"/><path d="M15 11h4l3 3v3h-7z"/><circle cx="5" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M3 5l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8848,7 +8848,7 @@ export const FireTruck: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Taxi: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "taxi");
+  const icon = { id: "taxi", name: "Taxi", category: "Vehicles2", tags: ["cab", "transport"], body: `<path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5h-3v-2H6v2H3z"/><circle cx="7" cy="15" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="15" r="1.5" fill="currentColor" stroke="none"/><path d="M9 6h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8861,7 +8861,7 @@ export const Taxi: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PoliceCar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "police-car");
+  const icon = { id: "police-car", name: "Police Car", category: "Vehicles2", tags: ["police", "emergency"], body: `<path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5h-3v-2H6v2H3z"/><circle cx="7" cy="15" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="15" r="1.5" fill="currentColor" stroke="none"/><path d="M10 3h4l1 3H9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8874,7 +8874,7 @@ export const PoliceCar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bulldozer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bulldozer");
+  const icon = { id: "bulldozer", name: "Bulldozer", category: "Vehicles2", tags: ["construction", "earth"], body: `<rect x="5" y="9" width="10" height="7" rx="1"/><path d="M3 16V8l-2 8M15 16h6M21 8v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8887,7 +8887,7 @@ export const Bulldozer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Forklift: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "forklift");
+  const icon = { id: "forklift", name: "Forklift", category: "Vehicles2", tags: ["warehouse", "lift"], body: `<rect x="3" y="6" width="9" height="13" rx="1"/><path d="M15 4v16M15 4h2v16M17 8h4M17 12h4M17 16h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8900,7 +8900,7 @@ export const Forklift: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cactus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cactus");
+  const icon = { id: "cactus", name: "Cactus", category: "Plants2", tags: ["desert", "plant"], body: `<rect x="9" y="9" width="6" height="13" rx="3"/><path d="M9 14c-2 0-3-1-3-3v-2c0-1 1-2 3-2M15 14c2 0 3-1 3-3v-2c0-1-1-2-3-2M9 18c-2 0-4-1-4-3M15 18c2 0 4-1 4-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8913,7 +8913,7 @@ export const Cactus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PalmTree: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "palm-tree");
+  const icon = { id: "palm-tree", name: "Palm Tree", category: "Plants2", tags: ["tropical", "tree"], body: `<path d="M12 21V11M12 11c-3-3-7-3-9-1 2 1 4 2 9 1zM12 11c3-3 7-3 9-1-2 1-4 2-9 1zM12 11c0-4-2-7-5-8 1 3 2 5 5 8zM12 11c0-4 2-7 5-8-1 3-2 5-5 8z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8926,7 +8926,7 @@ export const PalmTree: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bamboo: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bamboo");
+  const icon = { id: "bamboo", name: "Bamboo", category: "Plants2", tags: ["plant", "grass"], body: `<rect x="9" y="3" width="6" height="4" rx="1"/><rect x="9" y="9" width="6" height="4" rx="1"/><rect x="9" y="15" width="6" height="4" rx="1"/><path d="M12 7v2M12 13v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8939,7 +8939,7 @@ export const Bamboo: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mushroom2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mushroom-2");
+  const icon = { id: "mushroom-2", name: "Mushroom 2", category: "Plants2", tags: ["fungus", "toadstool"], body: `<path d="M4 11a8 8 0 0 1 16 0H4z"/><path d="M9 11v6a3 3 0 0 0 6 0v-6"/><circle cx="9" cy="8" r="1.2" fill="currentColor" stroke="none"/><circle cx="14" cy="9" r="1.2" fill="currentColor" stroke="none"/><circle cx="11" cy="6" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8952,7 +8952,7 @@ export const Mushroom2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Seedling: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "seedling");
+  const icon = { id: "seedling", name: "Seedling", category: "Plants2", tags: ["grow", "young"], body: `<path d="M12 21V11M12 11c0-3-2-5-6-5 0 4 2 5 6 5zM12 9c0-3 2-5 6-5 0 4-2 5-6 5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8965,7 +8965,7 @@ export const Seedling: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Shrub: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shrub");
+  const icon = { id: "shrub", name: "Shrub", category: "Plants2", tags: ["bush", "garden"], body: `<circle cx="6" cy="14" r="4"/><circle cx="12" cy="11" r="5"/><circle cx="18" cy="14" r="4"/><path d="M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8978,7 +8978,7 @@ export const Shrub: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tree2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tree-2");
+  const icon = { id: "tree-2", name: "Tree 2", category: "Plants2", tags: ["plant", "forest"], body: `<circle cx="12" cy="9" r="6"/><path d="M12 15v6M9 21h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -8991,7 +8991,7 @@ export const Tree2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Vine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "vine");
+  const icon = { id: "vine", name: "Vine", category: "Plants2", tags: ["plant", "creeper"], body: `<path d="M3 3c4 0 6 4 6 8s-2 8-6 8M3 3c0 4 4 6 8 6s8-2 8-6M3 3c0 4 4 6 8 6M9 9v3l3 2M15 9v3l-3 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9004,7 +9004,7 @@ export const Vine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stapler2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stapler-2");
+  const icon = { id: "stapler-2", name: "Stapler 2", category: "Office2", tags: ["office", "bind"], body: `<path d="M3 16l3-4h13v6H3z"/><path d="M3 18h16M6 12V8h13"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9017,7 +9017,7 @@ export const Stapler2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const InkPen: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ink-pen");
+  const icon = { id: "ink-pen", name: "Ink Pen", category: "Office2", tags: ["write", "fountain"], body: `<path d="M3 21l4-4M7 17L17 7l3 3L10 20z"/><path d="M17 7l2-2 3 3-2 2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9030,7 +9030,7 @@ export const InkPen: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Highlighter: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "highlighter");
+  const icon = { id: "highlighter", name: "Highlighter", category: "Office2", tags: ["marker", "text"], body: `<path d="M3 21l5-2 12-12-3-3L5 16z"/><path d="M15 4l3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9043,7 +9043,7 @@ export const Highlighter: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RubberStamp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rubber-stamp");
+  const icon = { id: "rubber-stamp", name: "Rubber Stamp", category: "Office2", tags: ["seal", "mark"], body: `<path d="M7 14a4 4 0 0 1 1-7h8a4 4 0 0 1 1 7l-2 3H9z"/><rect x="3" y="17" width="18" height="4" rx="1"/><path d="M9 4h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9056,7 +9056,7 @@ export const RubberStamp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TapeDispenser: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tape");
+  const icon = { id: "tape", name: "Tape Dispenser", category: "Office2", tags: ["tape", "stick"], body: `<path d="M3 12l9-5 9 5-9 5z"/><path d="M3 12v6h18v-6M7 14h2M11 14h2M15 14h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9069,7 +9069,7 @@ export const TapeDispenser: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Whiteboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "whiteboard");
+  const icon = { id: "whiteboard", name: "Whiteboard", category: "Office2", tags: ["board", "write"], body: `<rect x="3" y="4" width="18" height="13" rx="1"/><path d="M3 17h18M7 21h2M15 21h2M8 17v4M16 17v4M7 8h6M7 11h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9082,7 +9082,7 @@ export const Whiteboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Projector: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "projector");
+  const icon = { id: "projector", name: "Projector", category: "Office2", tags: ["presentation", "office"], body: `<rect x="2" y="9" width="20" height="8" rx="2"/><circle cx="6" cy="13" r="2"/><path d="M12 9V5M5 5h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9095,7 +9095,7 @@ export const Projector: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CalendarDate: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "calendar-3");
+  const icon = { id: "calendar-3", name: "Calendar Date", category: "Office2", tags: ["date", "schedule"], body: `<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/><circle cx="12" cy="14" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9108,7 +9108,7 @@ export const CalendarDate: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dragon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dragon");
+  const icon = { id: "dragon", name: "Dragon", category: "Fantasy", tags: ["mythical", "creature"], body: `<path d="M3 21c3-2 4-4 4-7 0 0 2-2 5-2s5 2 5 5c0 2-1 4-3 4M7 14c-2 0-3-2-3-4 0-3 3-5 6-5 4 0 6 2 8 5M14 8l3-3M19 5l2-2M16 5l-1-3M20 8l2-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9121,7 +9121,7 @@ export const Dragon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Unicorn: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "unicorn");
+  const icon = { id: "unicorn", name: "Unicorn", category: "Fantasy", tags: ["mythical", "horse"], body: `<path d="M3 21l4-7 2-7 3 1 4-3v6l5 5v5M7 14l3 1M14 7h0.1"/><path d="M14 7l3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9134,7 +9134,7 @@ export const Unicorn: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mermaid: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mermaid");
+  const icon = { id: "mermaid", name: "Mermaid", category: "Fantasy", tags: ["mythical", "sea"], body: `<circle cx="12" cy="5" r="2"/><path d="M12 7v6M10 13h4M9 19c0-3 1-5 3-6 2 1 3 3 3 6M7 19h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9147,7 +9147,7 @@ export const Mermaid: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WizardHat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wizard-hat");
+  const icon = { id: "wizard-hat", name: "Wizard Hat", category: "Fantasy", tags: ["magic", "hat"], body: `<path d="M3 20l9-18 9 18z"/><circle cx="12" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="9" cy="16" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9160,7 +9160,7 @@ export const WizardHat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CrystalBall: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "crystal-ball");
+  const icon = { id: "crystal-ball", name: "Crystal Ball", category: "Fantasy", tags: ["magic", "future"], body: `<circle cx="12" cy="12" r="8"/><path d="M5 20h14M6 20l-1 1M18 20l1 1"/><circle cx="9" cy="9" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9173,7 +9173,7 @@ export const CrystalBall: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PotionBottle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "potion");
+  const icon = { id: "potion", name: "Potion Bottle", category: "Fantasy", tags: ["magic", "brew"], body: `<path d="M10 3h4v3l2 4v9a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-9l2-4z"/><path d="M9 14h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9186,7 +9186,7 @@ export const PotionBottle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SpellBook: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "spell-book");
+  const icon = { id: "spell-book", name: "Spell Book", category: "Fantasy", tags: ["magic", "book"], body: `<path d="M5 4h12a3 3 0 0 1 3 3v14H8a3 3 0 0 1-3-3z"/><path d="M5 4a3 3 0 0 0-3 3v14a3 3 0 0 1 3-3"/><path d="M11 9l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9199,7 +9199,7 @@ export const SpellBook: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fairy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fairy");
+  const icon = { id: "fairy", name: "Fairy", category: "Fantasy", tags: ["magic", "wing"], body: `<circle cx="12" cy="7" r="2"/><path d="M10 9l-5 4 5 2M14 9l5 4-5 2M12 11v6M10 17h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9212,7 +9212,7 @@ export const Fairy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RoyalCrown: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "crown-2");
+  const icon = { id: "crown-2", name: "Royal Crown", category: "Fantasy", tags: ["king", "royal"], body: `<path d="M3 18h18M5 8l3 4 4-7 4 7 3-4-2 10H7z"/><circle cx="12" cy="5" r="1" fill="currentColor" stroke="none"/><circle cx="5" cy="8" r="1" fill="currentColor" stroke="none"/><circle cx="19" cy="8" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9225,7 +9225,7 @@ export const RoyalCrown: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MagicPortal: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "magic-portal");
+  const icon = { id: "magic-portal", name: "Magic Portal", category: "Fantasy", tags: ["portal", "magic"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="3"/><path d="M3 12c2-2 4-2 6 0M21 12c-2-2-4-2-6 0M12 3c-2 2-2 4 0 6M12 21c2-2 2-4 0-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9238,7 +9238,7 @@ export const MagicPortal: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MedicalCross: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ambulance-cross");
+  const icon = { id: "ambulance-cross", name: "Medical Cross", category: "Medical2", tags: ["red-cross", "health"], body: `<path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9251,7 +9251,7 @@ export const MedicalCross: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BloodDrop: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "blood-drop");
+  const icon = { id: "blood-drop", name: "Blood Drop", category: "Medical2", tags: ["blood", "donate"], body: `<path d="M12 3s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/><path d="M9 14a3 3 0 0 0 3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9264,7 +9264,7 @@ export const BloodDrop: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FirstAidKit: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "first-aid-kit");
+  const icon = { id: "first-aid-kit", name: "First Aid Kit", category: "Medical2", tags: ["emergency", "kit"], body: `<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V4h8v3M11 12v4M9 14h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9277,7 +9277,7 @@ export const FirstAidKit: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MedicineBottle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "medicine-bottle");
+  const icon = { id: "medicine-bottle", name: "Medicine Bottle", category: "Medical2", tags: ["pill", "pharmacy"], body: `<rect x="6" y="6" width="12" height="15" rx="1"/><path d="M5 3h14v3H5zM10 11h4M10 14h4M10 17h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9290,7 +9290,7 @@ export const MedicineBottle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MedicalThermometer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "thermometer-med");
+  const icon = { id: "thermometer-med", name: "Medical Thermometer", category: "Medical2", tags: ["fever", "temp"], body: `<path d="M14 4a3 3 0 0 1 6 0v10a3 3 0 0 1-6 0z"/><circle cx="17" cy="17" r="2" fill="currentColor" stroke="none"/><path d="M14 7H4a2 2 0 0 0-2 2v3h12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9303,7 +9303,7 @@ export const MedicalThermometer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stretcher: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stretcher");
+  const icon = { id: "stretcher", name: "Stretcher", category: "Medical2", tags: ["hospital", "patient"], body: `<rect x="3" y="10" width="14" height="4"/><circle cx="6" cy="18" r="1.5"/><circle cx="14" cy="18" r="1.5"/><path d="M3 14l-1 4M17 14h4M19 12V8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9316,7 +9316,7 @@ export const Stretcher: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const VaccineVial: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "vaccine");
+  const icon = { id: "vaccine", name: "Vaccine Vial", category: "Medical2", tags: ["vaccine", "vial"], body: `<rect x="9" y="6" width="6" height="14" rx="1"/><path d="M8 6h8M10 3h4v3h-4zM9 11h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9329,7 +9329,7 @@ export const VaccineVial: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EyeChart: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eye-test");
+  const icon = { id: "eye-test", name: "Eye Chart", category: "Medical2", tags: ["vision", "test"], body: `<rect x="2" y="3" width="20" height="18" rx="1"/><path d="M5 7h2M5 10h4M5 13h6M5 16h8M5 19h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9342,7 +9342,7 @@ export const EyeChart: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wheelchair: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wheelchair");
+  const icon = { id: "wheelchair", name: "Wheelchair", category: "Medical2", tags: ["accessibility", "mobility"], body: `<circle cx="9" cy="18" r="3"/><circle cx="9" cy="5" r="2"/><path d="M9 7v8h6l3 5M9 11h7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9355,7 +9355,7 @@ export const Wheelchair: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MedicalReport: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "medical-report");
+  const icon = { id: "medical-report", name: "Medical Report", category: "Medical2", tags: ["report", "health"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 3v4h6V3M8 11h2M12 11h4M8 14h2M12 14h4M8 17h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9368,7 +9368,7 @@ export const MedicalReport: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Trinity: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trinity");
+  const icon = { id: "trinity", name: "Trinity", category: "Religion2", tags: ["christian", "faith"], body: `<circle cx="12" cy="6" r="3"/><circle cx="6" cy="15" r="3"/><circle cx="18" cy="15" r="3"/><path d="M12 9l-4 3M12 9l4 3M8 16h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9381,7 +9381,7 @@ export const Trinity: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Ankh: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ankh");
+  const icon = { id: "ankh", name: "Ankh", category: "Religion2", tags: ["egyptian", "life"], body: `<circle cx="12" cy="6" r="3"/><path d="M12 9v12M7 13h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9394,7 +9394,7 @@ export const Ankh: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const YinYang: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "yin-yang");
+  const icon = { id: "yin-yang", name: "Yin Yang", category: "Religion2", tags: ["tao", "balance"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 3a4.5 4.5 0 0 1 0 9 4.5 4.5 0 0 0 0 9"/><circle cx="12" cy="7.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="16.5" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9407,7 +9407,7 @@ export const YinYang: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pentagram: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pentagram");
+  const icon = { id: "pentagram", name: "Pentagram", category: "Religion2", tags: ["star", "pagan"], body: `<path d="M12 3l3 7 7 0-6 5 2 8-6-5-6 5 2-8-6-5 7 0z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9420,7 +9420,7 @@ export const Pentagram: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ToriiGate: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "torii-gate");
+  const icon = { id: "torii-gate", name: "Torii Gate", category: "Religion2", tags: ["shinto", "japan"], body: `<path d="M3 6c4-3 14-3 18 0M5 5v15M19 5v15M3 11c5-2 13-2 18 0M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9433,7 +9433,7 @@ export const ToriiGate: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dove: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dove");
+  const icon = { id: "dove", name: "Dove", category: "Religion2", tags: ["peace", "holy"], body: `<path d="M3 12c4-2 7-5 9-9 2 4 5 7 9 9-4 2-7 5-9 9-2-4-5-7-9-9z"/><circle cx="6" cy="11" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9446,7 +9446,7 @@ export const Dove: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PrayerHands: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "prayer-hands");
+  const icon = { id: "prayer-hands", name: "Prayer Hands", category: "Religion2", tags: ["pray", "faith"], body: `<path d="M9 21V11c0-2 1-3 3-3s3 1 3 3v10M9 11c-1-1-3-1-3-3V5M15 11c1-1 3-1 3-3V5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9459,7 +9459,7 @@ export const PrayerHands: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const IncenseStick: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "incense");
+  const icon = { id: "incense", name: "Incense Stick", category: "Religion2", tags: ["prayer", "ritual"], body: `<path d="M12 3v14M9 21h6M10 17h4"/><path d="M11 3c0 1 2 1 2 0 0-1 0-2-1-2s-1 1-1 2z" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9472,7 +9472,7 @@ export const IncenseStick: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PaintPalette: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "palette");
+  const icon = { id: "palette", name: "Paint Palette", category: "Art", tags: ["paint", "color"], body: `<path d="M12 3a9 9 0 0 0 0 18c1 0 2-1 2-2 0-1-1-2 0-3 1-1 3 0 4-1a4 4 0 0 0-1-7c-1-2-3-3-5-3z"/><circle cx="7" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="9" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="14" cy="6" r="1" fill="currentColor" stroke="none"/><circle cx="17" cy="9" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9485,7 +9485,7 @@ export const PaintPalette: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PaintBrush: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "brush");
+  const icon = { id: "brush", name: "Paint Brush", category: "Art", tags: ["paint", "art"], body: `<path d="M3 21l3-3M6 18L17 7l3 3L9 21z"/><path d="M17 7l2-2 3 3-2 2z"/><path d="M16 4l4 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9498,7 +9498,7 @@ export const PaintBrush: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Easel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "easel");
+  const icon = { id: "easel", name: "Easel", category: "Art", tags: ["canvas", "art"], body: `<rect x="4" y="3" width="16" height="13" rx="1"/><path d="M12 16v5M8 21h8M4 16l-2 5M20 16l2 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9511,7 +9511,7 @@ export const Easel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArtPencil: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pencil-art");
+  const icon = { id: "pencil-art", name: "Art Pencil", category: "Art", tags: ["draw", "sketch"], body: `<path d="M3 21l4-1L18 9l-3-3L4 17z"/><path d="M16 4l4 4-2 2-4-4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9524,7 +9524,7 @@ export const ArtPencil: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PictureFrame: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "frame");
+  const icon = { id: "frame", name: "Picture Frame", category: "Art", tags: ["frame", "decor"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><rect x="6" y="6" width="12" height="12"/><path d="M9 14l2-3 2 2 3-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9537,7 +9537,7 @@ export const PictureFrame: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArtScissors: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scissors-art");
+  const icon = { id: "scissors-art", name: "Art Scissors", category: "Art", tags: ["cut", "craft"], body: `<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8 8l12 8M8 16L20 8M6 9v9"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9550,7 +9550,7 @@ export const ArtScissors: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PaintTube: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "color-tube");
+  const icon = { id: "color-tube", name: "Paint Tube", category: "Art", tags: ["paint", "tube"], body: `<path d="M5 21l4-4 9-9 4 4-9 9-4 4z"/><path d="M14 4l6 6M5 21l-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9563,7 +9563,7 @@ export const PaintTube: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SprayPaint: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "spray");
+  const icon = { id: "spray", name: "Spray Paint", category: "Art", tags: ["graffiti", "spray"], body: `<rect x="9" y="8" width="6" height="13" rx="1"/><path d="M9 11h6M11 8V5h2v3M11 5l-1-2M13 5l1-2M19 3l1 1M21 6l1 1M18 8l1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9576,7 +9576,7 @@ export const SprayPaint: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArtRuler: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ruler-art");
+  const icon = { id: "ruler-art", name: "Art Ruler", category: "Art", tags: ["measure", "draw"], body: `<rect x="2" y="9" width="20" height="6" rx="1"/><path d="M5 9v2M8 9v3M11 9v2M14 9v3M17 9v2M5 15v-2M8 15v-3M11 15v-2M14 15v-3M17 15v-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9589,7 +9589,7 @@ export const ArtRuler: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Canvas: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "canvas");
+  const icon = { id: "canvas", name: "Canvas", category: "Art", tags: ["paint", "art"], body: `<rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 18v3h18v-3M7 8l3 3M11 8l4 4M7 13l2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9602,7 +9602,7 @@ export const Canvas: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MusicSheet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "music-sheet");
+  const icon = { id: "music-sheet", name: "Music Sheet", category: "Music3", tags: ["notes", "score"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 7h18M3 10h18M3 13h18M3 16h18"/><circle cx="9" cy="13" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="1.5" fill="currentColor" stroke="none"/><path d="M10 13V8h6v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9615,7 +9615,7 @@ export const MusicSheet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Metronome: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "metronome");
+  const icon = { id: "metronome", name: "Metronome", category: "Music3", tags: ["tempo", "beat"], body: `<path d="M5 21l4-18h6l4 18z"/><path d="M5 21h14M9 3h6M9 21l5-15"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9628,7 +9628,7 @@ export const Metronome: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TuningFork: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tuning-fork");
+  const icon = { id: "tuning-fork", name: "Tuning Fork", category: "Music3", tags: ["tune", "pitch"], body: `<path d="M9 3v8a3 3 0 0 0 6 0V3M9 3v0M15 3v0M9 16v5M15 16v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9641,7 +9641,7 @@ export const TuningFork: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MusicStand: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "music-stand");
+  const icon = { id: "music-stand", name: "Music Stand", category: "Music3", tags: ["sheet", "stand"], body: `<rect x="5" y="4" width="14" height="9" rx="1"/><path d="M5 13l-2 8M19 13l2 8M12 13v8M8 21h8M8 7h8M8 10h5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9654,7 +9654,7 @@ export const MusicStand: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CassetteTape: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cassette");
+  const icon = { id: "cassette", name: "Cassette Tape", category: "Music3", tags: ["retro", "music"], body: `<rect x="2" y="6" width="20" height="12" rx="1"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/><path d="M8 6V4h8v2M5 18h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9667,7 +9667,7 @@ export const CassetteTape: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const VinylRecord: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "vinyl-record");
+  const icon = { id: "vinyl-record", name: "Vinyl Record", category: "Music3", tags: ["retro", "music"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9680,7 +9680,7 @@ export const VinylRecord: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Concert: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "concert");
+  const icon = { id: "concert", name: "Concert", category: "Music3", tags: ["live", "show"], body: `<circle cx="6" cy="7" r="2"/><path d="M4 21v-4l2-4 2 4v4M6 9v4M14 21V11M14 11a3 3 0 0 1 6 0v10M14 16h6M18 8V3M16 4l2-1 2 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9693,7 +9693,7 @@ export const Concert: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DJHeadphones: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "headphones-dj");
+  const icon = { id: "headphones-dj", name: "DJ Headphones", category: "Music3", tags: ["dj", "music"], body: `<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/><path d="M12 4v-2M9 4l-1-1M15 4l1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9706,7 +9706,7 @@ export const DJHeadphones: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Resistor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "resistor");
+  const icon = { id: "resistor", name: "Resistor", category: "Electronics", tags: ["circuit", "ohm"], body: `<path d="M2 12h4l2-4 4 8 2-4 4-4h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9719,7 +9719,7 @@ export const Resistor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Capacitor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "capacitor");
+  const icon = { id: "capacitor", name: "Capacitor", category: "Electronics", tags: ["circuit", "cap"], body: `<path d="M2 12h8M14 12h8M10 4v16M14 4v16"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9732,7 +9732,7 @@ export const Capacitor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Transistor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "transistor");
+  const icon = { id: "transistor", name: "Transistor", category: "Electronics", tags: ["circuit", "bjt"], body: `<circle cx="12" cy="12" r="8"/><path d="M8 8v8M8 12h6M14 8l4-2M14 12l4 1M14 16l4 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9745,7 +9745,7 @@ export const Transistor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LED: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "led");
+  const icon = { id: "led", name: "LED", category: "Electronics", tags: ["light", "diode"], body: `<path d="M9 21V11h6v10M9 11V6a3 3 0 0 1 6 0v5M9 21h6"/><path d="M5 4l2 2M19 4l-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9758,7 +9758,7 @@ export const LED: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Diode: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "diode");
+  const icon = { id: "diode", name: "Diode", category: "Electronics", tags: ["circuit", "diode"], body: `<path d="M2 12h6l8-6v12l-8-6h-6z"/><path d="M16 6v12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9771,7 +9771,7 @@ export const Diode: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BatteryCell: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "battery-cell");
+  const icon = { id: "battery-cell", name: "Battery Cell", category: "Electronics", tags: ["power", "cell"], body: `<rect x="3" y="7" width="16" height="10" rx="1"/><path d="M21 11v2M5 9v6M8 9v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9784,7 +9784,7 @@ export const BatteryCell: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wire: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wire");
+  const icon = { id: "wire", name: "Wire", category: "Electronics", tags: ["cable", "wire"], body: `<path d="M3 3c4 0 6 4 6 8s-2 8-6 8M3 3c0 4 4 6 8 6s8-2 8-6M3 3c0 4 4 6 8 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9797,7 +9797,7 @@ export const Wire: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Switch: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "switch");
+  const icon = { id: "switch", name: "Switch", category: "Electronics", tags: ["toggle", "switch"], body: `<circle cx="6" cy="12" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 12l8-6M4 6h4M16 18h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9810,7 +9810,7 @@ export const Switch: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fuse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fuse");
+  const icon = { id: "fuse", name: "Fuse", category: "Electronics", tags: ["protect", "circuit"], body: `<rect x="3" y="9" width="18" height="6" rx="3"/><path d="M2 12h1M21 12h1M8 12l3-2 2 4 3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9823,7 +9823,7 @@ export const Fuse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Transformer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "transformer");
+  const icon = { id: "transformer", name: "Transformer", category: "Electronics", tags: ["coil", "power"], body: `<path d="M5 21V3M9 21V3M15 21V3M19 21V3M5 21h4M15 21h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9836,7 +9836,7 @@ export const Transformer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Boxing: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "boxing");
+  const icon = { id: "boxing", name: "Boxing", category: "Sports3", tags: ["fight", "ring"], body: `<rect x="3" y="9" width="18" height="10" rx="1"/><path d="M3 12h18M3 18l-2 3M21 18l2 3M5 9V6h14v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9849,7 +9849,7 @@ export const Boxing: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Swimming: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "swimming");
+  const icon = { id: "swimming", name: "Swimming", category: "Sports3", tags: ["pool", "swim"], body: `<circle cx="17" cy="6" r="2"/><path d="M3 14c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 3 2M3 18c2 0 3-2 5-2s3 2 5 2 3-2 5-2 3 2 3 2M5 10l5 3 4-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9862,7 +9862,7 @@ export const Swimming: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Archery: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "archery");
+  const icon = { id: "archery", name: "Archery", category: "Sports3", tags: ["bow", "arrow"], body: `<circle cx="14" cy="12" r="8"/><circle cx="14" cy="12" r="4"/><circle cx="14" cy="12" r="1" fill="currentColor" stroke="none"/><path d="M2 12h6M14 4V2M14 22v-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9875,7 +9875,7 @@ export const Archery: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fencing: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fencing");
+  const icon = { id: "fencing", name: "Fencing", category: "Sports3", tags: ["sword", "duel"], body: `<path d="M3 21L18 6M18 6l3-3M3 21l-1 1M16 4l4 4M20 8l-3-3M14 6l3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9888,7 +9888,7 @@ export const Fencing: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WeightLifting: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "weight-lifting");
+  const icon = { id: "weight-lifting", name: "Weight Lifting", category: "Sports3", tags: ["gym", "barbell"], body: `<rect x="2" y="9" width="3" height="6"/><rect x="19" y="9" width="3" height="6"/><path d="M5 12h14M5 9v6M19 9v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9901,7 +9901,7 @@ export const WeightLifting: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cycling: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cycling");
+  const icon = { id: "cycling", name: "Cycling", category: "Sports3", tags: ["bike", "race"], body: `<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-7h5l3 7M10 10l-1-3h-2M15 10l2-3M10 10l5 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9914,7 +9914,7 @@ export const Cycling: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Marathon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "marathon");
+  const icon = { id: "marathon", name: "Marathon", category: "Sports3", tags: ["run", "race"], body: `<circle cx="14" cy="4" r="2"/><path d="M14 6l-4 4 3 2v6M10 10l-3 3M14 12l4-2M9 21l1-5M17 21l-3-7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9927,7 +9927,7 @@ export const Marathon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Gymnastics: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gymnastics");
+  const icon = { id: "gymnastics", name: "Gymnastics", category: "Sports3", tags: ["flexible", "gym"], body: `<circle cx="12" cy="4" r="2"/><path d="M12 6v6M6 9l6 3 6-3M5 21l7-9 7 9M9 21l3-5 3 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9940,7 +9940,7 @@ export const Gymnastics: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MountainPeak: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mountain-peak");
+  const icon = { id: "mountain-peak", name: "Mountain Peak", category: "Geography", tags: ["peak", "hill"], body: `<path d="M3 20l5-9 4 5 3-4 6 8z"/><circle cx="17" cy="6" r="2"/><path d="M3 20h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9953,7 +9953,7 @@ export const MountainPeak: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Volcano_volcano2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "volcano-2");
+  const icon = { id: "volcano-2", name: "Volcano", category: "Geography", tags: ["erupt", "lava"], body: `<path d="M3 21l5-12 4 4 4-4 5 12z"/><path d="M8 9c0-2 1-3 3-3M14 8c0-2 1-3 3-3M12 4l1-2M14 5l1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9966,7 +9966,7 @@ export const Volcano_volcano2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Island: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "island");
+  const icon = { id: "island", name: "Island", category: "Geography", tags: ["sea", "tropical"], body: `<path d="M3 18h18M5 18c1-3 3-5 7-5s6 2 7 5M9 13V8M9 8c-2-1-3-3-2-5 2 1 3 3 2 5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9979,7 +9979,7 @@ export const Island: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const River: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "river");
+  const icon = { id: "river", name: "River", category: "Geography", tags: ["water", "flow"], body: `<path d="M3 5c4 0 5 3 9 3s5-3 9-3M3 12c4 0 5 3 9 3s5-3 9-3M3 19c4 0 5 3 9 3s5-3 9-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -9992,7 +9992,7 @@ export const River: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Desert: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "desert");
+  const icon = { id: "desert", name: "Desert", category: "Geography", tags: ["sand", "dry"], body: `<path d="M3 20l4-8 4 5 4-7 6 10z"/><circle cx="20" cy="5" r="2"/><path d="M3 20h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10005,7 +10005,7 @@ export const Desert: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cave: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cave");
+  const icon = { id: "cave", name: "Cave", category: "Geography", tags: ["rock", "cavern"], body: `<path d="M3 21V11a9 9 0 0 1 18 0v10z"/><path d="M3 21h18M9 21v-4a3 3 0 0 1 6 0v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10018,7 +10018,7 @@ export const Cave: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Glacier: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "glacier");
+  const icon = { id: "glacier", name: "Glacier", category: "Geography", tags: ["ice", "frozen"], body: `<path d="M3 21l4-10 4 6 4-8 6 12z"/><path d="M3 21h18M7 11l3 4M14 9l3 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10031,7 +10031,7 @@ export const Glacier: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Waterfall: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "waterfall");
+  const icon = { id: "waterfall", name: "Waterfall", category: "Geography", tags: ["water", "fall"], body: `<path d="M3 8h18v13H3zM3 12c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2M3 16c2 0 2 2 4 2s2-2 4-2 2 2 4 2 2-2 4-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10044,7 +10044,7 @@ export const Waterfall: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Aries: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "aries");
+  const icon = { id: "aries", name: "Aries", category: "Zodiac", tags: ["ram", "astrology"], body: `<path d="M3 17c2-5 5-7 9-7s7 2 9 7M7 13c-1-2-1-5 1-6 2 1 3 3 2 5M15 11c1-2 2-4 4-5 1 1 1 4-1 6M12 11v10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10057,7 +10057,7 @@ export const Aries: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Taurus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "taurus");
+  const icon = { id: "taurus", name: "Taurus", category: "Zodiac", tags: ["bull", "astrology"], body: `<circle cx="12" cy="15" r="6"/><path d="M5 8C5 4 8 4 9 6s3 3 3 3 2-1 3-3 4-2 4 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10070,7 +10070,7 @@ export const Taurus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Gemini: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gemini");
+  const icon = { id: "gemini", name: "Gemini", category: "Zodiac", tags: ["twins", "astrology"], body: `<path d="M7 3v18M17 3v18M5 7h14M5 17h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10083,7 +10083,7 @@ export const Gemini: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cancer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cancer");
+  const icon = { id: "cancer", name: "Cancer", category: "Zodiac", tags: ["crab", "astrology"], body: `<path d="M5 8c4 0 6 4 7 8 1-4 3-8 7-8M5 8a3 3 0 1 0 0 6M19 8a3 3 0 1 1 0 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10096,7 +10096,7 @@ export const Cancer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Leo: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "leo");
+  const icon = { id: "leo", name: "Leo", category: "Zodiac", tags: ["lion", "astrology"], body: `<circle cx="9" cy="16" r="3"/><path d="M11 13c0-5 3-9 8-9 0 5-3 7-8 9M6 7c1 2 4 3 5 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10109,7 +10109,7 @@ export const Leo: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Virgo: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "virgo");
+  const icon = { id: "virgo", name: "Virgo", category: "Zodiac", tags: ["virgin", "astrology"], body: `<path d="M3 21V5l3 3 3-3v16M9 21V5l3 3 3-3v16M15 11c0-3 2-5 5-5v10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10122,7 +10122,7 @@ export const Virgo: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Libra: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "libra");
+  const icon = { id: "libra", name: "Libra", category: "Zodiac", tags: ["scale", "astrology"], body: `<path d="M3 21h18M12 3v3M5 9h14M5 9c0 3 3 5 7 5s7-2 7-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10135,7 +10135,7 @@ export const Libra: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Scorpio: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scorpio");
+  const icon = { id: "scorpio", name: "Scorpio", category: "Zodiac", tags: ["scorpion", "astrology"], body: `<path d="M3 21V8a4 4 0 0 1 8 0v13M11 8a4 4 0 0 1 8 0v13M3 14h8M19 21l3-3-3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10148,7 +10148,7 @@ export const Scorpio: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sagittarius: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sagittarius");
+  const icon = { id: "sagittarius", name: "Sagittarius", category: "Zodiac", tags: ["archer", "astrology"], body: `<path d="M3 21L21 3M21 3l-7 0M21 3l0 7M3 21l7 0M3 21l0-7M7 17l10-10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10161,7 +10161,7 @@ export const Sagittarius: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Capricorn: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "capricorn");
+  const icon = { id: "capricorn", name: "Capricorn", category: "Zodiac", tags: ["goat", "astrology"], body: `<path d="M3 21V8c0-3 2-5 5-5s4 2 4 5v8c0 2 1 4 3 4s4-2 4-4M5 21h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10174,7 +10174,7 @@ export const Capricorn: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Aquarius: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "aquarius");
+  const icon = { id: "aquarius", name: "Aquarius", category: "Zodiac", tags: ["water", "astrology"], body: `<path d="M3 8l3 3 3-3 3 3 3-3 3 3 3-3M3 13l3 3 3-3 3 3 3-3 3 3 3-3M3 18l3 3 3-3 3 3 3-3 3 3 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10187,7 +10187,7 @@ export const Aquarius: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pisces: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pisces");
+  const icon = { id: "pisces", name: "Pisces", category: "Zodiac", tags: ["fish", "astrology"], body: `<path d="M5 3c0 5-2 13-2 18M19 3c0 5 2 13 2 18M5 8c2 2 12 2 14 0M5 16c2-2 12-2 14 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10200,7 +10200,7 @@ export const Pisces: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bicycle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bicycle");
+  const icon = { id: "bicycle", name: "Bicycle", category: "Vehicles3", tags: ["cycle", "bike"], body: `<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-7h6l-3 7M10 10l-2-3h-2M14 10l2-3M10 10l4 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10213,7 +10213,7 @@ export const Bicycle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Motorcycle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "motorcycle");
+  const icon = { id: "motorcycle", name: "Motorcycle", category: "Vehicles3", tags: ["bike", "ride"], body: `<circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M5 17l3-5h6l3 5M8 12l-1-3M14 12l-2 5M11 9h4l2 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10226,7 +10226,7 @@ export const Motorcycle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ElectricScooter: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scooter-electric");
+  const icon = { id: "scooter-electric", name: "Electric Scooter", category: "Vehicles3", tags: ["escooter", "ride"], body: `<circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M6 18l3-7 4 1 3 6M9 11l-1-3M16 11l2-4M5 9h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10239,7 +10239,7 @@ export const ElectricScooter: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Helicopter: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "helicopter");
+  const icon = { id: "helicopter", name: "Helicopter", category: "Vehicles3", tags: ["fly", "heli"], body: `<path d="M3 7h14a4 4 0 0 1 4 4v3H3z"/><path d="M3 14v3M21 11l2-1M3 7V4h6M9 7V3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10252,7 +10252,7 @@ export const Helicopter: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tank: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tank");
+  const icon = { id: "tank", name: "Tank", category: "Vehicles3", tags: ["military", "war"], body: `<path d="M3 18h14M5 18V12h12v6M5 14H3M19 14h2M9 12V8h6v4M3 18c-1 0-2-1-2-2s1-2 2-2M19 14c1 0 2 1 2 2s-1 2-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10265,7 +10265,7 @@ export const Tank: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TractorTrailer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tractor-trailer");
+  const icon = { id: "tractor-trailer", name: "Tractor Trailer", category: "Vehicles3", tags: ["truck", "cargo"], body: `<rect x="2" y="9" width="6" height="9" rx="1"/><path d="M8 13h6l4 5h-10z"/><circle cx="5" cy="19" r="2"/><circle cx="15" cy="19" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10278,7 +10278,7 @@ export const TractorTrailer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Submarine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "submarine");
+  const icon = { id: "submarine", name: "Submarine", category: "Vehicles3", tags: ["sea", "navy"], body: `<ellipse cx="12" cy="14" rx="9" ry="3"/><path d="M9 11V7h4v4M11 7V3M14 17l3 3M3 14l-2 1M21 14l2 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10291,7 +10291,7 @@ export const Submarine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sailboat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sailboat");
+  const icon = { id: "sailboat", name: "Sailboat", category: "Vehicles3", tags: ["sail", "boat"], body: `<path d="M3 19h18l-2 3H5z"/><path d="M12 19V4M12 4l7 11H12z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10304,7 +10304,7 @@ export const Sailboat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ShieldSword: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shield-sword");
+  const icon = { id: "shield-sword", name: "Shield Sword", category: "Weapons", tags: ["weapon", "defense"], body: `<path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10317,7 +10317,7 @@ export const ShieldSword: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BowArrow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bow-arrow");
+  const icon = { id: "bow-arrow", name: "Bow Arrow", category: "Weapons", tags: ["archery", "weapon"], body: `<path d="M5 4c-3 5-3 11 0 16M5 4c3 5 3 11 0 16M3 12h18M19 9l4 3-4 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10330,7 +10330,7 @@ export const BowArrow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Crossbow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "crossbow");
+  const icon = { id: "crossbow", name: "Crossbow", category: "Weapons", tags: ["weapon", "bow"], body: `<path d="M3 12h18M9 6l-2 6 2 6M15 6l2 6-2 6M9 12l8-3M9 12l8 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10343,7 +10343,7 @@ export const Crossbow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BattleAxe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "axe-battle");
+  const icon = { id: "axe-battle", name: "Battle Axe", category: "Weapons", tags: ["weapon", "axe"], body: `<path d="M3 21l9-9M12 12l5-5M5 4c2 4 6 6 10 6l2-2c-4-6-12-4-12-4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10356,7 +10356,7 @@ export const BattleAxe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Katana: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "katana");
+  const icon = { id: "katana", name: "Katana", category: "Weapons", tags: ["sword", "japan"], body: `<path d="M3 21l14-14M17 7l3-3M3 21l-1 1M14 8l4 4M20 4l-3-1M22 6l-1 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10369,7 +10369,7 @@ export const Katana: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dagger: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dagger");
+  const icon = { id: "dagger", name: "Dagger", category: "Weapons", tags: ["knife", "weapon"], body: `<path d="M3 21l8-8M11 13L17 7l3 3-6 6zM11 13l-2-1M3 21l-1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10382,7 +10382,7 @@ export const Dagger: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WarHammer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hammer-weapon");
+  const icon = { id: "hammer-weapon", name: "War Hammer", category: "Weapons", tags: ["weapon", "hammer"], body: `<path d="M3 21l9-9M12 12l3-3M5 6h10v6H5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10395,7 +10395,7 @@ export const WarHammer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Spear: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "spear");
+  const icon = { id: "spear", name: "Spear", category: "Weapons", tags: ["weapon", "spear"], body: `<path d="M3 21l13-13M16 8l4-4M3 21l-1 1M16 8l3-3M19 5l3-1-1 3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10408,7 +10408,7 @@ export const Spear: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ShoppingMall: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mall");
+  const icon = { id: "mall", name: "Shopping Mall", category: "Buildings2", tags: ["shop", "complex"], body: `<rect x="3" y="6" width="18" height="15" rx="1"/><path d="M3 6l3-3h12l3 3M6 21v-7h4v7M14 21v-7h4v7M6 10h2M10 10h2M14 10h2M18 10h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10421,7 +10421,7 @@ export const ShoppingMall: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bank: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bank");
+  const icon = { id: "bank", name: "Bank", category: "Buildings2", tags: ["finance", "money"], body: `<path d="M3 9l9-6 9 6M5 9v9M19 9v9M9 9v9M15 9v9M3 21h18M3 18h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10434,7 +10434,7 @@ export const Bank: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Museum: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "museum");
+  const icon = { id: "museum", name: "Museum", category: "Buildings2", tags: ["art", "history"], body: `<path d="M3 21V8l9-5 9 5v13M3 21h18M7 21v-8h10v8M9 13h6M10 11v2M14 11v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10447,7 +10447,7 @@ export const Museum: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Library: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "library");
+  const icon = { id: "library", name: "Library", category: "Buildings2", tags: ["books", "study"], body: `<path d="M3 21V9l9-6 9 6v12M3 21h18M7 21V11M11 21V11M13 21V11M17 21V11"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10460,7 +10460,7 @@ export const Library: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Stadium: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stadium");
+  const icon = { id: "stadium", name: "Stadium", category: "Buildings2", tags: ["sports", "arena"], body: `<ellipse cx="12" cy="14" rx="9" ry="3"/><path d="M3 14v3c0 2 4 3 9 3s9-1 9-3v-3M5 11V8M9 11V7M15 11V7M19 11V8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10473,7 +10473,7 @@ export const Stadium: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cathedral: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cathedral");
+  const icon = { id: "cathedral", name: "Cathedral", category: "Buildings2", tags: ["church", "gothic"], body: `<path d="M5 21V11l7-7 7 7v10M5 21h14M10 14l2-2 2 2M9 21v-4h6v4M12 4V1M11 2h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10486,7 +10486,7 @@ export const Cathedral: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Warehouse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "warehouse");
+  const icon = { id: "warehouse", name: "Warehouse", category: "Buildings2", tags: ["storage", "industrial"], body: `<path d="M3 21V9l9-4 9 4v12M3 21h18M7 21v-7h10v7M9 14h6M9 17h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10499,7 +10499,7 @@ export const Warehouse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GasStation: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gas-station");
+  const icon = { id: "gas-station", name: "Gas Station", category: "Buildings2", tags: ["fuel", "petrol"], body: `<path d="M5 21V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v16M5 21h8M5 9h8M14 9l4 3v9M14 21h6M17 12v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10512,7 +10512,7 @@ export const GasStation: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Park: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "park");
+  const icon = { id: "park", name: "Park", category: "Buildings2", tags: ["garden", "trees"], body: `<path d="M3 21h18M6 21V12M10 21V8M14 21V10M18 21V14M5 12c1-2 1-4 1-4 0 2 0 2 1 4M9 8c1-2 1-4 1-4 0 2 0 2 1 4M13 10c1-2 1-4 1-4 0 2 0 2 1 4M17 14c1-2 1-4 1-4 0 2 0 2 1 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10525,7 +10525,7 @@ export const Park: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Windmill: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "windmill");
+  const icon = { id: "windmill", name: "Windmill", category: "Buildings2", tags: ["wind", "old"], body: `<path d="M12 21V11M12 11c0-3-2-5-5-5-2 2-2 4 0 5zM12 11c0-3 2-5 5-5 2 2 2 4 0 5zM12 11c3 0 5 2 5 5-2 2-4 2-5 0zM12 11c-3 0-5-2-5-5 2-2 4-2 5 0z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10538,7 +10538,7 @@ export const Windmill: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lighthouse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lighthouse");
+  const icon = { id: "lighthouse", name: "Lighthouse", category: "Buildings2", tags: ["sea", "light"], body: `<path d="M9 21V8l3-3 3 3v13M9 21h6M9 13h6M11 5V2M10 3h2M5 6L2 4M19 6l3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10551,7 +10551,7 @@ export const Lighthouse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pyramid: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pyramid");
+  const icon = { id: "pyramid", name: "Pyramid", category: "Buildings2", tags: ["egypt", "ancient"], body: `<path d="M3 21L12 4l9 17zM12 4v17M8 12l4-2 4 2M6 17l6-2 6 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10564,7 +10564,7 @@ export const Pyramid: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Snowflake2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "snowflake-2");
+  const icon = { id: "snowflake-2", name: "Snowflake 2", category: "Nature2", tags: ["winter", "crystal"], body: `<path d="M12 3v18M3 12h18M5 5l14 14M19 5L5 19M9 4l3 1 3-1M9 20l3-1 3 1M4 9l1 3-1 3M20 9l-1 3 1 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10577,7 +10577,7 @@ export const Snowflake2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Rainbow2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rainbow-2");
+  const icon = { id: "rainbow-2", name: "Rainbow 2", category: "Nature2", tags: ["color", "arc"], body: `<path d="M3 20a9 9 0 0 1 18 0M5 20a7 7 0 0 1 14 0M7 20a5 5 0 0 1 10 0M9 20a3 3 0 0 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10590,7 +10590,7 @@ export const Rainbow2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Aurora: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "aurora-borealis");
+  const icon = { id: "aurora-borealis", name: "Aurora", category: "Nature2", tags: ["northern", "lights"], body: `<path d="M3 18c3-3 6-3 9 0s6 3 9 0M3 14c3-3 6-3 9 0s6 3 9 0M3 10c3-3 6-3 9 0s6 3 9 0M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10603,7 +10603,7 @@ export const Aurora: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Comet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "comet");
+  const icon = { id: "comet", name: "Comet", category: "Nature2", tags: ["space", "tail"], body: `<circle cx="17" cy="7" r="3"/><path d="M15 9L4 20M13 7L3 17M17 11l-7 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10616,7 +10616,7 @@ export const Comet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Eclipse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eclipse");
+  const icon = { id: "eclipse", name: "Eclipse", category: "Nature2", tags: ["sun", "moon"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18 5 5 0 0 1 0-18z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10629,7 +10629,7 @@ export const Eclipse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tornado2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tornado-2");
+  const icon = { id: "tornado-2", name: "Tornado 2", category: "Nature2", tags: ["wind", "storm"], body: `<path d="M3 4h18M5 8h14M7 12h10M9 16h6M11 20h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10642,7 +10642,7 @@ export const Tornado2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tsunami: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tsunami");
+  const icon = { id: "tsunami", name: "Tsunami", category: "Nature2", tags: ["wave", "disaster"], body: `<path d="M3 21V14c0-3 2-5 5-5s5 2 5 5 2 5 5 5h3M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10655,7 +10655,7 @@ export const Tsunami: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Earthquake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "earthquake");
+  const icon = { id: "earthquake", name: "Earthquake", category: "Nature2", tags: ["seismic", "shake"], body: `<path d="M3 12h3l2-5 3 10 2-7 3 4 2-2h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10668,7 +10668,7 @@ export const Earthquake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Eruption: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "volcano-3");
+  const icon = { id: "volcano-3", name: "Eruption", category: "Nature2", tags: ["lava", "volcano"], body: `<path d="M3 21l5-12 4 4 4-4 5 12z"/><path d="M8 9c0-2 1-3 3-3M14 8c0-2 1-3 3-3M12 4l1-2M14 5l1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10681,7 +10681,7 @@ export const Eruption: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Iceberg: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "iceberg");
+  const icon = { id: "iceberg", name: "Iceberg", category: "Nature2", tags: ["ice", "sea"], body: `<path d="M3 21l5-12 4 4 4-4 5 12z"/><path d="M3 21h18M8 9l4 4 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10694,7 +10694,7 @@ export const Iceberg: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SandDunes: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "desert-2");
+  const icon = { id: "desert-2", name: "Sand Dunes", category: "Nature2", tags: ["desert", "sand"], body: `<path d="M3 20c2-4 5-4 7-2s5 2 7 0 4-2 4-2v4zM3 20h18M5 16c1-2 2-2 3-1M15 14c1-2 2-2 3-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10707,7 +10707,7 @@ export const SandDunes: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Oasis: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "oasis");
+  const icon = { id: "oasis", name: "Oasis", category: "Nature2", tags: ["water", "desert"], body: `<ellipse cx="12" cy="14" rx="6" ry="3"/><path d="M9 14V9c0-1 1-2 3-2s3 1 3 2v5M9 9c-1-1-2-1-3-2M15 9c1-1 2-1 3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10720,7 +10720,7 @@ export const Oasis: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tambourine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tambourine");
+  const icon = { id: "tambourine", name: "Tambourine", category: "Music4", tags: ["percussion", "shake"], body: `<circle cx="12" cy="12" r="8"/><circle cx="12" cy="5" r="1.2" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.2" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10733,7 +10733,7 @@ export const Tambourine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Banjo: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "banjo");
+  const icon = { id: "banjo", name: "Banjo", category: "Music4", tags: ["string", "folk"], body: `<circle cx="8" cy="16" r="5"/><path d="M12 13l8-9M16 9l2-2M14 11l2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10746,7 +10746,7 @@ export const Banjo: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cello: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cello");
+  const icon = { id: "cello", name: "Cello", category: "Music4", tags: ["string", "classical"], body: `<ellipse cx="12" cy="18" rx="6" ry="4"/><ellipse cx="12" cy="11" rx="4" ry="3"/><path d="M12 11V3M10 4h4M9 16l6 0M9 18l6 0M10 19l4 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10759,7 +10759,7 @@ export const Cello: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Accordion: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "accordion");
+  const icon = { id: "accordion", name: "Accordion", category: "Music4", tags: ["squeeze", "folk"], body: `<rect x="2" y="8" width="6" height="9" rx="1"/><rect x="16" y="8" width="6" height="9" rx="1"/><path d="M8 9l2 0M8 11l2 0M8 13l2 0M8 15l2 0M14 9h2M14 11h2M14 13h2M14 15h2M10 9v7M12 9v7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10772,7 +10772,7 @@ export const Accordion: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Saxophone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "saxophone");
+  const icon = { id: "saxophone", name: "Saxophone", category: "Music4", tags: ["brass", "jazz"], body: `<path d="M16 3v9a5 5 0 0 1-10 0V8M16 3l4 1M11 13v8M9 21h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10785,7 +10785,7 @@ export const Saxophone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Harmonica: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "harmonica");
+  const icon = { id: "harmonica", name: "Harmonica", category: "Music4", tags: ["mouth", "blues"], body: `<rect x="2" y="9" width="20" height="6" rx="1"/><path d="M5 12h1M8 12h1M11 12h1M14 12h1M17 12h1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10798,7 +10798,7 @@ export const Harmonica: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Xylophone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "xylophone");
+  const icon = { id: "xylophone", name: "Xylophone", category: "Music4", tags: ["bars", "kids"], body: `<rect x="3" y="8" width="3" height="9"/><rect x="7" y="6" width="3" height="11"/><rect x="11" y="4" width="3" height="13"/><rect x="15" y="6" width="3" height="11"/><rect x="19" y="8" width="3" height="9"/><path d="M2 6l4 1M6 4l4 1M10 2l4 1M14 4l4 1M18 6l4 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10811,7 +10811,7 @@ export const Xylophone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Maracas: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "maracas");
+  const icon = { id: "maracas", name: "Maracas", category: "Music4", tags: ["shake", "latin"], body: `<ellipse cx="6" cy="8" rx="3" ry="4"/><ellipse cx="18" cy="8" rx="3" ry="4"/><path d="M6 12v9M18 12v9M5 16h2M17 16h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10824,7 +10824,7 @@ export const Maracas: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Trombone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trombone");
+  const icon = { id: "trombone", name: "Trombone", category: "Music4", tags: ["brass", "slide"], body: `<path d="M3 11h11l4-3v3M3 11v2M7 11v2M10 11v2M19 11l2 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10837,7 +10837,7 @@ export const Trombone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Clarinet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "clarinet");
+  const icon = { id: "clarinet", name: "Clarinet", category: "Music4", tags: ["woodwind", "music"], body: `<rect x="9" y="3" width="6" height="18" rx="1"/><circle cx="12" cy="7" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="11" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10850,7 +10850,7 @@ export const Clarinet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Flute: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flute-music");
+  const icon = { id: "flute-music", name: "Flute", category: "Music4", tags: ["wind", "music"], body: `<rect x="2" y="10" width="20" height="4" rx="1"/><circle cx="7" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="11" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10863,7 +10863,7 @@ export const Flute: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cymbal: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cymbal");
+  const icon = { id: "cymbal", name: "Cymbal", category: "Music4", tags: ["crash", "metal"], body: `<ellipse cx="12" cy="9" rx="9" ry="2"/><path d="M12 11v8M9 21h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10876,7 +10876,7 @@ export const Cymbal: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sushi: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sushi");
+  const icon = { id: "sushi", name: "Sushi", category: "Food2", tags: ["japanese", "rice"], body: `<ellipse cx="12" cy="13" rx="6" ry="4"/><ellipse cx="12" cy="11" rx="6" ry="3"/><path d="M8 11c0-2 2-3 4-3s4 1 4 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10889,7 +10889,7 @@ export const Sushi: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Noodles: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "noodles");
+  const icon = { id: "noodles", name: "Noodles", category: "Food2", tags: ["ramen", "asian"], body: `<path d="M3 21V13a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8M3 21h18M3 18h18"/><path d="M7 9c0-2 1-3 2-3M11 9c0-3 1-4 2-4M15 9c0-2 1-3 2-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10902,7 +10902,7 @@ export const Noodles: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Taco: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "taco");
+  const icon = { id: "taco", name: "Taco", category: "Food2", tags: ["mexican", "food"], body: `<path d="M3 16a9 9 0 0 1 18 0M3 16v2h18v-2M7 14l1-2M11 14l1-2M15 14l1-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10915,7 +10915,7 @@ export const Taco: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sandwich: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sandwich");
+  const icon = { id: "sandwich", name: "Sandwich", category: "Food2", tags: ["lunch", "food"], body: `<path d="M4 6h16v3H4zM4 11h16v3H4zM4 16h16v3H4z"/><path d="M4 6c0-1 1-2 2-2h12c1 0 2 1 2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10928,7 +10928,7 @@ export const Sandwich: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SoupBowl: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "soup");
+  const icon = { id: "soup", name: "Soup Bowl", category: "Food2", tags: ["hot", "liquid"], body: `<path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M3 11h18M21 11h1M2 11H1M9 7c0-1 1-2 2-2M13 7c0-1 1-2 2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10941,7 +10941,7 @@ export const SoupBowl: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Steak: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "steak");
+  const icon = { id: "steak", name: "Steak", category: "Food2", tags: ["meat", "beef"], body: `<path d="M4 12c0-4 4-7 8-7s7 3 7 7-3 7-7 7-8-3-8-7z"/><path d="M8 12l3 2M12 8l3 4M14 14l3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10954,7 +10954,7 @@ export const Steak: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FrenchFries: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fries");
+  const icon = { id: "fries", name: "French Fries", category: "Food2", tags: ["fast", "potato"], body: `<path d="M5 21l-2-9h18l-2 9z"/><path d="M8 12V4M11 12V3M14 12V4M17 12V5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10967,7 +10967,7 @@ export const FrenchFries: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HotDog: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hotdog");
+  const icon = { id: "hotdog", name: "Hot Dog", category: "Food2", tags: ["fast", "snack"], body: `<path d="M4 14c0-3 3-5 8-5s8 2 8 5v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M7 14c2-1 4-1 5 0s3 1 5 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10980,7 +10980,7 @@ export const HotDog: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cheese: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cheese");
+  const icon = { id: "cheese", name: "Cheese", category: "Food2", tags: ["dairy", "food"], body: `<path d="M3 19l5-14 13 5v9z"/><circle cx="8" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="13" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="17" cy="16" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -10993,7 +10993,7 @@ export const Cheese: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FriedEgg: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "egg-fried");
+  const icon = { id: "egg-fried", name: "Fried Egg", category: "Food2", tags: ["breakfast", "egg"], body: `<path d="M3 14a6 6 0 0 1 12 0c0 3-3 5-6 5s-6-2-6-5z"/><circle cx="9" cy="13" r="2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11006,7 +11006,7 @@ export const FriedEgg: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pancake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pancake");
+  const icon = { id: "pancake", name: "Pancake", category: "Food2", tags: ["breakfast", "stack"], body: `<ellipse cx="12" cy="9" rx="9" ry="2"/><ellipse cx="12" cy="13" rx="9" ry="2"/><ellipse cx="12" cy="17" rx="9" ry="2"/><path d="M14 5V3M16 4V2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11019,7 +11019,7 @@ export const Pancake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SaladBowl: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "salad");
+  const icon = { id: "salad", name: "Salad Bowl", category: "Food2", tags: ["healthy", "veggie"], body: `<path d="M3 11h18l-2 5a4 4 0 0 1-4 3H9a4 4 0 0 1-4-3z"/><circle cx="9" cy="8" r="2"/><circle cx="15" cy="7" r="2"/><circle cx="12" cy="5" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11032,7 +11032,7 @@ export const SaladBowl: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Yoga: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "yoga");
+  const icon = { id: "yoga", name: "Yoga", category: "Activities", tags: ["meditation", "exercise"], body: `<circle cx="12" cy="4" r="2"/><path d="M12 6v6M5 18c3 0 7-1 7-3s4-3 7-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11045,7 +11045,7 @@ export const Yoga: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Running: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "running");
+  const icon = { id: "running", name: "Running", category: "Activities", tags: ["jog", "fitness"], body: `<circle cx="14" cy="4" r="2"/><path d="M14 6l-3 4 2 2v6M11 10l-3 2M14 12l4-1M9 21l2-5M17 21l-3-7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11058,7 +11058,7 @@ export const Running: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dancing: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dancing");
+  const icon = { id: "dancing", name: "Dancing", category: "Activities", tags: ["dance", "music"], body: `<circle cx="12" cy="4" r="2"/><path d="M12 6v5M8 10l4 1 4-1M6 16l6-5 6 5M9 21l3-5 3 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11071,7 +11071,7 @@ export const Dancing: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Meditation: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "meditation");
+  const icon = { id: "meditation", name: "Meditation", category: "Activities", tags: ["calm", "peace"], body: `<circle cx="12" cy="5" r="2"/><path d="M12 7v6M7 13h10M6 18c2 0 4-1 6-1s4 1 6 1M9 21h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11084,7 +11084,7 @@ export const Meditation: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Reading: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "reading");
+  const icon = { id: "reading", name: "Reading", category: "Activities", tags: ["book", "study"], body: `<circle cx="12" cy="5" r="2"/><path d="M8 21V11l4-3 4 3v10M8 11h8M8 15h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11097,7 +11097,7 @@ export const Reading: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Writing: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "writing");
+  const icon = { id: "writing", name: "Writing", category: "Activities", tags: ["write", "create"], body: `<circle cx="12" cy="5" r="2"/><path d="M9 21l3-9 3 9M6 12h12M9 14h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11110,7 +11110,7 @@ export const Writing: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cooking: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cooking");
+  const icon = { id: "cooking", name: "Cooking", category: "Activities", tags: ["chef", "food"], body: `<circle cx="12" cy="4" r="2"/><path d="M8 21l2-9 4 0 2 9M5 14h14M9 12h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11123,7 +11123,7 @@ export const Cooking: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Painting: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "painting");
+  const icon = { id: "painting", name: "Painting", category: "Activities", tags: ["art", "color"], body: `<circle cx="12" cy="4" r="2"/><path d="M9 21l3-8 3 8M6 13l6-1 6 1M9 16h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11136,7 +11136,7 @@ export const Painting: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Gardening: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gardening");
+  const icon = { id: "gardening", name: "Gardening", category: "Activities", tags: ["plant", "garden"], body: `<circle cx="12" cy="4" r="2"/><path d="M12 6v6M8 18l4-6 4 6M6 21l3-3 3 1 3-1 3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11149,7 +11149,7 @@ export const Gardening: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fishing: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fishing");
+  const icon = { id: "fishing", name: "Fishing", category: "Activities", tags: ["fish", "rod"], body: `<circle cx="6" cy="5" r="2"/><path d="M5 7l4 4 1 9M9 11l9-7M14 16a3 3 0 1 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11162,7 +11162,7 @@ export const Fishing: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hiking: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hiking");
+  const icon = { id: "hiking", name: "Hiking", category: "Activities", tags: ["trek", "outdoor"], body: `<circle cx="12" cy="3" r="2"/><path d="M12 5l-5 8h3l-2 8M12 5l5 8h-3l2 8M9 10h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11175,7 +11175,7 @@ export const Hiking: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cycling2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cycling-2");
+  const icon = { id: "cycling-2", name: "Cycling 2", category: "Activities", tags: ["bike", "sport"], body: `<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-8h5l3 8M9 9l-2-3h-2M14 9l2-3M5 14h2M17 14h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11188,7 +11188,7 @@ export const Cycling2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Happy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "happy");
+  const icon = { id: "happy", name: "Happy", category: "Emotions", tags: ["joy", "smile"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 14a4 4 0 0 0 8 0"/><circle cx="9" cy="9" r="0.8" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11201,7 +11201,7 @@ export const Happy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sad: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sad");
+  const icon = { id: "sad", name: "Sad", category: "Emotions", tags: ["down", "cry"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 16a4 4 0 0 1 8 0"/><path d="M9 10c0-1-1-2-2-1M15 10c0-1 1-2 2-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11214,7 +11214,7 @@ export const Sad: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Love: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "love-emotion");
+  const icon = { id: "love-emotion", name: "Love", category: "Emotions", tags: ["heart", "adore"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 13a4 4 0 0 0 8 0"/><path d="M9 9l-1-1.5-1 1.5 1 1.5zM15 9l-1-1.5-1 1.5 1 1.5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11227,7 +11227,7 @@ export const Love: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Angry_angryemotion: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "angry-emotion");
+  const icon = { id: "angry-emotion", name: "Angry", category: "Emotions", tags: ["mad", "rage"], body: `<circle cx="12" cy="12" r="9"/><path d="M7 9l3 1M17 9l-3 1M9 16a4 4 0 0 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11240,7 +11240,7 @@ export const Angry_angryemotion: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Surprised: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "surprised");
+  const icon = { id: "surprised", name: "Surprised", category: "Emotions", tags: ["wow", "shock"], body: `<circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.5"/><circle cx="15" cy="10" r="1.5"/><circle cx="12" cy="16" r="2.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11253,7 +11253,7 @@ export const Surprised: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Confused: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "confused");
+  const icon = { id: "confused", name: "Confused", category: "Emotions", tags: ["??", "lost"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 10h0.1M15 10h0M8 16c2-1 6-1 8 0M9 7l1-1 1 1-1 1zM15 7l1-1 1 1-1 1z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11266,7 +11266,7 @@ export const Confused: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Sleepy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sleepy");
+  const icon = { id: "sleepy", name: "Sleepy", category: "Emotions", tags: ["tired", "zzz"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 14h6M8 10l3 1M16 10l-3 1M18 4l1 1 1-1M20 7l0.5 0.5 0.5-0.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11279,7 +11279,7 @@ export const Sleepy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Excited: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "excited");
+  const icon = { id: "excited", name: "Excited", category: "Emotions", tags: ["wow", "yay"], body: `<circle cx="12" cy="12" r="9"/><path d="M8 14a4 4 0 0 0 8 0"/><circle cx="8" cy="9" r="1.5" fill="currentColor" stroke="none"/><circle cx="16" cy="9" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11292,7 +11292,7 @@ export const Excited: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bored: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bored");
+  const icon = { id: "bored", name: "Bored", category: "Emotions", tags: ["meh", "uninterested"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 10l3 1M15 10l-3 1M8 16h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11305,7 +11305,7 @@ export const Bored: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Scared: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scared");
+  const icon = { id: "scared", name: "Scared", category: "Emotions", tags: ["fear", "afraid"], body: `<circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.5"/><circle cx="15" cy="10" r="1.5"/><path d="M9 16a3 3 0 0 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11318,7 +11318,7 @@ export const Scared: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Like: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "like");
+  const icon = { id: "like", name: "Like", category: "SocialMedia", tags: ["thumb", "up"], body: `<path d="M7 22V11l4-4V3a2 2 0 0 1 4 0v6h5a2 2 0 0 1 2 2l-2 9a3 3 0 0 1-3 2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11331,7 +11331,7 @@ export const Like: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Comment: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "comment");
+  const icon = { id: "comment", name: "Comment", category: "SocialMedia", tags: ["chat", "reply"], body: `<path d="M3 5h18v11H10l-5 4v-4H3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11344,7 +11344,7 @@ export const Comment: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Share_share2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "share-2");
+  const icon = { id: "share-2", name: "Share", category: "SocialMedia", tags: ["distribute", "social"], body: `<circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 12l6-4M9 12l6 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11357,7 +11357,7 @@ export const Share_share2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bookmark_bookmark2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bookmark-2");
+  const icon = { id: "bookmark-2", name: "Bookmark", category: "SocialMedia", tags: ["save", "mark"], body: `<path d="M5 3h14v18l-7-5-7 5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11370,7 +11370,7 @@ export const Bookmark_bookmark2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Follow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "follow");
+  const icon = { id: "follow", name: "Follow", category: "SocialMedia", tags: ["subscribe", "add"], body: `<circle cx="9" cy="8" r="3"/><path d="M3 19a6 6 0 0 1 12 0"/><path d="M18 7v6M15 10h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11383,7 +11383,7 @@ export const Follow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DirectMessage: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dm");
+  const icon = { id: "dm", name: "Direct Message", category: "SocialMedia", tags: ["dm", "inbox"], body: `<path d="M21 4L3 11l6 2 2 6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11396,7 +11396,7 @@ export const DirectMessage: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Retweet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "retweet");
+  const icon = { id: "retweet", name: "Retweet", category: "SocialMedia", tags: ["repost", "twitter"], body: `<path d="M3 7h11l-2-2M3 7l2-2M3 7v6M21 17H10l2 2M21 17l-2 2M21 17v-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11409,7 +11409,7 @@ export const Retweet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Trending: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "trending");
+  const icon = { id: "trending", name: "Trending", category: "SocialMedia", tags: ["viral", "hot"], body: `<path d="M3 17l5-5 4 3 6-8M16 7h4v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11422,7 +11422,7 @@ export const Trending: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LiveStream: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "live-stream");
+  const icon = { id: "live-stream", name: "Live Stream", category: "SocialMedia", tags: ["live", "broadcast"], body: `<circle cx="12" cy="12" r="3"/><path d="M7 7a7 7 0 0 0 0 10M17 7a7 7 0 0 1 0 10M4 4a12 12 0 0 0 0 16M20 4a12 12 0 0 1 0 16"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11435,7 +11435,7 @@ export const LiveStream: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const UploadMedia: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "upload-2");
+  const icon = { id: "upload-2", name: "Upload Media", category: "SocialMedia", tags: ["post", "media"], body: `<path d="M3 21V8l4-4h10l4 4v13M3 21h18M8 14h8M12 10v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11448,7 +11448,7 @@ export const UploadMedia: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Verified_verifiedbadge: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "verified-badge");
+  const icon = { id: "verified-badge", name: "Verified", category: "SocialMedia", tags: ["badge", "blue"], body: `<path d="M12 2l3 2 4-1 1 4 2 3-2 3 1 4-4 1-3 2-3-2-4 1-1-4-2-3 2-3-1-4 4-1z"/><path d="M9 12l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11461,7 +11461,7 @@ export const Verified_verifiedbadge: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hashtag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hashtag");
+  const icon = { id: "hashtag", name: "Hashtag", category: "SocialMedia", tags: ["tag", "topic"], body: `<path d="M9 3v18M15 3v18M3 9h18M3 15h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11474,7 +11474,7 @@ export const Hashtag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PDFFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-pdf");
+  const icon = { id: "file-pdf", name: "PDF File", category: "FileTypes", tags: ["document", "pdf"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4"/><text x="7" y="17" font-size="4" fill="currentColor" stroke="none">PDF</text>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11487,7 +11487,7 @@ export const PDFFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ImageFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-image");
+  const icon = { id: "file-image", name: "Image File", category: "FileTypes", tags: ["jpg", "png"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M8 14l3-3 3 3 2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11500,7 +11500,7 @@ export const ImageFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const VideoFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-video");
+  const icon = { id: "file-video", name: "Video File", category: "FileTypes", tags: ["mp4", "video"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M10 13l4 2-4 2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11513,7 +11513,7 @@ export const VideoFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const AudioFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-audio");
+  const icon = { id: "file-audio", name: "Audio File", category: "FileTypes", tags: ["mp3", "music"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M9 14v4M12 12v6M15 14v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11526,7 +11526,7 @@ export const AudioFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ZIPFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-zip");
+  const icon = { id: "file-zip", name: "ZIP File", category: "FileTypes", tags: ["archive", "compress"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M11 7v2M11 11v2M11 15v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11539,7 +11539,7 @@ export const ZIPFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CodeFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-code");
+  const icon = { id: "file-code", name: "Code File", category: "FileTypes", tags: ["js", "ts"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M9 13l-2 2 2 2M15 13l2 2-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11552,7 +11552,7 @@ export const CodeFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TextFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-text");
+  const icon = { id: "file-text", name: "Text File", category: "FileTypes", tags: ["txt", "doc"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M8 13h8M8 16h8M8 10h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11565,7 +11565,7 @@ export const TextFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ExcelFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-excel");
+  const icon = { id: "file-excel", name: "Excel File", category: "FileTypes", tags: ["xls", "spreadsheet"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M8 14l2 3 2-3 2 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11578,7 +11578,7 @@ export const ExcelFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WordFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-word");
+  const icon = { id: "file-word", name: "Word File", category: "FileTypes", tags: ["docx", "word"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M8 13l1 5 2-4 2 4 1-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11591,7 +11591,7 @@ export const WordFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PPTFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-ppt");
+  const icon = { id: "file-ppt", name: "PPT File", category: "FileTypes", tags: ["ppt", "slides"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M8 14h6M8 14v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11604,7 +11604,7 @@ export const PPTFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CSVFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-csv");
+  const icon = { id: "file-csv", name: "CSV File", category: "FileTypes", tags: ["data", "csv"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M7 13h10M7 16h10M9 13v3M13 13v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11617,7 +11617,7 @@ export const CSVFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const JSONFile: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-json");
+  const icon = { id: "file-json", name: "JSON File", category: "FileTypes", tags: ["json", "config"], body: `<path d="M5 3h10l4 4v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M14 3v4h4M9 13c-1 1-1 3 0 4M15 13c1 1 1 3 0 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11630,7 +11630,7 @@ export const JSONFile: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mathematics: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "math-subject");
+  const icon = { id: "math-subject", name: "Mathematics", category: "Subjects", tags: ["math", "calc"], body: `<path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6zM7 7h0M17 7h0M7 17h0M17 17h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11643,7 +11643,7 @@ export const Mathematics: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Science: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "science-subject");
+  const icon = { id: "science-subject", name: "Science", category: "Subjects", tags: ["science", "atom"], body: `<circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="3"/><ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(120 12 12)"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11656,7 +11656,7 @@ export const Science: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const English: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "english-subject");
+  const icon = { id: "english-subject", name: "English", category: "Subjects", tags: ["language", "abc"], body: `<path d="M4 4h6M7 4v16M4 20h6M14 4h6M17 4v16M14 20h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11669,7 +11669,7 @@ export const English: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const History_historysubject: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "history-subject");
+  const icon = { id: "history-subject", name: "History", category: "Subjects", tags: ["past", "ancient"], body: `<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2M3 12h2M19 12h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11682,7 +11682,7 @@ export const History_historysubject: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Geography: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "geography-subject");
+  const icon = { id: "geography-subject", name: "Geography", category: "Subjects", tags: ["world", "earth"], body: `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11695,7 +11695,7 @@ export const Geography: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArtClass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "art-subject");
+  const icon = { id: "art-subject", name: "Art Class", category: "Subjects", tags: ["draw", "paint"], body: `<circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1.2" fill="currentColor" stroke="none"/><circle cx="11" cy="15" r="1.2" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11708,7 +11708,7 @@ export const ArtClass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MusicClass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "music-subject");
+  const icon = { id: "music-subject", name: "Music Class", category: "Subjects", tags: ["music", "note"], body: `<circle cx="6" cy="18" r="3"/><path d="M9 18V4l9-1v3l-9 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11721,7 +11721,7 @@ export const MusicClass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PhysicalEd: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pe-subject");
+  const icon = { id: "pe-subject", name: "Physical Ed", category: "Subjects", tags: ["pe", "sport"], body: `<circle cx="12" cy="4" r="2"/><path d="M12 6v6M6 9l6 1 6-1M9 21l3-5 3 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11734,7 +11734,7 @@ export const PhysicalEd: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ComputerSci: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "computer-subject");
+  const icon = { id: "computer-subject", name: "Computer Sci", category: "Subjects", tags: ["cs", "code"], body: `<rect x="3" y="4" width="18" height="13" rx="1"/><path d="M3 17h18M9 21h6M9 9l-2 2 2 2M15 9l2 2-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11747,7 +11747,7 @@ export const ComputerSci: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Biology: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "biology-subject");
+  const icon = { id: "biology-subject", name: "Biology", category: "Subjects", tags: ["dna", "life"], body: `<path d="M7 3c0 6 10 6 10 12M17 3c0 6-10 6-10 12M7 3v18M17 3v18M7 6h10M7 9h10M7 15h10M7 18h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11760,7 +11760,7 @@ export const Biology: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Yacht: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "yacht");
+  const icon = { id: "yacht", name: "Yacht", category: "Transport2", tags: ["boat", "luxury"], body: `<path d="M3 19h18l-3 4H6zM12 19V4M12 4l8 11H12z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11773,7 +11773,7 @@ export const Yacht: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Jet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "jet");
+  const icon = { id: "jet", name: "Jet", category: "Transport2", tags: ["plane", "fast"], body: `<path d="M3 12l8-2 4-7 2 8 4 3-4 1-2 8-4-7z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11786,7 +11786,7 @@ export const Jet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CableCar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cable-car");
+  const icon = { id: "cable-car", name: "Cable Car", category: "Transport2", tags: ["transport", "lift"], body: `<path d="M2 4l20 0M5 4v3h14V4M5 7v13h14V7M9 13h6M9 17h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11799,7 +11799,7 @@ export const CableCar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Metro: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "metro");
+  const icon = { id: "metro", name: "Metro", category: "Transport2", tags: ["train", "subway"], body: `<rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M8 7h2M14 7h2M7 21l2-3M17 21l-2-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11812,7 +11812,7 @@ export const Metro: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tram: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tram");
+  const icon = { id: "tram", name: "Tram", category: "Transport2", tags: ["transport", "rail"], body: `<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 11h18M8 7h2M14 7h2M8 18v3M16 18v3M12 2v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11825,7 +11825,7 @@ export const Tram: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HorseRide: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "horse-ride");
+  const icon = { id: "horse-ride", name: "Horse Ride", category: "Transport2", tags: ["horse", "ride"], body: `<path d="M3 18c2 0 4-2 4-4l2-4c1-1 3-1 4 0l4 4c1 1 1 2 0 3M14 9V5M3 18v2M21 18v2M16 4l1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11838,7 +11838,7 @@ export const HorseRide: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bicycle2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bicycle-2");
+  const icon = { id: "bicycle-2", name: "Bicycle 2", category: "Transport2", tags: ["cycle", "bike"], body: `<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-7h6l-3 7M10 10l-2-3h-2M14 10l2-3M10 10l4 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11851,7 +11851,7 @@ export const Bicycle2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Segway: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "segway");
+  const icon = { id: "segway", name: "Segway", category: "Transport2", tags: ["electric", "ride"], body: `<circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 17V8h12v9M12 8V4M10 5h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11864,7 +11864,7 @@ export const Segway: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Gondola: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gondola");
+  const icon = { id: "gondola", name: "Gondola", category: "Transport2", tags: ["cable", "ski"], body: `<path d="M2 5h20M5 5v3h14V5M5 8v12h14V8M9 14h6M9 17h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11877,7 +11877,7 @@ export const Gondola: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hoverboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hoverboard");
+  const icon = { id: "hoverboard", name: "Hoverboard", category: "Transport2", tags: ["electric", "future"], body: `<rect x="2" y="9" width="20" height="6" rx="3"/><circle cx="6" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="18" cy="12" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11890,7 +11890,7 @@ export const Hoverboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Unicycle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "unicycle");
+  const icon = { id: "unicycle", name: "Unicycle", category: "Transport2", tags: ["cycle", "one"], body: `<circle cx="12" cy="18" r="4"/><path d="M12 14V4M9 4h6M9 8h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11903,7 +11903,7 @@ export const Unicycle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Skis: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "skis");
+  const icon = { id: "skis", name: "Skis", category: "Transport2", tags: ["ski", "snow"], body: `<path d="M3 21l18-3M5 20l-1 1M19 18l-1 1M10 18l-1-7 4-2-2 7M13 9l1-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11916,7 +11916,7 @@ export const Skis: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HotSun: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sun-hot");
+  const icon = { id: "sun-hot", name: "Hot Sun", category: "Weather4", tags: ["summer", "hot"], body: `<circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2M3 3h0.1M21 3h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11929,7 +11929,7 @@ export const HotSun: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cold: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cold");
+  const icon = { id: "cold", name: "Cold", category: "Weather4", tags: ["winter", "freeze"], body: `<path d="M12 3v18M3 8l9 5 9-5M3 16l9-5 9 5M3 8v8M21 8v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11942,7 +11942,7 @@ export const Cold: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Humid: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "humid");
+  const icon = { id: "humid", name: "Humid", category: "Weather4", tags: ["moist", "wet"], body: `<circle cx="12" cy="15" r="6"/><path d="M9 9c0-2 1-3 3-3M14 9c0-2 1-3 3-3M5 9c0-2 1-3 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11955,7 +11955,7 @@ export const Humid: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const StrongWind: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "windy-2");
+  const icon = { id: "windy-2", name: "Strong Wind", category: "Weather4", tags: ["gust", "storm"], body: `<path d="M3 8h12a3 3 0 1 0-3-3M3 16h16a3 3 0 1 1-3 3M3 12h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11968,7 +11968,7 @@ export const StrongWind: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Storm: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "storm");
+  const icon = { id: "storm", name: "Storm", category: "Weather4", tags: ["thunder", "rain"], body: `<path d="M7 14a5 5 0 0 1-1-9.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><path d="M13 14l-3 5h3l-2 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11981,7 +11981,7 @@ export const Storm: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Blizzard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "blizzard");
+  const icon = { id: "blizzard", name: "Blizzard", category: "Weather4", tags: ["snow", "wind"], body: `<path d="M3 8h18M3 12h14M5 16h14M3 20h10"/><circle cx="20" cy="20" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -11994,7 +11994,7 @@ export const Blizzard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Monsoon: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "monsoon");
+  const icon = { id: "monsoon", name: "Monsoon", category: "Weather4", tags: ["rain", "season"], body: `<path d="M7 12a5 5 0 0 1-1-9.9A6 6 0 0 1 18 3a4 4 0 0 1 1 7.9"/><path d="M9 17l-1 3M13 17l-1 3M17 17l-1 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12007,7 +12007,7 @@ export const Monsoon: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drought: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drought");
+  const icon = { id: "drought", name: "Drought", category: "Weather4", tags: ["dry", "hot"], body: `<circle cx="12" cy="9" r="4"/><path d="M12 13v8M8 17h8M5 21h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12020,7 +12020,7 @@ export const Drought: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Foggy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "foggy");
+  const icon = { id: "foggy", name: "Foggy", category: "Weather4", tags: ["mist", "low"], body: `<path d="M3 6h18M3 10h14M5 14h14M3 18h10M7 22h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12033,7 +12033,7 @@ export const Foggy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drizzle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drizzle");
+  const icon = { id: "drizzle", name: "Drizzle", category: "Weather4", tags: ["light", "rain"], body: `<path d="M7 14a5 5 0 0 1-1-9.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><path d="M10 18l-0.5 2M14 18l-0.5 2M18 18l-0.5 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12046,7 +12046,7 @@ export const Drizzle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const XRay: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "x-ray");
+  const icon = { id: "x-ray", name: "X-Ray", category: "Medical3", tags: ["scan", "bone"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M12 3v18M9 7c0 2-1 3-1 5M15 7c0 2 1 3 1 5M9 16c0 2 1 3 3 3s3-1 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12059,7 +12059,7 @@ export const XRay: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CTScan: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scan");
+  const icon = { id: "scan", name: "CT Scan", category: "Medical3", tags: ["scan", "medical"], body: `<rect x="3" y="6" width="18" height="12" rx="1"/><path d="M3 12h18M8 6V18M16 6V18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12072,7 +12072,7 @@ export const CTScan: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Surgery: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "surgery");
+  const icon = { id: "surgery", name: "Surgery", category: "Medical3", tags: ["operation", "medical"], body: `<path d="M3 21l6-6M14 4l6 6-9 9-6-6zM9 10l3 3M11 8l3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12085,7 +12085,7 @@ export const Surgery: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Checkup: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "checkup");
+  const icon = { id: "checkup", name: "Checkup", category: "Medical3", tags: ["health", "exam"], body: `<circle cx="12" cy="6" r="3"/><path d="M9 9l-3 8 4 4M15 9l3 8-4 4M8 21h8M12 12v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12098,7 +12098,7 @@ export const Checkup: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DentalCare: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dental");
+  const icon = { id: "dental", name: "Dental Care", category: "Medical3", tags: ["teeth", "dental"], body: `<path d="M12 4c-4 0-6 2-6 5 0 4 2 4 2 8 0 2 1 3 2 3s1-3 2-3 1 3 2 3 2-1 2-3c0-4 2-4 2-8 0-3-2-5-6-5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12111,7 +12111,7 @@ export const DentalCare: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EyeClinic: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "eye-clinic");
+  const icon = { id: "eye-clinic", name: "Eye Clinic", category: "Medical3", tags: ["optometry", "vision"], body: `<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12124,7 +12124,7 @@ export const EyeClinic: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const EarClinic: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ear-clinic");
+  const icon = { id: "ear-clinic", name: "Ear Clinic", category: "Medical3", tags: ["hearing", "ent"], body: `<path d="M7 18a4 4 0 0 1 0-8V6a3 3 0 0 1 6 0v3a4 4 0 0 1 4 4M12 9h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12137,7 +12137,7 @@ export const EarClinic: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BloodTest: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "blood-test");
+  const icon = { id: "blood-test", name: "Blood Test", category: "Medical3", tags: ["lab", "blood"], body: `<rect x="9" y="3" width="6" height="14" rx="3"/><path d="M9 11h6M9 14h6M12 17v4M9 21h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12150,7 +12150,7 @@ export const BloodTest: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pharmacy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pharmacy");
+  const icon = { id: "pharmacy", name: "Pharmacy", category: "Medical3", tags: ["medicine", "store"], body: `<rect x="3" y="4" width="18" height="17" rx="1"/><path d="M3 9h18M11 13l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12163,7 +12163,7 @@ export const Pharmacy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FitnessCheck: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fitness-check");
+  const icon = { id: "fitness-check", name: "Fitness Check", category: "Medical3", tags: ["health", "fit"], body: `<path d="M3 12h4l2-7 4 14 2-7h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12176,7 +12176,7 @@ export const FitnessCheck: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Blackboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "blackboard");
+  const icon = { id: "blackboard", name: "Blackboard", category: "Education2", tags: ["teach", "class"], body: `<rect x="2" y="4" width="20" height="13" rx="1"/><path d="M2 17l-1 4M22 17l1 4M5 21h14M9 8h6M9 11h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12189,7 +12189,7 @@ export const Blackboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Textbook: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "textbook");
+  const icon = { id: "textbook", name: "Textbook", category: "Education2", tags: ["book", "study"], body: `<path d="M5 4h12a3 3 0 0 1 3 3v14H8a3 3 0 0 1-3-3z"/><path d="M5 4a3 3 0 0 0-3 3v14a3 3 0 0 1 3-3M9 8h7M9 11h7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12202,7 +12202,7 @@ export const Textbook: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Notebook_notebookedu: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "notebook-edu");
+  const icon = { id: "notebook-edu", name: "Notebook", category: "Education2", tags: ["notes", "study"], body: `<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 3v18M3 8h4M3 12h4M3 16h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12215,7 +12215,7 @@ export const Notebook_notebookedu: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ExamPaper: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "exam");
+  const icon = { id: "exam", name: "Exam Paper", category: "Education2", tags: ["test", "paper"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h8M8 11h8M8 15h5M14 18l1-1 2 2 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12228,7 +12228,7 @@ export const ExamPaper: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GraduationCap_graduationcap: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "graduation-cap");
+  const icon = { id: "graduation-cap", name: "Graduation Cap", category: "Education2", tags: ["study", "school"], body: `<path d="M3 9l9-4 9 4-9 4zM7 11v5c0 1 2 2 5 2s5-1 5-2v-5M21 9v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12241,7 +12241,7 @@ export const GraduationCap_graduationcap: React.FC<ToolverseIconProps> = (props)
 };
 
 export const PencilRuler: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pencil-ruler");
+  const icon = { id: "pencil-ruler", name: "Pencil & Ruler", category: "Education2", tags: ["tools", "school"], body: `<path d="M14 4l6 6L8 22H2v-6zM11 7l6 6"/><rect x="2" y="9" width="6" height="20" rx="1" transform="rotate(-15 5 19)"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12254,7 +12254,7 @@ export const PencilRuler: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SchoolBus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "school-bus");
+  const icon = { id: "school-bus", name: "School Bus", category: "Education2", tags: ["transport", "kids"], body: `<rect x="3" y="5" width="18" height="13" rx="2"/><path d="M3 12h18M7 18v3M17 18v3M8 8h2M12 8h2M16 8h0M8 21h2M14 21h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12267,7 +12267,7 @@ export const SchoolBus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dictionary: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dictionary");
+  const icon = { id: "dictionary", name: "Dictionary", category: "Education2", tags: ["words", "language"], body: `<path d="M5 4h14v16H5zM5 4a3 3 0 0 0-3 3v14a3 3 0 0 1 3-3M9 8l2 5 2-5M9 14h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12280,7 +12280,7 @@ export const Dictionary: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Abacus: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "abacus");
+  const icon = { id: "abacus", name: "Abacus", category: "Education2", tags: ["math", "count"], body: `<rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M3 14h18M8 4v5M14 9v5M10 14v6M16 14v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12293,7 +12293,7 @@ export const Abacus: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GeographyGlobe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "globe-edu");
+  const icon = { id: "globe-edu", name: "Geography Globe", category: "Education2", tags: ["world", "earth"], body: `<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18M5 5c4 4 4 10 0 14M19 5c-4 4-4 10 0 14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12306,7 +12306,7 @@ export const GeographyGlobe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WashingMachine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "washing-machine");
+  const icon = { id: "washing-machine", name: "Washing Machine", category: "Appliances", tags: ["laundry", "wash"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><circle cx="12" cy="14" r="5"/><circle cx="12" cy="14" r="2"/><path d="M7 6h2M14 6h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12319,7 +12319,7 @@ export const WashingMachine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Dryer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "dryer");
+  const icon = { id: "dryer", name: "Dryer", category: "Appliances", tags: ["laundry", "dry"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><circle cx="12" cy="14" r="5"/><path d="M9 14h6M12 11v6M7 6h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12332,7 +12332,7 @@ export const Dryer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Oven: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "oven");
+  const icon = { id: "oven", name: "Oven", category: "Appliances", tags: ["bake", "kitchen"], body: `<rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 10h18M6 7h0.1M9 7h0.1M5 14h14v4H5z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12345,7 +12345,7 @@ export const Oven: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Microwave: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "microwave");
+  const icon = { id: "microwave", name: "Microwave", category: "Appliances", tags: ["heat", "kitchen"], body: `<rect x="2" y="6" width="20" height="12" rx="1"/><rect x="4" y="8" width="11" height="8"/><path d="M17 10v2M17 13v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12358,7 +12358,7 @@ export const Microwave: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Blender: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "blender");
+  const icon = { id: "blender", name: "Blender", category: "Appliances", tags: ["mix", "kitchen"], body: `<rect x="9" y="3" width="8" height="10" rx="1"/><rect x="6" y="13" width="14" height="7" rx="1"/><path d="M12 6v4M14 6v4M9 16h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12371,7 +12371,7 @@ export const Blender: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Toaster: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "toaster");
+  const icon = { id: "toaster", name: "Toaster", category: "Appliances", tags: ["toast", "bread"], body: `<rect x="3" y="8" width="18" height="11" rx="2"/><path d="M7 8V5M17 8V5M6 12h2M6 15h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12384,7 +12384,7 @@ export const Toaster: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Vacuum: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "vacuum");
+  const icon = { id: "vacuum", name: "Vacuum", category: "Appliances", tags: ["clean", "home"], body: `<circle cx="6" cy="18" r="3"/><path d="M6 15V8l8-3v6M14 11h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12397,7 +12397,7 @@ export const Vacuum: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Iron: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "iron");
+  const icon = { id: "iron", name: "Iron", category: "Appliances", tags: ["press", "cloth"], body: `<path d="M3 18l3-9h14l1 9z"/><path d="M6 9V7h12v2M10 14h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12410,7 +12410,7 @@ export const Iron: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CeilingFan: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fan-appliance");
+  const icon = { id: "fan-appliance", name: "Ceiling Fan", category: "Appliances", tags: ["cool", "air"], body: `<circle cx="12" cy="12" r="2"/><path d="M12 12c-3-3-5-3-8 0 3 3 5 3 8 0zM12 12c3-3 3-5 0-8-3 3-3 5 0 8zM12 12c3 3 5 3 8 0-3-3-5-3-8 0zM12 12c-3 3-3 5 0 8 3-3 3-5 0-8z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12423,7 +12423,7 @@ export const CeilingFan: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CoffeeMachine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "coffee-machine");
+  const icon = { id: "coffee-machine", name: "Coffee Machine", category: "Appliances", tags: ["coffee", "brew"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 9h8v3a4 4 0 0 1-8 0zM12 15v3M9 21h6M8 6h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12436,7 +12436,7 @@ export const CoffeeMachine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ArcadeMachine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "arcade");
+  const icon = { id: "arcade", name: "Arcade Machine", category: "Gaming2", tags: ["retro", "arcade"], body: `<rect x="3" y="2" width="18" height="20" rx="2"/><rect x="5" y="4" width="14" height="10" rx="1"/><path d="M7 18h2M11 18h2M15 18h2M9 21h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12449,7 +12449,7 @@ export const ArcadeMachine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChessPiece: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chess");
+  const icon = { id: "chess", name: "Chess Piece", category: "Gaming2", tags: ["king", "chess"], body: `<path d="M12 3l-1 2-2-1 1 2-2 1 2 1-1 2 2-1 1 1 1-1 2 1-1-2 2-1-2-1 1-2-2 1zM8 11v3l-2 7h12l-2-7v-3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12462,7 +12462,7 @@ export const ChessPiece: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PlayingCard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "playing-card");
+  const icon = { id: "playing-card", name: "Playing Card", category: "Gaming2", tags: ["card", "game"], body: `<rect x="6" y="2" width="12" height="20" rx="1"/><path d="M9 6h0M15 18h0M12 10l-2 4h4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12475,7 +12475,7 @@ export const PlayingCard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PokerChip: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "poker-chip");
+  const icon = { id: "poker-chip", name: "Poker Chip", category: "Gaming2", tags: ["casino", "chip"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12488,7 +12488,7 @@ export const PokerChip: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Roulette: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "roulette");
+  const icon = { id: "roulette", name: "Roulette", category: "Gaming2", tags: ["casino", "wheel"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="1"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12501,7 +12501,7 @@ export const Roulette: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SlotMachine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "slot-machine");
+  const icon = { id: "slot-machine", name: "Slot Machine", category: "Gaming2", tags: ["casino", "slots"], body: `<rect x="3" y="3" width="18" height="18" rx="2"/><rect x="5" y="6" width="5" height="6"/><rect x="12" y="6" width="5" height="6"/><path d="M5 16h14M5 19h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12514,7 +12514,7 @@ export const SlotMachine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GameController2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "controller-2");
+  const icon = { id: "controller-2", name: "Game Controller 2", category: "Gaming2", tags: ["gamepad", "play"], body: `<rect x="2" y="7" width="20" height="11" rx="5"/><path d="M6 11v3M5 12h2M15 11h0.1M17 13h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12527,7 +12527,7 @@ export const GameController2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RacingWheel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "racing-wheel");
+  const icon = { id: "racing-wheel", name: "Racing Wheel", category: "Gaming2", tags: ["racing", "drive"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M3 12h6M21 12h-6M12 21v-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12540,7 +12540,7 @@ export const RacingWheel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const VictoryHand: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "victory");
+  const icon = { id: "victory", name: "Victory Hand", category: "Gaming2", tags: ["win", "peace"], body: `<path d="M9 21V8a2 2 0 0 1 4 0M13 8V5a2 2 0 0 1 4 0v3M17 8V7a2 2 0 0 1 4 0v8a6 6 0 0 1-6 6h-2a4 4 0 0 1-4-4l-2-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12553,7 +12553,7 @@ export const VictoryHand: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LevelUp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "level-up");
+  const icon = { id: "level-up", name: "Level Up", category: "Gaming2", tags: ["progress", "level"], body: `<path d="M3 21l9-9 9 9M3 13l9-9 9 9M3 5l9-9 9 9"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12566,7 +12566,7 @@ export const LevelUp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BossEnemy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "boss");
+  const icon = { id: "boss", name: "Boss Enemy", category: "Gaming2", tags: ["boss", "enemy"], body: `<circle cx="12" cy="12" r="7"/><path d="M5 5L3 3M19 5l2-2M5 19l-2 2M19 19l2 2M9 10l-1-1M15 10l1-1M9 14h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12579,7 +12579,7 @@ export const BossEnemy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Achievement: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "achievement");
+  const icon = { id: "achievement", name: "Achievement", category: "Gaming2", tags: ["trophy", "badge"], body: `<circle cx="12" cy="10" r="6"/><path d="M9 16l-1 5h8l-1-5M9 21h6M9 10l2 2 4-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12592,7 +12592,7 @@ export const Achievement: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DeskLamp: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "desk-lamp");
+  const icon = { id: "desk-lamp", name: "Desk Lamp", category: "Office3", tags: ["light", "desk"], body: `<path d="M9 3h6l3 8H6zM12 11v6M8 21h8M9 17h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12605,7 +12605,7 @@ export const DeskLamp: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const OfficeChair: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "office-chair");
+  const icon = { id: "office-chair", name: "Office Chair", category: "Office3", tags: ["seat", "office"], body: `<path d="M6 3v10a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V3M9 16v5M15 16v5M7 21h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12618,7 +12618,7 @@ export const OfficeChair: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MonitorArm: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "monitor-arm");
+  const icon = { id: "monitor-arm", name: "Monitor Arm", category: "Office3", tags: ["mount", "screen"], body: `<rect x="2" y="4" width="20" height="12" rx="1"/><path d="M2 16h20M12 16v5M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12631,7 +12631,7 @@ export const MonitorArm: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FileCabinet: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "file-cabinet");
+  const icon = { id: "file-cabinet", name: "File Cabinet", category: "Office3", tags: ["storage", "files"], body: `<rect x="5" y="2" width="14" height="20" rx="1"/><path d="M5 8h14M5 14h14M9 5h2M9 11h2M9 17h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12644,7 +12644,7 @@ export const FileCabinet: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Clipboard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "clipboard");
+  const icon = { id: "clipboard", name: "Clipboard", category: "Office3", tags: ["notes", "write"], body: `<rect x="5" y="3" width="14" height="18" rx="1"/><rect x="8" y="2" width="8" height="3" rx="1"/><path d="M9 9h6M9 13h6M9 17h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12657,7 +12657,7 @@ export const Clipboard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Notepad: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "notepad");
+  const icon = { id: "notepad", name: "Notepad", category: "Office3", tags: ["notes", "write"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M7 7h10M7 11h10M7 15h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12670,7 +12670,7 @@ export const Notepad: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Calculator3: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "calculator-3");
+  const icon = { id: "calculator-3", name: "Calculator 3", category: "Office3", tags: ["math", "calc"], body: `<rect x="5" y="2" width="14" height="20" rx="1"/><rect x="8" y="5" width="8" height="3"/><circle cx="9" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="9" cy="16" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="16" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="16" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12683,7 +12683,7 @@ export const Calculator3: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Headset: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "headset");
+  const icon = { id: "headset", name: "Headset", category: "Office3", tags: ["call", "audio"], body: `<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/><path d="M19 20v1a3 3 0 0 1-3 3h-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12696,7 +12696,7 @@ export const Headset: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const OfficePhone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "office-phone");
+  const icon = { id: "office-phone", name: "Office Phone", category: "Office3", tags: ["call", "office"], body: `<rect x="3" y="3" width="18" height="14" rx="1"/><rect x="5" y="5" width="14" height="3"/><circle cx="8" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="0.8" fill="currentColor" stroke="none"/><path d="M9 21h6M12 17v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12709,7 +12709,7 @@ export const OfficePhone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FaxMachine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fax");
+  const icon = { id: "fax", name: "Fax Machine", category: "Office3", tags: ["office", "send"], body: `<rect x="3" y="6" width="18" height="12" rx="1"/><rect x="5" y="3" width="14" height="3"/><path d="M5 10h14M5 13h14M5 16h14M3 18v3h18v-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12722,7 +12722,7 @@ export const FaxMachine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PaperShredder: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shredder");
+  const icon = { id: "shredder", name: "Paper Shredder", category: "Office3", tags: ["destroy", "paper"], body: `<rect x="3" y="8" width="18" height="8" rx="1"/><rect x="5" y="3" width="14" height="5"/><path d="M7 16v5M10 16v5M13 16v5M16 16v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12735,7 +12735,7 @@ export const PaperShredder: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WhiteboardMarker: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "whiteboard-marker");
+  const icon = { id: "whiteboard-marker", name: "Whiteboard Marker", category: "Office3", tags: ["marker", "write"], body: `<rect x="6" y="8" width="12" height="10" rx="1"/><path d="M8 8V4h8v4M8 18v3h8v-3M9 12h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12748,7 +12748,7 @@ export const WhiteboardMarker: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Doctor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "doctor");
+  const icon = { id: "doctor", name: "Doctor", category: "Professions", tags: ["medical", "doctor"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M7 16h10M11 14h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12761,7 +12761,7 @@ export const Doctor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Engineer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "engineer");
+  const icon = { id: "engineer", name: "Engineer", category: "Professions", tags: ["build", "engineer"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M9 14l3 2 3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12774,7 +12774,7 @@ export const Engineer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Chef: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chef");
+  const icon = { id: "chef", name: "Chef", category: "Professions", tags: ["cook", "chef"], body: `<path d="M5 21V11a4 4 0 0 1 8 0 4 4 0 0 1 6 0v10M5 21h14M8 4c-2 1-3 3-3 5M16 4c2 1 3 3 3 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12787,7 +12787,7 @@ export const Chef: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lawyer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lawyer");
+  const icon = { id: "lawyer", name: "Lawyer", category: "Professions", tags: ["law", "judge"], body: `<path d="M3 21h18M5 21V11l7-7 7 7v10M5 11h14M9 21V14h6v7M11 7h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12800,7 +12800,7 @@ export const Lawyer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Teacher: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "teacher");
+  const icon = { id: "teacher", name: "Teacher", category: "Professions", tags: ["teach", "education"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M5 14l-2 2M19 14l2 2M9 16h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12813,7 +12813,7 @@ export const Teacher: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Scientist: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scientist");
+  const icon = { id: "scientist", name: "Scientist", category: "Professions", tags: ["science", "research"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M9 14c1 1 5 1 6 0M10 8c0 2 4 2 4 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12826,7 +12826,7 @@ export const Scientist: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Artist: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "artist");
+  const icon = { id: "artist", name: "Artist", category: "Professions", tags: ["paint", "art"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M9 14c1-1 5-1 6 0M5 9l-2-1M19 9l2-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12839,7 +12839,7 @@ export const Artist: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pilot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pilot");
+  const icon = { id: "pilot", name: "Pilot", category: "Professions", tags: ["fly", "pilot"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M5 14l-2 1M19 14l2 1M9 14l3 2 3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12852,7 +12852,7 @@ export const Pilot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Farmer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "farmer");
+  const icon = { id: "farmer", name: "Farmer", category: "Professions", tags: ["farm", "agriculture"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M5 14l-2-2M9 16l3-2 3 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12865,7 +12865,7 @@ export const Farmer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Police: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "police");
+  const icon = { id: "police", name: "Police", category: "Professions", tags: ["police", "protect"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M5 8l7-3 7 3M9 14h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12878,7 +12878,7 @@ export const Police: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Firefighter: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "firefighter");
+  const icon = { id: "firefighter", name: "Firefighter", category: "Professions", tags: ["fire", "rescue"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M5 8l7-4 7 4M9 14l3 2 3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12891,7 +12891,7 @@ export const Firefighter: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Programmer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "programmer");
+  const icon = { id: "programmer", name: "Programmer", category: "Professions", tags: ["code", "dev"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M9 14l-2 2 2 2M15 14l2 2-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12904,7 +12904,7 @@ export const Programmer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const AIBrain: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ai-brain");
+  const icon = { id: "ai-brain", name: "AI Brain", category: "Tech2", tags: ["ai", "neural"], body: `<path d="M9 3a3 3 0 0 0-3 3 3 3 0 0 0-1 5 3 3 0 0 0 1 5 3 3 0 0 0 3 3V3zM15 3a3 3 0 0 1 3 3 3 3 0 0 1 1 5 3 3 0 0 1-1 5 3 3 0 0 1-3 3V3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12917,7 +12917,7 @@ export const AIBrain: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CloudServer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cloud-server");
+  const icon = { id: "cloud-server", name: "Cloud Server", category: "Tech2", tags: ["cloud", "server"], body: `<path d="M7 14a4 4 0 0 1-1-7.9A6 6 0 0 1 18 5a4 4 0 0 1 1 7.9"/><rect x="3" y="14" width="18" height="7" rx="1"/><circle cx="7" cy="17.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="11" cy="17.5" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12930,7 +12930,7 @@ export const CloudServer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const APIEndpoint: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "api-2");
+  const icon = { id: "api-2", name: "API Endpoint", category: "Tech2", tags: ["api", "rest"], body: `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l-2 3 2 3M17 9l2 3-2 3M13 7l-2 10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12943,7 +12943,7 @@ export const APIEndpoint: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Blockchain: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "blockchain");
+  const icon = { id: "blockchain", name: "Blockchain", category: "Tech2", tags: ["block", "chain"], body: `<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6h4M10 17h4M6 10v4M17 10v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12956,7 +12956,7 @@ export const Blockchain: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Database2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "database-2");
+  const icon = { id: "database-2", name: "Database 2", category: "Tech2", tags: ["db", "storage"], body: `<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12969,7 +12969,7 @@ export const Database2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const QRCode: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "qr-code");
+  const icon = { id: "qr-code", name: "QR Code", category: "Tech2", tags: ["scan", "qr"], body: `<rect x="3" y="3" width="6" height="6"/><rect x="15" y="3" width="6" height="6"/><rect x="3" y="15" width="6" height="6"/><rect x="6" y="6" width="0" height="0"/><path d="M15 15h2v2M19 15h2v2M15 19h2v2M19 19h2v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12982,7 +12982,7 @@ export const QRCode: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Biometric: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fingerprint-3");
+  const icon = { id: "fingerprint-3", name: "Biometric", category: "Tech2", tags: ["scan", "bio"], body: `<path d="M3 12a9 9 0 0 1 18 0M6 12a6 6 0 0 1 12 0M9 12a3 3 0 0 1 6 0v3M12 12v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -12995,7 +12995,7 @@ export const Biometric: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TechShield: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shield-tech");
+  const icon = { id: "shield-tech", name: "Tech Shield", category: "Tech2", tags: ["security", "tech"], body: `<path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M9 12l2 2 4-4M5 5l14 14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13008,7 +13008,7 @@ export const TechShield: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CodeWindow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "code-window");
+  const icon = { id: "code-window", name: "Code Window", category: "Tech2", tags: ["editor", "code"], body: `<rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 8h18M6 6h0.1M8 6h0.1M10 6h0.1M7 12l-2 2 2 2M13 12l2 2-2 2M11 11l2 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13021,7 +13021,7 @@ export const CodeWindow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Terminal2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "terminal-2");
+  const icon = { id: "terminal-2", name: "Terminal 2", category: "Tech2", tags: ["shell", "command"], body: `<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M13 15h4M3 8h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13034,7 +13034,7 @@ export const Terminal2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GitBranch: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "git-branch");
+  const icon = { id: "git-branch", name: "Git Branch", category: "Tech2", tags: ["git", "version"], body: `<circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="8" r="2"/><path d="M6 8v8M8 6a4 4 0 0 1 4 4v0a4 4 0 0 0 4 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13047,7 +13047,7 @@ export const GitBranch: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Container: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "docker");
+  const icon = { id: "docker", name: "Container", category: "Tech2", tags: ["docker", "deploy"], body: `<rect x="3" y="9" width="4" height="4"/><rect x="8" y="9" width="4" height="4"/><rect x="13" y="9" width="4" height="4"/><rect x="8" y="4" width="4" height="4"/><path d="M3 13c0 4 3 6 7 6 5 0 9-3 11-7-2 1-4 0-5-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13060,7 +13060,7 @@ export const Container: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Buddha: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "buddha");
+  const icon = { id: "buddha", name: "Buddha", category: "Religion3", tags: ["buddhism", "peace"], body: `<circle cx="12" cy="5" r="3"/><path d="M8 21c0-4 2-7 4-7s4 3 4 7M6 10c2 0 4 1 6 1s4-1 6-1M9 7c1 1 5 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13073,7 +13073,7 @@ export const Buddha: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PrayerBeads: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "prayer-beads");
+  const icon = { id: "prayer-beads", name: "Prayer Beads", category: "Religion3", tags: ["rosary", "prayer"], body: `<circle cx="12" cy="3" r="2"/><circle cx="6" cy="6" r="1.5"/><circle cx="18" cy="6" r="1.5"/><circle cx="4" cy="12" r="1.5"/><circle cx="20" cy="12" r="1.5"/><circle cx="6" cy="18" r="1.5"/><circle cx="18" cy="18" r="1.5"/><circle cx="12" cy="21" r="1.5"/><path d="M12 5L6 6 4 12 6 18 12 21 18 18 20 12 18 6 12 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13086,7 +13086,7 @@ export const PrayerBeads: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PrayerCandle: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "candle-2");
+  const icon = { id: "candle-2", name: "Prayer Candle", category: "Religion3", tags: ["candle", "prayer"], body: `<path d="M12 3c-1 1-2 2-2 3a2 2 0 0 0 4 0c0-1-1-2-2-3z"/><rect x="9" y="9" width="6" height="12" rx="1"/><path d="M7 21h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13099,7 +13099,7 @@ export const PrayerCandle: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const IncenseBurner: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "incense-2");
+  const icon = { id: "incense-2", name: "Incense Burner", category: "Religion3", tags: ["incense", "ritual"], body: `<path d="M5 21h14M7 21v-5h10v5M9 16V8M12 16V6M15 16V8M9 4l1-2M12 3l1-2M15 4l1-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13112,7 +13112,7 @@ export const IncenseBurner: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Temple: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "temple");
+  const icon = { id: "temple", name: "Temple", category: "Religion3", tags: ["hindu", "temple"], body: `<path d="M3 21V14l9-9 9 9v7M3 21h18M7 21v-5h10v5M9 16h6M12 5V2M11 3h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13125,7 +13125,7 @@ export const Temple: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mosque: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mosque-2");
+  const icon = { id: "mosque-2", name: "Mosque", category: "Religion3", tags: ["islam", "mosque"], body: `<path d="M3 21V12l9-7 9 7v9M3 21h18M9 21v-5h6v5M12 5V1M11 2h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13138,7 +13138,7 @@ export const Mosque: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Synagogue: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "synagogue");
+  const icon = { id: "synagogue", name: "Synagogue", category: "Religion3", tags: ["jewish", "synagogue"], body: `<path d="M3 21V11l9-7 9 7v10M3 21h18M9 21V14h6v7M11 6l1-1 1 1M10 5h2M14 5h-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13151,7 +13151,7 @@ export const Synagogue: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MeditationPose: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "meditation-2");
+  const icon = { id: "meditation-2", name: "Meditation Pose", category: "Religion3", tags: ["yoga", "meditate"], body: `<circle cx="12" cy="5" r="2"/><path d="M7 18h10M6 14c2 0 4-1 6-1s4 1 6 1M12 7v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13164,7 +13164,7 @@ export const MeditationPose: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mars: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mars");
+  const icon = { id: "mars", name: "Mars", category: "Space2", tags: ["planet", "red"], body: `<circle cx="12" cy="12" r="9"/><path d="M6 10c2-1 4 0 5 2M14 8c2 0 4 1 5 3M8 16c2-1 4-1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13177,7 +13177,7 @@ export const Mars: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Jupiter: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "jupiter");
+  const icon = { id: "jupiter", name: "Jupiter", category: "Space2", tags: ["planet", "gas"], body: `<circle cx="12" cy="12" r="9"/><path d="M5 9h14M5 12h14M5 15h14M9 6c-1 2-1 4 0 6M15 6c1 2 1 4 0 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13190,7 +13190,7 @@ export const Jupiter: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Asteroid: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "asteroid");
+  const icon = { id: "asteroid", name: "Asteroid", category: "Space2", tags: ["rock", "space"], body: `<path d="M5 12c0-3 3-6 6-6s6 2 7 5c0 3-2 7-6 7s-7-3-7-6z"/><circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="13" cy="13" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13203,7 +13203,7 @@ export const Asteroid: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BlackHole: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "black-hole");
+  const icon = { id: "black-hole", name: "Black Hole", category: "Space2", tags: ["space", "void"], body: `<circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13216,7 +13216,7 @@ export const BlackHole: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Comet2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "comet-2");
+  const icon = { id: "comet-2", name: "Comet 2", category: "Space2", tags: ["space", "tail"], body: `<circle cx="17" cy="7" r="3"/><path d="M15 9L4 20M13 7L3 17M17 11l-7 7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13229,7 +13229,7 @@ export const Comet2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SpaceStation: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "space-station");
+  const icon = { id: "space-station", name: "Space Station", category: "Space2", tags: ["iss", "orbit"], body: `<rect x="8" y="10" width="8" height="4" rx="1"/><rect x="2" y="11" width="4" height="2"/><rect x="18" y="11" width="4" height="2"/><rect x="11" y="6" width="2" height="12"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13242,7 +13242,7 @@ export const SpaceStation: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MoonLander: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "moon-lander");
+  const icon = { id: "moon-lander", name: "Moon Lander", category: "Space2", tags: ["nasa", "moon"], body: `<path d="M5 14h14l-2-7H7zM7 14v5M17 14v5M5 19h4M15 19h4M9 7V4h6v3M11 4h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13255,7 +13255,7 @@ export const MoonLander: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Astronaut: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "astronaut");
+  const icon = { id: "astronaut", name: "Astronaut", category: "Space2", tags: ["space", "suit"], body: `<circle cx="12" cy="6" r="3"/><path d="M7 21V12a5 5 0 0 1 10 0v9M9 9c0 2 6 2 6 0M5 14l-2 2M19 14l2 2M9 14h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13268,7 +13268,7 @@ export const Astronaut: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Nebula: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "nebula");
+  const icon = { id: "nebula", name: "Nebula", category: "Space2", tags: ["space", "cloud"], body: `<circle cx="12" cy="12" r="3"/><circle cx="6" cy="8" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><path d="M6 8l6 4M18 8l-6 4M8 17l4-5M16 17l-4-5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13281,7 +13281,7 @@ export const Nebula: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wormhole: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wormhole");
+  const icon = { id: "wormhole", name: "Wormhole", category: "Space2", tags: ["portal", "space"], body: `<circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="9" ry="3"/><ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3" transform="rotate(120 12 12)"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13294,7 +13294,7 @@ export const Wormhole: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Knitting: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "knitting");
+  const icon = { id: "knitting", name: "Knitting", category: "Hobbies", tags: ["yarn", "craft"], body: `<circle cx="6" cy="18" r="4"/><path d="M9 15L20 4M7 13l4 4M10 10l4 4M13 7l4 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13307,7 +13307,7 @@ export const Knitting: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pottery: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pottery");
+  const icon = { id: "pottery", name: "Pottery", category: "Hobbies", tags: ["clay", "craft"], body: `<path d="M9 3h6v3l2 3v9a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-9l2-3zM7 6h10M9 12h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13320,7 +13320,7 @@ export const Pottery: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Origami: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "origami");
+  const icon = { id: "origami", name: "Origami", category: "Hobbies", tags: ["paper", "fold"], body: `<path d="M3 21l9-9 9 9zM12 12L3 6l9-3 9 3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13333,7 +13333,7 @@ export const Origami: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const StampCollection: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "stamps");
+  const icon = { id: "stamps", name: "Stamp Collection", category: "Hobbies", tags: ["collect", "stamp"], body: `<path d="M3 4h2v2h2V4h2v2h2V4h2v2h2V4h2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2H7v2H5v-2H3v-2h2v-2H3v-2h2V8H3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13346,7 +13346,7 @@ export const StampCollection: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CoinCollection: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "coins-collection");
+  const icon = { id: "coins-collection", name: "Coin Collection", category: "Hobbies", tags: ["collect", "coin"], body: `<circle cx="8" cy="8" r="4"/><circle cx="16" cy="16" r="4"/><path d="M8 8h0M16 16h0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13359,7 +13359,7 @@ export const CoinCollection: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ModelKit: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "model-kit");
+  const icon = { id: "model-kit", name: "Model Kit", category: "Hobbies", tags: ["build", "model"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13372,7 +13372,7 @@ export const ModelKit: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PuzzlePiece: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "puzzle-piece");
+  const icon = { id: "puzzle-piece", name: "Puzzle Piece", category: "Hobbies", tags: ["puzzle", "fit"], body: `<path d="M9 3v3a2 2 0 0 1-4 0V6a3 3 0 0 0-1 6v3h4a2 2 0 0 1 0 4v3h8v-3a2 2 0 0 1 0-4h4v-8h-3a2 2 0 0 1 0-4V3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13385,7 +13385,7 @@ export const PuzzlePiece: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CardTrick: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "card-trick");
+  const icon = { id: "card-trick", name: "Card Trick", category: "Hobbies", tags: ["magic", "card"], body: `<rect x="6" y="2" width="12" height="20" rx="1"/><path d="M12 7l-2 4h4zM12 13l-2 4h4z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13398,7 +13398,7 @@ export const CardTrick: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Jigsaw: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "jigsaw");
+  const icon = { id: "jigsaw", name: "Jigsaw", category: "Hobbies", tags: ["puzzle", "game"], body: `<path d="M3 3h8v3a2 2 0 0 0 4 0V3h6v8h-3a2 2 0 0 0 0 4h3v6h-8v-3a2 2 0 0 0-4 0v3H3v-8h3a2 2 0 0 0 0-4H3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13411,7 +13411,7 @@ export const Jigsaw: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const RCCar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rc-car");
+  const icon = { id: "rc-car", name: "RC Car", category: "Hobbies", tags: ["remote", "toy"], body: `<path d="M3 13l2-5a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 5v5h-3v-2H6v2H3z"/><circle cx="7" cy="15" r="1.5" fill="currentColor" stroke="none"/><circle cx="17" cy="15" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13424,7 +13424,7 @@ export const RCCar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Drone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drone");
+  const icon = { id: "drone", name: "Drone", category: "Hobbies", tags: ["fly", "camera"], body: `<rect x="9" y="9" width="6" height="6" rx="1"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M9 9L4 6M15 9l5-3M9 15l-5 3M15 15l5 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13437,7 +13437,7 @@ export const Drone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Kite: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "kite");
+  const icon = { id: "kite", name: "Kite", category: "Hobbies", tags: ["fly", "wind"], body: `<path d="M12 3l8 8-8 8-8-8zM12 3v18M4 11h16M12 21l-3 3M12 21l3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13450,7 +13450,7 @@ export const Kite: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Apartment: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "apartment");
+  const icon = { id: "apartment", name: "Apartment", category: "Buildings3", tags: ["home", "flat"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-3h4v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13463,7 +13463,7 @@ export const Apartment: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Villa: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "villa");
+  const icon = { id: "villa", name: "Villa", category: "Buildings3", tags: ["house", "luxury"], body: `<path d="M3 21V11l9-7 9 7v10M3 21h18M7 21V12h10v9M9 14h2M13 14h2M11 21v-3h2v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13476,7 +13476,7 @@ export const Villa: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cottage: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cottage");
+  const icon = { id: "cottage", name: "Cottage", category: "Buildings3", tags: ["small", "house"], body: `<path d="M3 21V13l6-5 6 5v8M3 21h18M9 13v8M9 21v-3h3v3M15 13l3-3 3 3v8h-6z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13489,7 +13489,7 @@ export const Cottage: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Skyscraper2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "skyscraper-2");
+  const icon = { id: "skyscraper-2", name: "Skyscraper 2", category: "Buildings3", tags: ["tall", "city"], body: `<rect x="6" y="3" width="12" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13502,7 +13502,7 @@ export const Skyscraper2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mall: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mall-2");
+  const icon = { id: "mall-2", name: "Mall", category: "Buildings3", tags: ["shop", "complex"], body: `<rect x="3" y="6" width="18" height="15" rx="1"/><path d="M3 6l3-3h12l3 3M6 21v-7h4v7M14 21v-7h4v7M8 10h2M14 10h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13515,7 +13515,7 @@ export const Mall: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TVTower: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tower-2");
+  const icon = { id: "tower-2", name: "TV Tower", category: "Buildings3", tags: ["signal", "tall"], body: `<path d="M9 21V8l3-5 3 5v13M9 21h6M10 11h4M10 15h4M11 5h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13528,7 +13528,7 @@ export const TVTower: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Castle_castle2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "castle-2");
+  const icon = { id: "castle-2", name: "Castle", category: "Buildings3", tags: ["fortress", "royal"], body: `<path d="M3 21V10l3-2v2l3-2v2l3-2v2l3-2v2l3-2v11zM3 21h18M9 21v-3h6v3M5 6V4M9 6V4M15 6V4M19 6V4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13541,7 +13541,7 @@ export const Castle_castle2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Barn: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "barn");
+  const icon = { id: "barn", name: "Barn", category: "Buildings3", tags: ["farm", "rural"], body: `<path d="M3 21V11l9-6 9 6v10M3 21h18M9 21v-5h6v5M7 14h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13554,7 +13554,7 @@ export const Barn: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Greenhouse: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "greenhouse");
+  const icon = { id: "greenhouse", name: "Greenhouse", category: "Buildings3", tags: ["garden", "glass"], body: `<path d="M3 21V8l9-5 9 5v13M3 21h18M7 21V12h10v9M3 14h18M3 17h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13567,7 +13567,7 @@ export const Greenhouse: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Igloo: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "igloo");
+  const icon = { id: "igloo", name: "Igloo", category: "Buildings3", tags: ["snow", "arctic"], body: `<path d="M3 21a9 9 0 0 1 18 0M3 21h18M9 21v-4a3 3 0 0 1 6 0v4M5 17h14M7 13h10"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13580,7 +13580,7 @@ export const Igloo: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lipstick: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lipstick");
+  const icon = { id: "lipstick", name: "Lipstick", category: "Beauty", tags: ["makeup", "lips"], body: `<rect x="8" y="9" width="8" height="12" rx="1"/><path d="M9 9V4l6 1v4M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13593,7 +13593,7 @@ export const Lipstick: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Mascara: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mascara");
+  const icon = { id: "mascara", name: "Mascara", category: "Beauty", tags: ["makeup", "eyes"], body: `<rect x="9" y="3" width="6" height="18" rx="1"/><path d="M9 7h6M9 11h6M9 15h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13606,7 +13606,7 @@ export const Mascara: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Perfume: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "perfume");
+  const icon = { id: "perfume", name: "Perfume", category: "Beauty", tags: ["fragrance", "spray"], body: `<rect x="6" y="9" width="12" height="12" rx="1"/><path d="M9 9V6h6v3M11 6V3h2v3M8 6h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13619,7 +13619,7 @@ export const Perfume: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const NailPolish: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "nail-polish");
+  const icon = { id: "nail-polish", name: "Nail Polish", category: "Beauty", tags: ["nails", "color"], body: `<rect x="9" y="6" width="6" height="15" rx="1"/><rect x="10" y="3" width="4" height="3"/><path d="M11 10h2M11 13h2M11 16h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13632,7 +13632,7 @@ export const NailPolish: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CompactPowder: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "compact");
+  const icon = { id: "compact", name: "Compact Powder", category: "Beauty", tags: ["makeup", "powder"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M3 12a9 9 0 0 0 9-9v9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13645,7 +13645,7 @@ export const CompactPowder: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hairbrush: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hairbrush");
+  const icon = { id: "hairbrush", name: "Hairbrush", category: "Beauty", tags: ["hair", "brush"], body: `<rect x="3" y="9" width="14" height="6" rx="1"/><path d="M17 12h4M5 9V7M8 9V7M11 9V7M14 9V7M5 15v2M8 15v2M11 15v2M14 15v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13658,7 +13658,7 @@ export const Hairbrush: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Razor: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "razor");
+  const icon = { id: "razor", name: "Razor", category: "Beauty", tags: ["shave", "groom"], body: `<rect x="5" y="3" width="14" height="6" rx="1"/><path d="M5 9v3M19 9v3M12 12v9M9 21h6M7 6h2M11 6h2M15 6h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13671,7 +13671,7 @@ export const Razor: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Comb: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "comb");
+  const icon = { id: "comb", name: "Comb", category: "Beauty", tags: ["hair", "groom"], body: `<rect x="3" y="9" width="18" height="3" rx="1"/><path d="M5 12v5M8 12v5M11 12v5M14 12v5M17 12v5M20 12v5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13684,7 +13684,7 @@ export const Comb: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FaceCream: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cream");
+  const icon = { id: "cream", name: "Face Cream", category: "Beauty", tags: ["skincare", "lotion"], body: `<rect x="6" y="6" width="12" height="15" rx="1"/><rect x="8" y="3" width="8" height="3"/><path d="M9 12h6M9 15h6M9 18h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13697,7 +13697,7 @@ export const FaceCream: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HandMirror: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mirror-2");
+  const icon = { id: "mirror-2", name: "Hand Mirror", category: "Beauty", tags: ["reflection", "vanity"], body: `<ellipse cx="12" cy="8" rx="6" ry="7"/><path d="M12 15v6M9 21h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13710,7 +13710,7 @@ export const HandMirror: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Gear: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gear");
+  const icon = { id: "gear", name: "Gear", category: "Engineering", tags: ["mechanical", "gear"], body: `<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13723,7 +13723,7 @@ export const Gear: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cog: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cog");
+  const icon = { id: "cog", name: "Cog", category: "Engineering", tags: ["machine", "cog"], body: `<circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="2"/><path d="M12 3l1 3M12 21l-1-3M3 12l3-1M21 12l-3 1M5 5l3 1M19 19l-3-1M19 5l-3 1M5 19l3-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13736,7 +13736,7 @@ export const Cog: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Spring: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "spring");
+  const icon = { id: "spring", name: "Spring", category: "Engineering", tags: ["coil", "mechanical"], body: `<path d="M5 3c4 0 4 3 0 6s-4 3 0 6 4 3 0 6M19 3c-4 0-4 3 0 6s4 3 0 6-4 3 0 6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13749,7 +13749,7 @@ export const Spring: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BoltNut: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bolt-nut");
+  const icon = { id: "bolt-nut", name: "Bolt & Nut", category: "Engineering", tags: ["hardware", "fastener"], body: `<path d="M12 3l-7 4v10l7 4 7-4V7z"/><circle cx="12" cy="12" r="3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13762,7 +13762,7 @@ export const BoltNut: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bearing: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bearing");
+  const icon = { id: "bearing", name: "Bearing", category: "Engineering", tags: ["mechanical", "ball"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13775,7 +13775,7 @@ export const Bearing: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Valve: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "valve");
+  const icon = { id: "valve", name: "Valve", category: "Engineering", tags: ["pipe", "flow"], body: `<path d="M3 9h4l2 2h6l2-2h4M9 11v6M15 11v6M9 17h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13788,7 +13788,7 @@ export const Valve: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pipe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pipe");
+  const icon = { id: "pipe", name: "Pipe", category: "Engineering", tags: ["plumbing", "pipe"], body: `<path d="M3 3v6a4 4 0 0 0 4 4h10a4 4 0 0 1 4 4v4M3 9h4v4M17 13h4v4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13801,7 +13801,7 @@ export const Pipe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Engine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "engine");
+  const icon = { id: "engine", name: "Engine", category: "Engineering", tags: ["motor", "power"], body: `<rect x="4" y="8" width="16" height="10" rx="1"/><path d="M4 11h-2v4h2M20 11h2v4h-2M8 8V5h6v3M8 18v2h8v-2M8 13h2M14 13h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13814,7 +13814,7 @@ export const Engine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Turbine: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "turbine");
+  const icon = { id: "turbine", name: "Turbine", category: "Engineering", tags: ["power", "wind"], body: `<circle cx="12" cy="12" r="2"/><path d="M12 10c0-4-2-7-4-7s-3 3 0 5M14 12c4 0 7-2 7-4s-3-3-5 0M12 14c0 4 2 7 4 7s3-3 0-5M10 12c-4 0-7 2-7 4s3 3 5 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13827,7 +13827,7 @@ export const Turbine: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CircuitBoard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "circuit-board");
+  const icon = { id: "circuit-board", name: "Circuit Board", category: "Engineering", tags: ["pcb", "electronics"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M6 6h3v3M15 6h3v3M6 15h3v3M15 15h3v3M9 9h6v6H9z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13840,7 +13840,7 @@ export const CircuitBoard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Campfire: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "campfire");
+  const icon = { id: "campfire", name: "Campfire", category: "Camping2", tags: ["fire", "outdoor"], body: `<path d="M12 14c-3-3-3-7 0-11 3 4 3 8 0 11z"/><path d="M5 21l3-7M19 21l-3-7M9 21l3-5 3 5M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13853,7 +13853,7 @@ export const Campfire: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CampingCompass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "compass-camp");
+  const icon = { id: "compass-camp", name: "Camping Compass", category: "Camping2", tags: ["direction", "navigate"], body: `<circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-6 2 2-6z"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13866,7 +13866,7 @@ export const CampingCompass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Backpack: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "backpack");
+  const icon = { id: "backpack", name: "Backpack", category: "Camping2", tags: ["bag", "travel"], body: `<path d="M5 21V8a5 5 0 0 1 10 0v13M5 21h14M9 21V11h6v10M7 8c-2 0-3-2-3-4M17 8c2 0 3-2 3-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13879,7 +13879,7 @@ export const Backpack: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Lantern: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "lantern");
+  const icon = { id: "lantern", name: "Lantern", category: "Camping2", tags: ["light", "camp"], body: `<path d="M8 21V9a4 4 0 0 1 8 0v12M8 21h8M8 9V5h8v4M10 5V2h4v3M9 13h6M9 17h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13892,7 +13892,7 @@ export const Lantern: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SleepingBag: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "sleeping-bag");
+  const icon = { id: "sleeping-bag", name: "Sleeping Bag", category: "Camping2", tags: ["sleep", "camp"], body: `<path d="M7 21V8a5 5 0 0 1 10 0v13M7 21h10M9 21V12a3 3 0 0 1 6 0v9M11 9h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13905,7 +13905,7 @@ export const SleepingBag: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const HikingBoot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hiking-boot");
+  const icon = { id: "hiking-boot", name: "Hiking Boot", category: "Camping2", tags: ["shoe", "trek"], body: `<path d="M3 18V8l5-2v6l4-1 4 2v5M3 18h18M3 18v3h18v-3M9 11l3-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13918,7 +13918,7 @@ export const HikingBoot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FoldedMap: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "map-folded");
+  const icon = { id: "map-folded", name: "Folded Map", category: "Camping2", tags: ["navigate", "paper"], body: `<path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13931,7 +13931,7 @@ export const FoldedMap: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Binoculars2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "binoculars-2");
+  const icon = { id: "binoculars-2", name: "Binoculars 2", category: "Camping2", tags: ["view", "observe"], body: `<circle cx="6" cy="8" r="3"/><circle cx="18" cy="8" r="3"/><path d="M6 11v8M18 11v8M6 19h12M9 8h0.1M15 8h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13944,7 +13944,7 @@ export const Binoculars2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Treadmill: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "treadmill");
+  const icon = { id: "treadmill", name: "Treadmill", category: "Fitness2", tags: ["run", "gym"], body: `<path d="M3 21V11l4-2 4 2 4-4 4 2v12M3 21h18M3 18h18M7 9V4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13957,7 +13957,7 @@ export const Treadmill: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Kettlebell: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "kettlebell");
+  const icon = { id: "kettlebell", name: "Kettlebell", category: "Fitness2", tags: ["weight", "gym"], body: `<circle cx="12" cy="14" r="6"/><path d="M9 8a3 3 0 0 1 6 0M9 8V6a3 3 0 0 1 6 0v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13970,7 +13970,7 @@ export const Kettlebell: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const PullupBar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pullup-bar");
+  const icon = { id: "pullup-bar", name: "Pull-up Bar", category: "Fitness2", tags: ["gym", "upper"], body: `<rect x="2" y="4" width="20" height="3" rx="1"/><path d="M6 7v6a3 3 0 0 0 6 0V7M18 7v6a3 3 0 0 0 6 0M6 13v8M18 13v8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13983,7 +13983,7 @@ export const PullupBar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const YogaMat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "yoga-mat");
+  const icon = { id: "yoga-mat", name: "Yoga Mat", category: "Fitness2", tags: ["yoga", "roll"], body: `<rect x="3" y="9" width="18" height="6" rx="1"/><circle cx="5" cy="12" r="1.5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -13996,7 +13996,7 @@ export const YogaMat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const JumpRope: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "jump-rope");
+  const icon = { id: "jump-rope", name: "Jump Rope", category: "Fitness2", tags: ["cardio", "rope"], body: `<path d="M5 3v6a7 7 0 0 0 14 0V3M5 21v-6M19 21v-6M5 9h14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14009,7 +14009,7 @@ export const JumpRope: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ExerciseBall: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "exercise-ball");
+  const icon = { id: "exercise-ball", name: "Exercise Ball", category: "Fitness2", tags: ["stability", "gym"], body: `<circle cx="12" cy="14" r="7"/><path d="M5 11h14M5 17h14M8 8c2 2 8 2 8 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14022,7 +14022,7 @@ export const ExerciseBall: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ResistanceBand: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "resistance-band");
+  const icon = { id: "resistance-band", name: "Resistance Band", category: "Fitness2", tags: ["stretch", "band"], body: `<path d="M3 3c4 4 14 4 18 0M3 21c4-4 14-4 18 0M3 3v18M21 3v18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14035,7 +14035,7 @@ export const ResistanceBand: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WeightScale: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "weight-scale");
+  const icon = { id: "weight-scale", name: "Weight Scale", category: "Fitness2", tags: ["measure", "weight"], body: `<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M12 12l2-2M9 8h0.1M15 8h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14048,7 +14048,7 @@ export const WeightScale: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wallet_wallet2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wallet-2");
+  const icon = { id: "wallet-2", name: "Wallet", category: "Finance2", tags: ["money", "card"], body: `<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 8V5a2 2 0 0 1 2-2h12l3 3M16 12h3v3h-3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14061,7 +14061,7 @@ export const Wallet_wallet2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BankCard: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bank-card");
+  const icon = { id: "bank-card", name: "Bank Card", category: "Finance2", tags: ["card", "pay"], body: `<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 9h20M6 14h4M6 16h2M16 14h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14074,7 +14074,7 @@ export const BankCard: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cash: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cash");
+  const icon = { id: "cash", name: "Cash", category: "Finance2", tags: ["money", "bill"], body: `<rect x="2" y="6" width="20" height="12" rx="1"/><circle cx="12" cy="12" r="3"/><path d="M6 9h0.1M18 9h0.1M6 15h0.1M18 15h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14087,7 +14087,7 @@ export const Cash: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CoinStack: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "coin-stack");
+  const icon = { id: "coin-stack", name: "Coin Stack", category: "Finance2", tags: ["money", "coins"], body: `<ellipse cx="12" cy="6" rx="8" ry="2"/><path d="M4 6v4c0 1 4 2 8 2s8-1 8-2V6M4 10v4c0 1 4 2 8 2s8-1 8-2v-4M4 14v4c0 1 4 2 8 2s8-1 8-2v-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14100,7 +14100,7 @@ export const CoinStack: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SavingsPiggy: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "savings");
+  const icon = { id: "savings", name: "Savings Piggy", category: "Finance2", tags: ["save", "pig"], body: `<path d="M3 12a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v3a3 3 0 0 1-3 3h-1l-1 3h-2l-1-2h-4l-1 2H5l-1-3a3 3 0 0 1-1-3z"/><circle cx="8" cy="11" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14113,7 +14113,7 @@ export const SavingsPiggy: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Receipt2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "receipt-2");
+  const icon = { id: "receipt-2", name: "Receipt 2", category: "Finance2", tags: ["bill", "invoice"], body: `<path d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2z"/><path d="M8 8h8M8 11h8M8 14h5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14126,7 +14126,7 @@ export const Receipt2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TaxForm: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tax");
+  const icon = { id: "tax", name: "Tax Form", category: "Finance2", tags: ["tax", "document"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h8M8 11h8M8 15h4M14 17l1-1 2 2 3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14139,7 +14139,7 @@ export const TaxForm: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Invoice: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "invoice");
+  const icon = { id: "invoice", name: "Invoice", category: "Finance2", tags: ["bill", "business"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h8M8 11h4M14 11h2M8 15h4M14 15h2M8 19h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14152,7 +14152,7 @@ export const Invoice: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bitcoin2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bitcoin-2");
+  const icon = { id: "bitcoin-2", name: "Bitcoin 2", category: "Finance2", tags: ["btc", "crypto"], body: `<circle cx="12" cy="12" r="9"/><path d="M9 8h5a2 2 0 0 1 0 4H9zM9 12h6a2 2 0 0 1 0 4H9zM10 6v12M13 6v12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14165,7 +14165,7 @@ export const Bitcoin2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CurrencyExchange: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "exchange");
+  const icon = { id: "exchange", name: "Currency Exchange", category: "Finance2", tags: ["trade", "forex"], body: `<path d="M3 8h14l-3-3M3 8l3 3M21 16H7l3 3M21 16l-3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14178,7 +14178,7 @@ export const CurrencyExchange: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const WateringCan: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "watering-can");
+  const icon = { id: "watering-can", name: "Watering Can", category: "Garden2", tags: ["water", "plant"], body: `<path d="M5 21V10l4-3h5v14M5 21h12M9 7V4l5 1M14 14l3-2 2 2M14 17l3-1 2 1M14 11l4-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14191,7 +14191,7 @@ export const WateringCan: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Shovel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "shovel");
+  const icon = { id: "shovel", name: "Shovel", category: "Garden2", tags: ["dig", "garden"], body: `<path d="M3 21l4-4M7 17L17 7M17 7l3-3M14 4l4 4-2 2-4-4z"/><path d="M14 4l-2 2 4 4 2-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14204,7 +14204,7 @@ export const Shovel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Rake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "rake");
+  const icon = { id: "rake", name: "Rake", category: "Garden2", tags: ["garden", "clean"], body: `<rect x="2" y="6" width="20" height="3" rx="1"/><path d="M4 9v5M8 9v5M12 9v5M16 9v5M20 9v5M12 14v7"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14217,7 +14217,7 @@ export const Rake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wheelbarrow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wheelbarrow");
+  const icon = { id: "wheelbarrow", name: "Wheelbarrow", category: "Garden2", tags: ["carry", "garden"], body: `<path d="M3 18l2-7h12l2 7M3 18h18M5 11l3-5h6M5 18l-2 3M14 18v3"/><circle cx="14" cy="20" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14230,7 +14230,7 @@ export const Wheelbarrow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SeedPacket: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "seed-packet");
+  const icon = { id: "seed-packet", name: "Seed Packet", category: "Garden2", tags: ["seed", "plant"], body: `<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M5 9h14M9 14c0 2 6 2 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14243,7 +14243,7 @@ export const SeedPacket: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FlowerPot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "flower-pot");
+  const icon = { id: "flower-pot", name: "Flower Pot", category: "Garden2", tags: ["pot", "plant"], body: `<path d="M7 21l-1-9h12l-1 9zM6 12c0-3 3-5 6-5s6 2 6 5M9 7c0-2 1-3 3-3s3 1 3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14256,7 +14256,7 @@ export const FlowerPot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GardenHose: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hose");
+  const icon = { id: "hose", name: "Garden Hose", category: "Garden2", tags: ["water", "flexible"], body: `<path d="M3 21c4 0 4-4 8-4s4 4 8 4M3 17c4 0 4-4 8-4s4 4 8 4M3 13c4 0 4-4 8-4s4 4 8 4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14269,7 +14269,7 @@ export const GardenHose: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Scarecrow: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "scarecrow");
+  const icon = { id: "scarecrow", name: "Scarecrow", category: "Garden2", tags: ["field", "farm"], body: `<circle cx="12" cy="6" r="3"/><path d="M12 9v8M7 12l10 0M9 21l3-4 3 4M5 4l4 4M19 4l-4 4M9 6h0.1M15 6h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14282,7 +14282,7 @@ export const Scarecrow: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Robot: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "robot");
+  const icon = { id: "robot", name: "Robot", category: "Tech3", tags: ["ai", "bot"], body: `<rect x="5" y="6" width="14" height="12" rx="2"/><circle cx="9" cy="11" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1.5" fill="currentColor" stroke="none"/><path d="M9 15h6M12 6V3M9 3h6M3 10v3M21 10v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14295,7 +14295,7 @@ export const Robot: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Microchip: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chip-2");
+  const icon = { id: "chip-2", name: "Microchip", category: "Tech3", tags: ["cpu", "chip"], body: `<rect x="6" y="6" width="12" height="12" rx="1"/><rect x="9" y="9" width="6" height="6"/><path d="M9 3v3M12 3v3M15 3v3M9 18v3M12 18v3M15 18v3M3 9h3M3 12h3M3 15h3M18 9h3M18 12h3M18 15h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14308,7 +14308,7 @@ export const Microchip: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const VRHeadset: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "vr-headset");
+  const icon = { id: "vr-headset", name: "VR Headset", category: "Tech3", tags: ["vr", "virtual"], body: `<rect x="2" y="7" width="20" height="10" rx="2"/><circle cx="8" cy="12" r="2"/><circle cx="16" cy="12" r="2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14321,7 +14321,7 @@ export const VRHeadset: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SmartWatch2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "smart-watch-2");
+  const icon = { id: "smart-watch-2", name: "Smart Watch 2", category: "Tech3", tags: ["wearable", "device"], body: `<rect x="7" y="7" width="10" height="10" rx="3"/><path d="M9 7V3h6v4M9 17v4h6v-4M12 11v2l1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14334,7 +14334,7 @@ export const SmartWatch2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DeliveryDrone: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "drone-2");
+  const icon = { id: "drone-2", name: "Delivery Drone", category: "Tech3", tags: ["fly", "delivery"], body: `<rect x="9" y="9" width="6" height="6" rx="1"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M9 9L4 6M15 9l5-3M9 15l-5 3M15 15l5 3M11 15v4h2v-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14347,7 +14347,7 @@ export const DeliveryDrone: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const AIChat: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "ai-chat");
+  const icon = { id: "ai-chat", name: "AI Chat", category: "Tech3", tags: ["ai", "chat"], body: `<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 9h10M7 12h6M7 15h4M3 18l3-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14360,7 +14360,7 @@ export const AIChat: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CloudStorage: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cloud-storage");
+  const icon = { id: "cloud-storage", name: "Cloud Storage", category: "Tech3", tags: ["storage", "cloud"], body: `<path d="M7 18a5 5 0 0 1-1-9.9A6 6 0 0 1 18 9a4 4 0 0 1 1 7.9"/><path d="M9 14l3-3 3 3M12 11v6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14373,7 +14373,7 @@ export const CloudStorage: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const FingerprintScan: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fingerprint-4");
+  const icon = { id: "fingerprint-4", name: "Fingerprint Scan", category: "Tech3", tags: ["biometric", "scan"], body: `<path d="M3 12a9 9 0 0 1 18 0M6 12a6 6 0 0 1 12 0M9 12a3 3 0 0 1 6 0v3M12 12v6M3 9l2 1M21 9l-2 1M3 15l2-1M21 15l-2-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14386,7 +14386,7 @@ export const FingerprintScan: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CircuitBoard2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "circuit-2");
+  const icon = { id: "circuit-2", name: "Circuit Board 2", category: "Tech3", tags: ["pcb", "tech"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M6 6h4v4M14 6h4v4M6 14h4v4M14 14h4v4M10 8h4M8 10v4M16 10v4M10 16h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14399,7 +14399,7 @@ export const CircuitBoard2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const SatelliteDish: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "satellite-2");
+  const icon = { id: "satellite-2", name: "Satellite Dish", category: "Tech3", tags: ["signal", "space"], body: `<path d="M5 21a9 9 0 0 1 9-9M5 17a5 5 0 0 1 5-5M9 21a5 5 0 0 1 5-5M5 21v-1a4 4 0 0 1 4-4M19 3l-6 6M19 3l-2 4-4-2z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14412,7 +14412,7 @@ export const SatelliteDish: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TuningFork2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tuning-fork-2");
+  const icon = { id: "tuning-fork-2", name: "Tuning Fork 2", category: "Music5", tags: ["tune", "pitch"], body: `<path d="M9 3v8a3 3 0 0 0 6 0V3M9 3v0M15 3v0M9 16v5M15 16v5M9 21h6"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14425,7 +14425,7 @@ export const TuningFork2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const MusicNote2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "music-note-2");
+  const icon = { id: "music-note-2", name: "Music Note 2", category: "Music5", tags: ["note", "music"], body: `<circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><path d="M9 18V4l9-1v13"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14438,7 +14438,7 @@ export const MusicNote2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const DJHeadphones2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "headphones-3");
+  const icon = { id: "headphones-3", name: "DJ Headphones 2", category: "Music5", tags: ["audio", "dj"], body: `<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/><path d="M12 4v-2M9 4l-1-1M15 4l1-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14451,7 +14451,7 @@ export const DJHeadphones2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Speaker2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "speaker-2");
+  const icon = { id: "speaker-2", name: "Speaker 2", category: "Music5", tags: ["audio", "sound"], body: `<rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="12" cy="14" r="3"/><circle cx="12" cy="7" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14464,7 +14464,7 @@ export const Speaker2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const StudioMic2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "mic-3");
+  const icon = { id: "mic-3", name: "Studio Mic 2", category: "Music5", tags: ["record", "studio"], body: `<rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14477,7 +14477,7 @@ export const StudioMic2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const VolumeControl: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "volume-2");
+  const icon = { id: "volume-2", name: "Volume Control", category: "Music5", tags: ["sound", "audio"], body: `<path d="M3 10v4h4l5 4V6L7 10z"/><path d="M15 9a3 3 0 0 1 0 6M18 6a7 7 0 0 1 0 12"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14490,7 +14490,7 @@ export const VolumeControl: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Playlist2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "playlist-2");
+  const icon = { id: "playlist-2", name: "Playlist 2", category: "Music5", tags: ["queue", "music"], body: `<path d="M3 6h10M3 10h10M3 14h7M3 18h7M16 8l5 3-5 3z"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14503,7 +14503,7 @@ export const Playlist2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Radio2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "radio-2");
+  const icon = { id: "radio-2", name: "Radio 2", category: "Music5", tags: ["broadcast", "tune"], body: `<rect x="3" y="9" width="18" height="11" rx="2"/><circle cx="9" cy="14" r="2"/><path d="M14 12h4M14 15h4M5 9l8-4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14516,7 +14516,7 @@ export const Radio2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Croissant: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "croissant");
+  const icon = { id: "croissant", name: "Croissant", category: "Food3", tags: ["bread", "french"], body: `<path d="M3 16c0-5 4-9 9-9s9 4 9 9M3 16c0 2 2 3 4 3M21 16c0 2-2 3-4 3M7 19c2 1 8 1 10 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14529,7 +14529,7 @@ export const Croissant: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bagel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bagel");
+  const icon = { id: "bagel", name: "Bagel", category: "Food3", tags: ["bread", "breakfast"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14542,7 +14542,7 @@ export const Bagel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Muffin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "muffin");
+  const icon = { id: "muffin", name: "Muffin", category: "Food3", tags: ["bakery", "sweet"], body: `<path d="M5 21V13a7 7 0 0 1 14 0v8M5 21h14M7 13c0-3 2-5 5-5s5 2 5 5"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14555,7 +14555,7 @@ export const Muffin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cookie: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cookie");
+  const icon = { id: "cookie", name: "Cookie", category: "Food3", tags: ["sweet", "snack"], body: `<circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1.2" fill="currentColor" stroke="none"/><circle cx="11" cy="15" r="1.2" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="1" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14568,7 +14568,7 @@ export const Cookie: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Cupcake: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "cupcake");
+  const icon = { id: "cupcake", name: "Cupcake", category: "Food3", tags: ["sweet", "dessert"], body: `<path d="M5 21V13a7 7 0 0 1 14 0v8M5 21h14M7 13c0-3 2-5 5-5s5 2 5 5M9 8c0-2 1-3 3-3s3 1 3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14581,7 +14581,7 @@ export const Cupcake: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Pretzel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "pretzel");
+  const icon = { id: "pretzel", name: "Pretzel", category: "Food3", tags: ["snack", "german"], body: `<path d="M5 12c0-4 3-7 7-7s7 3 7 7-3 7-7 7M5 12c0 4 3 7 7 7M19 12c0 4-3 7-7 7M8 8c2 2 8 2 8 0M8 16c2-2 8-2 8 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14594,7 +14594,7 @@ export const Pretzel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Popcorn: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "popcorn");
+  const icon = { id: "popcorn", name: "Popcorn", category: "Food3", tags: ["snack", "movie"], body: `<path d="M5 21V11l3-2h8l3 2v10M5 21h14M8 9c0-2 1-3 2-3M12 9c0-2 1-3 2-3M14 8c0-2 1-3 2-3M9 6c0-2 1-3 3-3s3 1 3 3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14607,7 +14607,7 @@ export const Popcorn: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const ChocolateBar: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "chocolate");
+  const icon = { id: "chocolate", name: "Chocolate Bar", category: "Food3", tags: ["sweet", "candy"], body: `<rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14620,7 +14620,7 @@ export const ChocolateBar: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Donut2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "donut-2");
+  const icon = { id: "donut-2", name: "Donut 2", category: "Food3", tags: ["sweet", "dessert"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><circle cx="8" cy="8" r="0.8" fill="currentColor" stroke="none"/><circle cx="16" cy="9" r="0.8" fill="currentColor" stroke="none"/><circle cx="9" cy="17" r="0.8" fill="currentColor" stroke="none"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14633,7 +14633,7 @@ export const Donut2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Penguin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "penguin");
+  const icon = { id: "penguin", name: "Penguin", category: "Animals2", tags: ["bird", "antarctic"], body: `<path d="M6 21V8a6 6 0 0 1 12 0v13M6 21h12M8 21V13a4 4 0 0 1 8 0v8M10 9h0.1M14 9h0.1M11 14h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14646,7 +14646,7 @@ export const Penguin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Owl: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "owl");
+  const icon = { id: "owl", name: "Owl", category: "Animals2", tags: ["bird", "night"], body: `<circle cx="12" cy="12" r="8"/><circle cx="9" cy="11" r="2"/><circle cx="15" cy="11" r="2"/><path d="M11 11h2M9 16h6M5 5l3 1M19 5l-3 1M5 19l3-1M19 19l-3-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14659,7 +14659,7 @@ export const Owl: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Fox: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "fox");
+  const icon = { id: "fox", name: "Fox", category: "Animals2", tags: ["animal", "wild"], body: `<path d="M5 4l4 4 3-1 3 1 4-4-2 6c0 5-3 11-5 11s-5-6-5-11zM9 12h0.1M15 12h0.1M11 16h2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14672,7 +14672,7 @@ export const Fox: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Wolf: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "wolf");
+  const icon = { id: "wolf", name: "Wolf", category: "Animals2", tags: ["animal", "wild"], body: `<path d="M5 4l4 4 3-2 3 2 4-4-1 8c0 5-3 9-6 9s-6-4-6-9zM9 12h0.1M15 12h0.1M10 16h4"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14685,7 +14685,7 @@ export const Wolf: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Bear: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "bear");
+  const icon = { id: "bear", name: "Bear", category: "Animals2", tags: ["animal", "wild"], body: `<circle cx="12" cy="13" r="7"/><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><path d="M9 12h0.1M15 12h0.1M9 16h6M10 13l2 1 2-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14698,7 +14698,7 @@ export const Bear: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Deer: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "deer");
+  const icon = { id: "deer", name: "Deer", category: "Animals2", tags: ["animal", "forest"], body: `<path d="M5 21V12c0-4 3-7 7-7s7 3 7 7v9M5 21h14M9 21v-5h6v5M7 5l-2-3M9 4l-1-3M17 5l2-3M15 4l1-3M10 12h0.1M14 12h0.1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14711,7 +14711,7 @@ export const Deer: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Monkey: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "monkey");
+  const icon = { id: "monkey", name: "Monkey", category: "Animals2", tags: ["animal", "primate"], body: `<circle cx="12" cy="12" r="7"/><circle cx="6" cy="8" r="2"/><circle cx="18" cy="8" r="2"/><path d="M9 11h0.1M15 11h0.1M9 15c1 1 5 1 6 0"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14724,7 +14724,7 @@ export const Monkey: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Tiger: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tiger");
+  const icon = { id: "tiger", name: "Tiger", category: "Animals2", tags: ["animal", "wild"], body: `<circle cx="12" cy="13" r="7"/><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><path d="M9 11h0.1M15 11h0.1M9 15h6M7 10l1 1M17 10l-1 1M10 17l1-1 2 0 1 1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14737,7 +14737,7 @@ export const Tiger: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Giraffe: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "giraffe");
+  const icon = { id: "giraffe", name: "Giraffe", category: "Animals2", tags: ["animal", "tall"], body: `<path d="M9 21V8l3-5 3 5v13M9 21h6M11 14h2M11 18h2M9 3V1h6v2M9 3l-2-1M15 3l2-1"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14750,7 +14750,7 @@ export const Giraffe: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Zebra: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "zebra");
+  const icon = { id: "zebra", name: "Zebra", category: "Animals2", tags: ["animal", "stripes"], body: `<circle cx="12" cy="13" r="7"/><path d="M8 8l2 2M14 8l2 2M8 16l2-2M14 16l2-2M6 6l2 2M16 6l2 2M6 18l2-2M16 18l2-2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14763,7 +14763,7 @@ export const Zebra: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TravelMap: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "map-2");
+  const icon = { id: "map-2", name: "Travel Map", category: "Travel2", tags: ["location", "navigate"], body: `<path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14776,7 +14776,7 @@ export const TravelMap: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const LocationPin: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "location-pin");
+  const icon = { id: "location-pin", name: "Location Pin", category: "Travel2", tags: ["place", "gps"], body: `<path d="M12 22s8-7 8-13a8 8 0 0 0-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14789,7 +14789,7 @@ export const LocationPin: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const GPS: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "gps");
+  const icon = { id: "gps", name: "GPS", category: "Travel2", tags: ["navigate", "gps"], body: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14802,7 +14802,7 @@ export const GPS: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Suitcase2: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "suitcase-2");
+  const icon = { id: "suitcase-2", name: "Suitcase 2", category: "Travel2", tags: ["luggage", "travel"], body: `<rect x="5" y="6" width="14" height="15" rx="2"/><path d="M9 6V3h6v3M5 11h14M9 21v2M15 21v2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14815,7 +14815,7 @@ export const Suitcase2: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const BoardingPass: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "boarding-pass");
+  const icon = { id: "boarding-pass", name: "Boarding Pass", category: "Travel2", tags: ["ticket", "flight"], body: `<rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 12h18M7 9h4M7 15h4M14 9h3M14 15h3M12 3v18" stroke-dasharray="2 2"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14828,7 +14828,7 @@ export const BoardingPass: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const Hotel: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "hotel");
+  const icon = { id: "hotel", name: "Hotel", category: "Travel2", tags: ["stay", "accommodation"], body: `<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2M10 21v-3h4v3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14841,7 +14841,7 @@ export const Hotel: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const TouristCamera: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "tourist");
+  const icon = { id: "tourist", name: "Tourist Camera", category: "Travel2", tags: ["photo", "tourist"], body: `<rect x="3" y="6" width="18" height="14" rx="2"/><path d="M8 6l2-3h4l2 3"/><circle cx="12" cy="13" r="4"/><path d="M3 21h18"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,
@@ -14854,7 +14854,7 @@ export const TouristCamera: React.FC<ToolverseIconProps> = (props) => {
 };
 
 export const CurrencyExchange_currencyexchange: React.FC<ToolverseIconProps> = (props) => {
-  const icon = TOOLVERSE_ICONS.find(i => i.id === "currency-exchange");
+  const icon = { id: "currency-exchange", name: "Currency Exchange", category: "Travel2", tags: ["money", "exchange"], body: `<path d="M3 8h14l-3-3M3 8l3 3M21 16H7l3 3M21 16l-3-3"/>` };
   if (!icon) return null;
   const svgString = renderIconSvg(icon, {
     size: props.size || 24,

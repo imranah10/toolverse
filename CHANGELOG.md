@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.5.0] — 2026-09-12
+
+### ⚡ Fixed — real tree-shaking (97% smaller bundles)
+- **Icons**: every icon component now carries its own inline definition (was: shared `TOOLVERSE_ICONS.find()` lookup that forced bundlers to include all 1,009 icons for any single import)
+- **Library components**: same fix — 243 components each carry their own def (was: shared `COMPONENTS.find()` lookup + a 338 KB dead array)
+- **Verified with esbuild**: `import { Button, Plus }` bundle went from **317 KB → 8.8 KB minified** (~2.5 KB gzipped). Unused icons/components are fully dropped
+- `TOTAL_COMPONENTS` / `TOTAL_ICONS` constants corrected to honest values (274 / 1,009)
+
+### 🎉 Added — CLI v2 (zero dependencies, instant)
+- **`add` now covers all 18 handcrafted component files** (was 5). Sources are copied live from the installed package's `src/components/` — zero duplication, always in sync. Aliases included (`spinner`→loader, `chip`→tag, `modal`→overlay…)
+- **`npx toolverse icons <query>`** — icon search engine: search all 1,009 icons by name/tag/category, prints exact `import { X } from "toolverse"` snippets with all 7 variants. Bare `icons` lists categories with counts
+- **`npx toolverse theme <preset>`** — 7 drop-in theme presets (indigo · midnight · rose · ocean · forest · cyber · mono). Writes a ready-to-paste `toolverse-theme.ts` with `ToolverseProvider` usage snippet
+- **`npx toolverse stats`** — honest package contents at a glance
+- **`npx toolverse doctor`** — Node/React/package environment health check
+
+### 🔧 Changed
+- **Honest counts everywhere**: 274 components (31 handcrafted + 243 library) + 1,009 icons — verified from `dist/index.d.ts` (1,286+ named exports). Old "263 / 1,099" figures were overstated
+- package.json description + keywords updated (added `cli`)
+
+### 📚 Docs
+- README: full CLI v2 reference, corrected counts, cleaned maintainer section
+
+---
+
 ## [1.3.0] — 2026-07-24
 
 ### 🎉 Added
